@@ -1,0 +1,30 @@
+.fourty-five-page {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cornflowerblue;
+
+}
+
+#sidebar,#intro,#IntroFourty,#whyjoin,#WhySunshineFourty,#ApplyFourty,#SchoolFourty {
+    background-color: rgb(253,137,4);
+ }
+
+
+body {
+    background-color: rgb(82,97,147);
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+
+
+
+ p,li {
+    text-align:justify;
+    font-size: 21px;
+    
+ }

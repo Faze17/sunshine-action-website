@@ -1,0 +1,24 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+ }
+ h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ p,li,div {
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ p,li {
+    text-align:justify;
+    font-size: 21px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ #sidebar,#intro,#why,#why-SA,#apply,#schools,#university {
+    background-color: rgb(253,137,4);
+ }
+ .row {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }

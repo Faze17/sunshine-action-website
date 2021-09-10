@@ -1,0 +1,24 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(82,97,147);
+    color: #000;
+ }
+ h1 {
+    text-align: center;
+    font-weight: bold;
+ }
+ p,li,div {
+    color: #000;
+ }
+ p,li {
+    text-align:justify;
+    font-size: 21px;
+ }
+
+ p {
+     color: #000;
+ }
+
+ #sidebar,#intro,#ourstory,#whydowehelp,#howdowehelp,#schools,#sunshinefortunebags {
+    background-color: rgb(253,137,4);
+ }
