@@ -1,10 +1,10 @@
 {
   "name": "sunshine-website-f",
-  "homepage": "http://sunshine-action.org/",
+  "homepage": "http://Faze17.github.io/sunshine-website-f",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@popperjs/core": "^2.10.0",
+    "@popperjs/core": "^2.11.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -16,10 +16,12 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^2.1.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

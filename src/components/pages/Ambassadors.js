@@ -8,19 +8,15 @@ import HeroAmbassadors from '../HeroAmbassadors';
 
 
  function Ambassadors() {
-    return (
+    return(
         <>
         <HeroAmbassadors />
         <AmbassadorPage />
         <Footer /> 
-        
-        </>   
-    )
+        </>)
 };
 
-<div>
-    <h1> Ambassadors</h1>
-</div>
+
 
 
 
