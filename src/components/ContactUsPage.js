@@ -11,47 +11,6 @@ function ContactUsPage() {
    <div className="row">
       <div className="col-md-3">
          <br />
-         <div id="sidebar" className="d-flex flex-column flex-shrink-0 p-3 text-dark" style={{width: '100%'}}>
-            <img src="/images/logo.png" className="img-fluid" />
-            <hr />
-            <span className="text-dark fs-4 text-center">Table of Contents</span>
-            <ol className="flex-column mb-auto">
-               <li className="text-dark">
-                  <a href="#ContactUs" className="  text-dark" aria-current="page">
-                     Contact Us
-                  </a>
-               </li>
-               <li className="text-dark">
-                  <a href="#HowToDonate" className="  text-dark" aria-current="page">
-                     How to Donate
-                  </a>
-               </li>
-               <li className="text-dark">
-                  <a href="#SchoolContact" className="  text-dark" aria-current="page">
-
-                     Schools That Joined
-                  </a>
-               </li>
-            </ol>
-
-            <hr />
-            
-            <span className="text-dark fs-4 text-center">Social Media</span>
-            <hr />
-            Ambassador Media:
-            <a href="https://www.youtube.com/watch?v=VSf5sbIsk78&list=PLwSy58i5yYL7DYNpcePL7Ivfoz7UN8E8a&ab_channel=SunshineAction" className="text-dark">
-               YouTube
-            </a>
-            <br />
-            <br />
-            <span><br />General Media:</span>
-            <a href="https://www.facebook.com/SunshineAction/" className="text-dark">
-               Facebook
-            </a>
-            <a href="https://www.instagram.com/sunshineactionhk/" className="text-dark">Instagram</a>
-            <a href="https://twitter.com/SunshineAction" className="text-dark">Twitter</a>
-            <br /><br />
-         </div>
 
          
          
