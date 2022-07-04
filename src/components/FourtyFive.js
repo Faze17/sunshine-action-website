@@ -94,7 +94,7 @@ function FourtyFive() {
          <div className="container">
           
             <div id="IntroFourty" className="p-4 text-dark   rounded-3">
-               <h1>Join the Sunshine 45 Club</h1>
+               <h1><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAJzLG0YmLfppqIjci_TizgM8i4rzLDHMxYVVYCq9wOGQYdQ/viewform" className='text-black' >Join the Sunshine 45 Club</a></h1>
             </div>
             <br />
             

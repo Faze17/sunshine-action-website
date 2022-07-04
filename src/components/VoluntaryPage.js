@@ -53,8 +53,8 @@ function VoluntaryPage() {
 
     <p>If you are interested in becoming a volunteer with us, please email either: </p>
     <ul>
-        <li>Adrian: <u>ambassador@sunshine-action.org</u> </li>
-        <li>Sunny: <u>sunshine@sunshine-action.org</u> </li>
+        <li>Adrian: <a href="mailto:ambassador@sunshine-action.org" class="text-white">ambassador@sunshine-action.org</a></li>
+        <li>Sunny: <a href="mailto:sunshine@sunshine-action.org" class="text-white">sunshine@sunshine-action.org</a> </li>
     </ul>
     </div>
 </div>

@@ -59,7 +59,7 @@ function CompanyPage() {
         company achieve its sustainable and charitable 
         targets. We would love to hear from anybody who 
         may be interested in partnering with us -- please 
-        contact Sunny at <u>sunshine@sunshine-action.org </u></p>
+        contact Sunny at <a href="mailto:sunshine@sunshine-action.org" class="text-white">sunshine@sunshine-action.org</a></p>
     <br />
     
     </div>
