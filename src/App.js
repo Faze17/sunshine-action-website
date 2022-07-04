@@ -19,6 +19,8 @@ import PlantPlanet from './components/pages/PlantPlanet';
 import BuildingProject from './components/pages/BuildingProject';
 import WaterWorld from './components/pages/WaterWorldPage';
 import _SaveSea_Page from './components/pages/_SaveSea_Page';
+import MicroFinancePage from './components/pages/MicroFinancePage';
+import StudentSponsorshipPage from './components/pages/StudentSponsorshipPage';
 
 
 
@@ -50,7 +52,9 @@ function App() {
           <Route path='/plant-the-planet' exact component={PlantPlanet} />
           <Route path='/building-project' exact component={BuildingProject} />
           <Route path='/water-for-the-world' exact component={WaterWorld} />
-          
+          <Route path='/microfinace' exact component={MicroFinancePage} />
+          <Route path='/studentsponsorship' exact component={StudentSponsorshipPage} />
+
           
           </div>
         </Switch>
