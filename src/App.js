@@ -19,6 +19,7 @@ import SaveSea from './components/pages/SaveSea';
 import PlantPlanet from './components/pages/PlantPlanet';
 import BuildingProject from './components/pages/BuildingProject';
 import WaterWorld from './components/pages/WaterWorld';
+import ProjectPage from './components/pages/ProjectPage';
 
 function App() {
   return (
@@ -48,7 +49,8 @@ function App() {
           <Route path='/plant-the-planet' exact component={PlantPlanet} />
           <Route path='/building-project' exact component={BuildingProject} />
           <Route path='/water-for-the-world' exact component={WaterWorld} />
-          
+          {/* new added for project page */}
+          <Route path='/project-page' exact component={ProjectPage}   />       
           </div>
         </Switch>
       </Router> 

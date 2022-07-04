@@ -97,35 +97,42 @@ function FourtyFive() {
                <h1>Join the Sunshine 45 Club</h1>
             </div>
             <br />
-        
+            
+            {/* making slider */}
             <div className="row">
                <div className="col-md-2"></div>
                <div className="col-md-8">
                   <div id="carouselExampleControls" className="carousel slide card-img-top" data-bs-ride="carousel">
                      <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="5000">
-                           <div className="d-flex justify-content-center">
-                              <img id="three" src="/images/45slide2.jpg" className="d-block w-100"  />
+                           <div class="item peopleCarouselImg">
+                              <img id="three" src="/images/45slide2.jpg" className="d-block w-100"></img>
                            </div>
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
                            <div className="d-flex justify-content-center">
-                              <img src="/images/45slide5.jpg" className="d-block w-100"  />
+                              <div class="item peopleCarouselImg">
+                                 <img src="/images/45slide5.jpg" className="d-block w-100"  />
+                              </div>
                            </div>
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
                            <div className="d-flex justify-content-center">
-                              <img src="/images/45slide3.jpg" className="d-block w-100"  />
+                              <div class="item peopleCarouselImg">
+                                 <img src="/images/45slide3.jpg" className="d-block w-100"  />
+                              </div>
+                           </div>
+                        </div>
+                        <div className="carousel-item" data-bs-interval="6000">
+                           <div class="item peopleCarouselImg">
+                                 <img src="/images/45slide4.jpg" className="d-block w-100"  />
                            </div>
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
                            <div className="d-flex justify-content-center">
-                              <img src="/images/45slide4.jpg" className="d-block w-100"  />
-                           </div>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="6000">
-                           <div className="d-flex justify-content-center">
-                              <img src="images/45slide6.jpg" className="d-block w-100"  />
+                              <div class="item peopleCarouselImg">
+                                 <img src="/images/45slide6.jpg" className="d-block w-100"  />
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -145,7 +152,18 @@ function FourtyFive() {
             <br />
             
           
-            <p>Sunshine Action is inviting graduates worldwide with 45 & 44 points for IB /  3 A*A*A* for A-Level / 3.9-4.0 GPA / DSE Six 5** to join the exclusive Sunshine 45 Club, a student-led charity initiative. Members of the club will become Sunshine Ambassadors and will benefit from the vast networking opportunities available through participation in Sunshine Action’s charity programs.</p>
+            <p>Sunshine Action is inviting graduates worldwide with:</p>
+            <ul>
+               <li>45 & 44 points for IB </li>
+               <li>3 A*A*A* for A-Level </li>
+               <li>3.9-4.0 GPA </li>
+               <li>DSE Six 5** </li>
+            </ul>
+            <p>to join the exclusive Sunshine 45 Club, a student-led charity initiative.
+                Members of the club will become Sunshine Ambassadors and will benefit from 
+                the vast networking opportunities available through participation in Sunshine Action’s charity programs.</p>
+            
+            <br/>
             <p>As a Sunshine 45 Club member, you will:
                <ul>
                   <li>Participate in, conduct, create, or execute at least one humanitarian project per year as a team</li>
@@ -156,24 +174,38 @@ function FourtyFive() {
             </p>
             <div className="row">
                <div className="col-md-4">
-                  <br />
-                  <img src="images/4.jpeg" className="img-fluid" />
+                  <br/>
+                  <img src="images/4.jpeg" className="img-fluid"  />
                </div>
                <div className="col-md-8">
-                  <p>The first task for Club members in 2021 will be to:
-                     <ol>
-                        <li>Analyse the impact of COVID-19 on the general living model of humanity</li>
-                        <li>Predict lifestyle changes in the post-pandemic era</li>
-                        <li>Create a project that will bring real impact to communities in need, based on findings of the research</li>
-                     </ol>
+                  <br/>
+                  <p>The first task for Club members in 2021 will be to create a project that 
+                     help the communities based on analysing the impact of COVID-19 on the general
+                      living model of humanity and lifestyle changes.
                   </p>
-                  <p>Please take note that:
-                     <ul>
-                        <li>Sunshine 45 Club members will automatically become Sunshine Ambassadors (representing and promoting Sunshine Action at your institution)</li>
-                        <li>Programmes will be conducted throughout the year</li>
-                     </ul>
-                  </p>
-               </div>
+                  <br />
+                </div>
+               
+                <br/>
+               <p>Some of the skills & qualities we look for in our Sunshine Ambassadors:
+               <ul>
+                  <li>Leadership</li>
+                  <li>Takes initiative</li>
+                  <li>Responsible & committed</li>
+                  <li>Project management</li>
+                  <li>Good social communication</li>
+                  <li>Problem solving</li>
+                  <li>Team building & management</li>
+               </ul>
+               </p>
+                  
+               <p>Please take note that:
+                  <ul>
+                     <li>Sunshine 45 Club members will automatically become Sunshine Ambassadors (representing and promoting Sunshine Action at your institution)</li>
+                     <li>Programmes will be conducted throughout the year</li>
+                  </ul>
+               </p>
+            
             </div>
 
           
@@ -186,8 +218,8 @@ function FourtyFive() {
                <li>Boost and promote your future career</li>
                <li>Have the freedom to create your own project and proposal</li>
                <li>Be supported as you plan, coordinate, and execute the approved projects</li>
-               <li>Cooperate with Sunshine 45 Club members worldwide (from Hong Kong, UK, USA, Australia, and more) in project execution</li>
-               <li>Be part of the global Sunshine Action Network, where you could meet, interview, and learn from experts of different fields</li>
+               <li>Cooperate with Sunshine 45 Club members worldwide and be part of the global Sunshine Action Network, 
+                  where you could meet, interview, and learn from experts of different fields</li>
                <li>Develop a variety of in-demand skills such as Project Management, Strategic Planning, Leadership Skills, Marketing & Promotion, Public Relationship & Social Communication Skills, Raising Funds & Resources, Business Negotiation Skills, Organisational Skills, Team Building & Management, and many more…</li>
             </ul>
 
@@ -199,33 +231,42 @@ function FourtyFive() {
             <br />
             <div className="row">
                <div className="col-md-8">
-                  <p>Sunshine Action is probably the only charity organization in the World that has such diversity of programs under one umbrella of Poverty Relief. Assisting from food, construction, medicine, etc… to all sort of targets such as elderly, single parents, the handicapped, the severely sick, poor children, etc... and covering both environmental tree planting programs, restocking the ocean and helping stray dogs too. There are endless possibilities to develop and we are a highly flexible charity organization. We have cooperated with over 400 charity organizations in 18 countries worldwide</p>
+                  <p>Sunshine Action is probably the only charity organization in the 
+                     World that has such diversity of programs under one umbrella of 
+                     Poverty Relief. Sunshine Action’s programme ranges from helping the 
+                     vulnerable to protecting the environment. There are endless possibilities
+                     to develop and we are a highly flexible charity organization. We 
+                     have cooperated with over 400 charity organizations in 18 countries worldwide. </p>
                </div>
                <div className="col-md-4">
                   <img src="images/2.jpeg" className="img-fluid" />
                </div>
             </div>
 
-            <p>Sunshine Action is not an average organization that is interested only in asking you to donate or volunteering. In Sunshine Action , you could seriously learn a lot on other areas such as Compassion, Human Sensitivity, Project Management, Strategic Planning, Marketing & Promotion, Social Communication Skills, Funds & Resources-Raising,</p>
+            <p>Sunshine Action could be the only 
+               charity organization that will back you up on a background-check from major multi-national 
+               corporations, and even boost your future career. Even for someone being accused of a crime, 
+               the organization could consider to issue an official Certification or Mitigation Letter to the judge,
+                specifying his/her contribution to society.  </p>
             <div className="row">
                <div className="col-md-4">
                   <img src="images/3.jpeg" className="img-fluid" />
                </div>
                <div className="col-md-8">
-                  <p>Business Negotiation Skills, Multi-layers Leadership, Legal Aspects, Import & Export, Multinational Culture learning, Public Relationship & Communication, Organizational Skills, Team Building & Management, Global Environment & understanding and many more…from real-life projects –instead of theory- with the final purpose of training leaders capable in create true positive impacts for the benefit of humanity, sustainability of the resources in this planet and charity to the poor.</p>
                </div>
             </div>
 
-            <p>Being Sunshine Ambassadors, it’s a life-long advantage of being connected to the Sunshine Action Network, you could meet, interview and learn from VIPs of different fields, from politic, finance, legal, etc… and have the responsibility to connect other Sunshine Ambassadors and cooperate in different projects globally in the future.</p>
             <div className="row">
                <div className="col-md-8">
-                  <p>Sunshine Action could be the only charity organization that will back you up on background-check from major multi-national corporations, help to boost & promote your future career and even if you are being accused of a crime, the organization could consider to issue the official Certification or Mitigation Letter to the judge, specifying your contribution to the society. Of course, all these depends on how much you have contributed to Sunshine Action as Sunshine Ambassadors and also the nature of the crime. Sunshine Action has issued only 3 letters of this type in the last 10 years. One of them was requested by a mother for his son who volunteered previously.</p>
+                  <p>Sunshine Action welcomes creative and innovative ideas in the charity 
+                     field and gives you the freedom to create your own projects and proposals.
+                     We support Sunshine Ambassadors during the planning, coordination and execution
+                     of these approved projects, which almost do not exist in other charity organizations. </p>
                </div>
                <div className="col-md-4">
                   <img src="images/1.jpeg" className="img-fluid" />
                </div>
             </div>
-            <p>Sunshine Action welcome creative & innovative ideas in the charity field and give you the freedom to create your own project and proposal. We support the Sunshine Ambassadors during the planning, coordination and execution of these approved projects. So, you don’t need to always only follow Sunshine Action own original programs, but have this rare freedom almost non-existing in others charity organizations.</p>
          </div>
 
 
@@ -239,19 +280,7 @@ function FourtyFive() {
             <br /><br />Please note that this is a long-term role, as we at Sunshine Action value long-term networking.
             <br /><br />If you have any further questions, contact Adrian Yan at ambassador@sunshine-action.org or WhatsApp (+852) 5544 9656 for more information. We hope to hear from you soon!
          </p>
-         <br />
-         <p>Some of the skills & qualities we look for in our Sunshine Ambassadors:
-            <ul>
-               <li>Leadership</li>
-               <li>Takes initiative</li>
-               <li>Responsible & committed</li>
-               <li>Project management</li>
-               <li>Good social communication</li>
-               <li>Problem solving</li>
-               <li>Team building & management</li>
-            </ul>
-         </p>
-
+       
 
      
          <br />

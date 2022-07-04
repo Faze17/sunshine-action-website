@@ -20,7 +20,11 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
 
-
+ .peopleCarouselImg img {
+    width: auto;
+    height: 250px;
+    max-height: 250px;
+  }
 
 
  p,li {
