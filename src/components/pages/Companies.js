@@ -1,16 +1,15 @@
 import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-import HeroCompanies from '../HeroCompanies';
+import CompanyPage from '../CompanyPage';
+import HeroComp from '../HeroComp';
 
 
-
-
-
- function Companies() {
+function Companies() {
     return (
     <>
-    <HeroCompanies />
+    <HeroComp name = "COMPANIES" />
+    <CompanyPage />
     <Footer />
     </>
     )

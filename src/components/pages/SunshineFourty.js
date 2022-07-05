@@ -1,15 +1,14 @@
 import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-import HeroSection from '../HeroSection';
 import FourtyFive from '../FourtyFive';
-import HeroFourty from '../HeroFourty';
+import HeroComp from '../HeroComp';
 
 
  function SunshineFourty() {
     return (
     <>
-    <HeroFourty />
+    <HeroComp name = "SUNSHINE 45 CLUB" />
     <FourtyFive />
     <Footer />
     </>

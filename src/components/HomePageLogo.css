@@ -3,10 +3,5 @@
 align-items: center;
 margin: auto;
 display: block;
-
+width: 200px;
 }
-
-actual-logo.png {
-width: 100px;
-}
-

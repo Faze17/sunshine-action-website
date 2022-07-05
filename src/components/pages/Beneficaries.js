@@ -2,14 +2,13 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
 import BeneficariesList from '../BeneficariesList';
-import HeroBeneficaries from '../HeroBeneficaries';
-
+import HeroComp from '../HeroComp';
 
 
  function Beneficaries() {
     return (
     <>
-    <HeroBeneficaries />
+    <HeroComp name = "BENEFICARIES" />
     <BeneficariesList />
     <Footer />
     </>

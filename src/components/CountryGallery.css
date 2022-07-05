@@ -1,0 +1,9 @@
+.countryGallery .cards__items {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.countryGallery .cards__item {
+    flex-basis: 20%;
+    flex-grow: 0;
+    margin: 1rem 1rem 1rem;
+}

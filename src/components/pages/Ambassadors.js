@@ -1,16 +1,15 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import AmbassadorPage from '../AmbassadorPage';
-import HeroAmbassadors from '../HeroAmbassadors';
+import HeroComp from '../HeroComp';
 
 
 
  function Ambassadors() {
     return(
         <>
-        <HeroAmbassadors />
+        <HeroComp name = "AMBASSADORS" />
         <AmbassadorPage />
         <Footer /> 
         </>)

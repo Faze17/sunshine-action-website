@@ -40,7 +40,7 @@ function AmbassadorPage() {
                   </li>
                   <li className="text-dark">
                      <a href="#university" className="  text-dark" aria-current="page">
-                        Universities That Joined
+                        Universities&nbsp;That <br/> Joined
                      </a>
                   </li>
                   <li className="text-dark">

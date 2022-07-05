@@ -6,12 +6,11 @@ import './HeroSection.css';
 import { Button } from 'react-bootstrap';
 
 
-function HeroCompanies() {
+function HeroGlobal() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-4.mov' autoPlay loop muted />
-      <h1>COMING SOON</h1>
-      <h2>COMPANIES</h2>
+      <h1>GLOBAL PROJECTS</h1>
       <div className='hero-btns'>
 
 
@@ -23,4 +22,4 @@ function HeroCompanies() {
   );
 }
 
-export default HeroCompanies;
+export default HeroGlobal;

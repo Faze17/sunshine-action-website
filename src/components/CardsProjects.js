@@ -24,6 +24,11 @@ function CardsProjects() {
               text='Building Project'
               path='/building-project'
             />
+            <CardItem
+              src='images/StudentSponsorship2.jpg'
+              text='Student Sponsorship'
+              path='/studentsponsorship'
+            />
           </ul>
           <ul className='cards__items'>
             <CardItem
@@ -41,7 +46,11 @@ function CardsProjects() {
               text='Water for the World'
               path='/water-for-the-world'
             />
-
+            <CardItem
+              src='images/Microfinance2.jpg'
+              text='MicroFinance'
+              path='/microfinace'
+            />
           </ul>
         </div>
       </div>

@@ -1,20 +1,17 @@
 import React from 'react';
 import '../../App.css';
 
-import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
 import FortuneBagInfo from '../FortuneBagInfo';
-import HeroFortune from '../HeroFortune';
-
+import HeroComp from '../HeroComp';
 
 function FortuneBags() {
   return (
     <>
-      <HeroFortune />
+      <HeroComp name = "FORTUNE BAG PROGRAM" />
       <HomePageLogo />
       <FortuneBagInfo />
-      
       <Footer />
     </>
   );
