@@ -19,6 +19,9 @@ import SaveSea from './components/pages/SaveSea';
 import PlantPlanet from './components/pages/PlantPlanet';
 import BuildingProject from './components/pages/BuildingProject';
 import WaterWorld from './components/pages/WaterWorld';
+import GlobalProjects from './components/pages/Global';
+import _Project_Page from './components/pages/ProjectPage';
+import INDAPage from './components/pages/INDA';
 
 function App() {
   return (
@@ -48,6 +51,9 @@ function App() {
           <Route path='/plant-the-planet' exact component={PlantPlanet} />
           <Route path='/building-project' exact component={BuildingProject} />
           <Route path='/water-for-the-world' exact component={WaterWorld} />
+          <Route path='/global' exact component={GlobalProjects} />
+          <Route path='/projectpage' exact component={_Project_Page} />
+          <Route path='/INDA' exact component={INDAPage} />
           
           </div>
         </Switch>

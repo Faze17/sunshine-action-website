@@ -64,8 +64,14 @@ function NavBar() {
           </ul>
         </li>
 
-        <li class="nav-item">
-          <Link class="nav-link" to="/projects">Projects</Link>
+        <li class="nav-item dropdown">
+          <Link class="nav-link dropdown-toggle" to="/projects" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><Link class="dropdown-item" to="/projects">Hong Kong</Link></li>
+            <li><Link class="dropdown-item" to="/global">Global</Link></li>
+          </ul>
         </li>
         
         

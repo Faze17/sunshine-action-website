@@ -4,6 +4,7 @@ import './HomePageInfo.css';
 
 function OurStoryPage() {
     return (
+        <>
         <div className="homepageinfo" style={{background: 'rgb(82,97,147'}}>
    <div className="container">
       <div className="row">
@@ -35,6 +36,7 @@ consisting mainly in street sleeper projects and handing out of donations.</p>
 working with interns to further the vision established at the very heart of the charity: 
 staying committed to serving those in need.</p>
 
+
  
 
 
@@ -63,6 +65,13 @@ staying committed to serving those in need.</p>
 
 
 </div>
+<div className="homepageinfo" style={{background: '#db8802'}}>
+    <div className="container d-flex flex-column justify-content-center align-items-center py-5">
+        <h1>The UN Sustainable Development Goals</h1>
+        <img src = "sdg.png" style = {{width: "500px", margin: "3rem auto"}} />
+    </div>
+</div>
+</>
 
 
 
