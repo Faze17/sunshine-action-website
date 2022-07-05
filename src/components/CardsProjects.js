@@ -1,7 +1,6 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-import { HashLink as Link } from 'react-router-hash-link';
 
 function CardsProjects() {
   return (
@@ -55,12 +54,7 @@ function CardsProjects() {
           </ul>
         </div>
       </div>
-      <div className='global'>
-        <h1>Explore our Global Projects</h1>
-        <br />
-        <Link to="global" type = "button" class="btn btn-outline-light btn-lg" style={{borderRadius: '0px', marginBottom: '5px',}}>Global Projects</Link>
-      </div>
-    </>
+    </div>
   );
 }
 

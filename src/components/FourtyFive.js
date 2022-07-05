@@ -6,6 +6,7 @@ function FourtyFive() {
     return (
         <div ClassName="fourty-five-page" style={{backgroundColor: 'rgb(82,97,147)'}}>
 
+
 <div className="container">
    <div className="row">
       <div className="col-md-3">

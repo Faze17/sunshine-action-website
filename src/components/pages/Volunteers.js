@@ -2,15 +2,14 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
 import VoluntaryPage from '../VoluntaryPage';
-import HeroSection from '../HeroSection';
-import HeroVolunteer from '../HeroVolunteer';
+import HeroComp from '../HeroComp';
 
 
 
  function Volunteers() {
     return (
     <>
-    <HeroVolunteer /> 
+    <HeroComp name = "VOLUNTEER" />
     <VoluntaryPage />
     <Footer />
     </>

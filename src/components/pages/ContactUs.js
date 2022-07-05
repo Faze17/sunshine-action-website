@@ -2,14 +2,12 @@ import React from 'react';
 import '../../App.css';
 import ContactUsPage from '../ContactUsPage';
 import Footer from '../Footer';
-import HeroContactUs from '../HeroContactUs';
-import HeroSection from '../HeroSection';
-
+import HeroComp from '../HeroComp';
 
 function ContactUs() {
     return (
     <>
-    <HeroContactUs />
+    <HeroComp name = "CONTACT US" />
     <ContactUsPage /> 
     <Footer />  
     </>

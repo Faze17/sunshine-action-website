@@ -1,18 +1,15 @@
 import React from 'react';
 import '../../App.css';
-
-import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
 import OurStoryPage from '../OurStoryPage';
-import HeroOurStory from '../HeroOurStory';
-
+import HeroComp from '../HeroComp';
 
 
 function OurStory() {
   return (
     <>
-      <HeroOurStory />
+      <HeroComp name = "OUR STORY" />
       <HomePageLogo />
       <OurStoryPage />
       

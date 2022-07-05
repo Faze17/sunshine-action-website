@@ -1,8 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-
-import HeroPlantPlanet from '../HeroPlantPlanet';
+import HeroComp from '../HeroComp';
 
 
 
@@ -10,7 +9,7 @@ import HeroPlantPlanet from '../HeroPlantPlanet';
  function PlantPlanet() {
     return (
     <>
-    <HeroPlantPlanet />
+    <HeroComp name = "PLANT THE PLANET" />
     <Footer />
     </>
     )

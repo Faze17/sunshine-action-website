@@ -1,23 +1,23 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(2, 77, 216) 0%, rgb(253, 137, 4) 100%);
+  background: linear-gradient(90deg, rgb(2, 77, 216) 0%, rgb(253, 137, 4) 100%);
 
-  }
+}
 
-  .navbar-nav > li > .dropdown-menu { 
-    background-color: rgb(64, 134, 247);
-    
+.navbar-nav > li > .dropdown-menu { 
+  background-color: rgb(64, 134, 247);
   
-  }
+
+}
 
 
 .navbar-brand > span
 {
-  position: absolute;
-  width: 40px;
-  left: 90px;
-  top: 25px;
-  text-align: left;
-  margin: auto;
-  font-size: 30px;
-  
+position: absolute;
+width: 40px;
+left: 90px;
+top: 25px;
+text-align: left;
+margin: auto;
+font-size: 30px;
+
 }

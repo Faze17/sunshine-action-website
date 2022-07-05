@@ -11,7 +11,7 @@ export default WaterWorldPage;
 function WaterWorldPage() {
     return (
       <>
-        <HeroComp name = "Water For The World" />
+        <HeroComp name = "WATER FOR THE WORLD" />
         <HomePageLogo />
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">

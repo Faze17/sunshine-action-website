@@ -3,12 +3,12 @@ import '../../App.css';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
 import CardProjects from '../CardsProjects';
-import HeroProjects from '../HeroProjects';
+import HeroComp from '../HeroComp';
 
 function StreetSleepers() {
   return (
     <>
-      <HeroProjects />
+      <HeroComp name = "PROJECTS" />
       <HomePageLogo />
     <CardProjects />
       

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import './Project.css';
-
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
