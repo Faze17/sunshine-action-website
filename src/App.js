@@ -53,7 +53,9 @@ function App() {
           <Route path='/water-for-the-world' exact component={WaterWorld} />
           <Route path='/microfinace' exact component={MicroFinancePage} />
           <Route path='/studentsponsorship' exact component={StudentSponsorshipPage} />
-
+          <Route path='/global' exact component={GlobalProjects} />
+          <Route path='/projectpage' exact component={_Project_Page} />
+          <Route path='/INDA' exact component={INDAPage} />
           
           {/* new added for project page */}
           <Route path='/project-page' exact component={ProjectPage}   />       
