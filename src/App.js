@@ -15,10 +15,14 @@ import Volunteers from './components/pages/Volunteers';
 import Beneficaries from './components/pages/Beneficaries';
 import Companies from './components/pages/Companies';
 import Projects from './components/pages/Projects';
-import SaveSea from './components/pages/SaveSea';
 import PlantPlanet from './components/pages/PlantPlanet';
 import BuildingProject from './components/pages/BuildingProject';
-import WaterWorld from './components/pages/WaterWorld';
+import WaterWorld from './components/pages/WaterWorldPage';
+import _SaveSea_Page from './components/pages/_SaveSea_Page';
+import MicroFinancePage from './components/pages/MicroFinancePage';
+import StudentSponsorshipPage from './components/pages/StudentSponsorshipPage';
+
+
 
 function App() {
   return (
@@ -44,10 +48,13 @@ function App() {
           <Route path='/companies' exact component={Companies} />
           <Route path='/beneficaries' exact component={Beneficaries} />
           <Route path='/projects' exact component={Projects} />
-          <Route path='/save-the-sea' exact component={SaveSea} />
+          <Route path='/save-the-sea' exact component={_SaveSea_Page} />
           <Route path='/plant-the-planet' exact component={PlantPlanet} />
           <Route path='/building-project' exact component={BuildingProject} />
           <Route path='/water-for-the-world' exact component={WaterWorld} />
+          <Route path='/microfinace' exact component={MicroFinancePage} />
+          <Route path='/studentsponsorship' exact component={StudentSponsorshipPage} />
+
           
           </div>
         </Switch>

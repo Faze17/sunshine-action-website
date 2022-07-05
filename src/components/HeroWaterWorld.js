@@ -10,9 +10,7 @@ function HeroWaterWorld() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-4.mov' autoPlay loop muted />
-      <h1>COMING SOON</h1>
-      
-      <h2>WATER FOR THE WORLD</h2>
+      <h1>WATER FOR THE WORLD</h1>
       <div className='hero-btns'>
 
 
