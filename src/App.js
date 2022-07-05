@@ -21,8 +21,7 @@ import WaterWorld from './components/pages/WaterWorldPage';
 import _SaveSea_Page from './components/pages/_SaveSea_Page';
 import MicroFinancePage from './components/pages/MicroFinancePage';
 import StudentSponsorshipPage from './components/pages/StudentSponsorshipPage';
-
-
+import ProjectPage from './components/pages/ProjectPage';
 
 function App() {
   return (
@@ -56,6 +55,8 @@ function App() {
           <Route path='/studentsponsorship' exact component={StudentSponsorshipPage} />
 
           
+          {/* new added for project page */}
+          <Route path='/project-page' exact component={ProjectPage}   />       
           </div>
         </Switch>
       </Router> 

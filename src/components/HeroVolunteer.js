@@ -10,8 +10,7 @@ function HeroVolunteer() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-4.mov' autoPlay loop muted />
-      <h1>COMING SOON</h1>
-      <h2>VOLUNTEERS</h2>
+      <h1>VOLUNTEERS</h1>
       <div className='hero-btns'>
 
 

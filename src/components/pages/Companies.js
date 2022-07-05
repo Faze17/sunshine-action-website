@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
+import CompanyPage from '../CompanyPage';
 import HeroCompanies from '../HeroCompanies';
 
 
@@ -11,6 +12,7 @@ import HeroCompanies from '../HeroCompanies';
     return (
     <>
     <HeroCompanies />
+    <CompanyPage />
     <Footer />
     </>
     )
