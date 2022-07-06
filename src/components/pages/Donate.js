@@ -2,20 +2,20 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
-import PlantPlanetInfo from '../PlantPlanetInfo';
+import CHDInfo from '../CHDInfo';
 import HeroComp from '../HeroComp';
 
 
-function PlantPlanet() {
+function CHD() {
   return (
     <>
       <HeroComp name = "PLANT THE PLANET" />
       <HomePageLogo />
-    <PlantPlanetInfo />
+    <CHDInfo />
       
       <Footer />
     </>
   );
 }
 
-export default PlantPlanet;
+export default CHD;
