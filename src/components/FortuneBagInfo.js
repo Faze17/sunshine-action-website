@@ -9,7 +9,6 @@ function FortuneBagInfo() {
    <div className="container">
       <div className="row">
          <div className="col-md-2"></div>
-
          <div className="col-md-8">
             <div className="container">
                <div id="sunshinefortunebags" className="p-4 text-dark rounded-3">
@@ -22,10 +21,11 @@ function FortuneBagInfo() {
 
 <div className="row">
     <div>
-    <li><b>The Fortune Bag program packs and distributes food bags to those in need in many countries around the world.</b></li>
-    <li>The Sunshine Fortune Bag Program is the biggest program in the organization, which focuses on poverty relief.</li>
-    <li>The Sunshine Fortune Bags have been distributed in many countries around the world, including Vietnam, Kenya, China, Bangladesh, Myanmar, Hong Kong, Mongolia, India, Macau, Nepal, Thailand, Sri Lanka, Cambodia, Indonesia, Vietnam & the Philippines in the last 13 years.</li>
-    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Fortune Bag Program. Your contribution would mean a lot to us. Learn how to donate here.</b></li>
+    <li><b>The Fortune Bag Program packs and distributes bags full of rice, pasta, dry foods, sauces, toiletries, and other necessities to low-income individuals supported by our partner beneficiaries. </b></li>
+    <li>The Sunshine Fortune Bag Program is the biggest program in the organization, which focuses on poverty relief. </li>
+    <li>The Sunshine Fortune Bags have been distributed in many countries around the world, including Vietnam, Kenya, China, Bangladesh, Myanmar, Hong Kong, Mongolia, India, Macau, Nepal, Thailand, Sri Lanka, Cambodia, Indonesia, Vietnam & the Philippines in the last 13 years. </li>
+    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Fortune Bag Program. Your contribution would mean a lot to us. Learn how to donate here. </b></li>
+    <img src="../fortune-bags-1.jpg" alt="Fortune Bags 1"></img>
       </div>
 </div>
 <br />
@@ -36,29 +36,29 @@ function FortuneBagInfo() {
 
 <div className="row">
     <div>
-    <p>This was the first official program of Sunshine Action in 2008 and remains our biggest project after more than a decade. We started with the simple concept that "Everyone Needs to Eat", called our donations Fortune Bags, and used the Festive Seasons as motivation to donate.</p>
- <p>The first charity organization to which Sunshine Action donated Fortune Bags was HK Women Workers Association and its sister org: Cleaning Workers’ Association. At that time in early 2008, there was no minimum wage in Hong Kong. Most cleaning workers made an average of only $3,500-4,500 HK per month (£367.81- £472.90, or $446.07-$573.52 US). Many struggled to pay rent and sustain their families but could not apply for social welfare.</p>
+    <p>This was the first official program of Sunshine Action in 2008 and remains our biggest project after more than a decade. We started with the simple concept that "Everyone Needs to Eat", called our donations Fortune Bags, and used the Festive Seasons as a motivation to donate. </p>
+ <p>The first charity organization Sunshine Action donated Fortune Bags to was the HK Women Workers Association and its sister organization, Cleaning Workers’ Association. At that time in early 2008, there was no minimum wage in Hong Kong. Most cleaning workers made an average of only HKD$3,500-4,500 per month (USD$450-580). Many struggled to pay rent and sustain their families but could not apply for social welfare support. </p>
 
-<p>When Sunny started the Sunshine Fortune Bags program in 2008, every season there were only a few volunteers, from 3-6 to pack all bags. They borrowed the office from HK Women Workers Association to store the food. Volunteers came on Saturdays and Sundays for 3 consecutive weekends to pack the bags. Sunshine Action didn't have its own office until 4 years later. This was the humble beginning of Sunshine Action, and the world's smallest Charity Organization.</p>
+<p>When Sunny started the Sunshine Fortune Bags program in 2008, there were only a couple of volunteers each season to pack all bags. They borrowed the office from HK Women Workers Association to store the food. Volunteers came on Saturdays and Sundays for 3 consecutive weekends to pack the bags. Sunshine Action did not have its own office until 4 years later. This was the humble beginning of Sunshine Action, the world's smallest charity organization. </p>
 
-<p>The Fortune Bag Program has since expanded outside of Hong Kong. Sunshine Action began providing Fortune Bags in Macau in 2011. Fortune Bags have also been distributed in Vietnam, Kenya, China, Bangladesh, Myanmar, Hong Kong, Mongolia, India, Nepal, Thailand, Sri Lanka, Cambodia, Indonesia, Vietnam & the Philippines. Occasionally, we also donate to local charity kitchens in bulk. In addition to distributing Fortune Bags, Sunshine Action has donated food to the poor through the following organizations:</p>
- 
-<li>- Blue Sky Food Assistance Serv. Project </li>
-<li>- Crossroad Foundaion</li>
-<li>- Feeding Hong Kong </li>
-<li>- Food Angel </li>
-<li>- Food Grace</li>
-<li>- Foodlink Foundation </li>
-<li>- Food for Good </li>
-<li>- Food Friend Action</li>
-<li>- Greener Action </li>
-<li>- J Life Foundation</li>
-<li>- K.T. Methodist Cleaners Community Food Bank </li>
-<li>- Christian Action Kitchen for the Refugees</li>
-<li>- Missionaries of Charity Nam Cheong shelter</li>
-<li>- St. James Settlement People's Food Bank</li>
-<li>- YWAM Food Bank Tuen Mun</li>
-
+<p>The Fortune Bag Program has since expanded outside of Hong Kong. Sunshine Action began providing Fortune Bags in Macau in 2011. Fortune Bags have also been distributed in Vietnam, Kenya, China, Bangladesh, Myanmar, Hong Kong, Mongolia, India, Nepal, Thailand, Sri Lanka, Cambodia, Indonesia, Vietnam & the Philippines. Occasionally, we also donate to local charity kitchens in bulk.</p>
+ <p>In addition to distributing Fortune Bags, Sunshine Action has donated food to the poor through the following organizations: </p>
+<li>Blue Sky Food Assistance Serv. Project </li>
+<li>Crossroad Foundaion</li>
+<li>Feeding Hong Kong </li>
+<li>Food Angel </li>
+<li>Food Grace</li>
+<li>Foodlink Foundation </li>
+<li>Food for Good </li>
+<li>Food Friend Action</li>
+<li>Greener Action </li>
+<li>J Life Foundation</li>
+<li>K.T. Methodist Cleaners Community Food Bank </li>
+<li>Christian Action Kitchen for the Refugees</li>
+<li>Missionaries of Charity Nam Cheong shelter</li>
+<li>St. James Settlement People's Food Bank</li>
+<li>YWAM Food Bank Tuen Mun</li>
+<img src="../images/fortune-bags-2.jpg" alt="Fortune Bags 2"></img>
       </div>
 </div>
 
@@ -70,9 +70,10 @@ function FortuneBagInfo() {
 <div className="row">
     <div>
 
-    <li>The <b>biggest</b> Sunshine Fortune Bags program packed in one single morning was Mid-Autumn 2020, donating over 7,500 Sunshine Fortune Bags for the poor & elderly in Hong Kong, through 70 local centres.</li>
-    <li>The <b>heaviest</b> Sunshine Fortune Bags were packed during September 2020 for the Moon Festival and World Food Day, with each bag containing 9-10 items and averaging 9 kg (or roughly 20 lbs) each.</li>
-    <li>The <b>most expensive</b> Sunshine Fortune Bags program was completed in May 2019 for Mother's & Father's Day. In terms of market value, the content of each bag was approximately $300 HK ($40 US or £31.52) with each bag containing 9 items. A total of 3,000 bags were distributed (total market value $900,000 HK, £94,560, or $120,000 US) during May and June 2019, making it the single most expensive program ever done in the history of Sunshine Action!</li>
+    <li>The <b>biggest</b> Sunshine Fortune Bags program conducted in a single morning was during the Mid-Autumn Festival in 2020, donating over 7,500 Sunshine Fortune Bags for the poor and elderly in Hong Kong, through 70 local centres. </li>
+    <li>The <b>heaviest</b> Sunshine Fortune Bags were packed during September 2020 for Mid-Autumn Festival and World Food Day, with each bag containing 9-10 items and averaging 9 kg (or roughly 20 lbs) each</li>
+    <li>The <b>most expensive</b> Sunshine Fortune Bags were made in May 2019 for Mother's & Father's Day. Each bag included 9 items and was approximately worth HKD$300 (USD$40). A total of 3,000 bags were distributed (total market value of HKD$900,000 or USD$120,000) during this period, making it the single most expensive program ever done in the history of Sunshine Action! </li>
+    <img src="../fortune-bags-3.jpg" alt="Fortune Bags 3"></img>
     </div>
 </div>
 <br />
@@ -84,7 +85,7 @@ function FortuneBagInfo() {
 
 <div className="row">
     <div>
-        <p>Sunshine Action works with schools to fundraise, package and distribute Fortune Bags. Before the COVID-19 outbreak, Sunshine Action had conducted the fortune bag program in the following schools in the last 3 years:</p>
+        <p>Sunshine Action works with schools to fundraise, package and distribute Fortune Bags. Before the Covid-19 outbreak, the organization had conducted the Fortune Bag Program in the following schools in the few years preceding the pandemic: </p>
         <li>Kowloon Wah Yan School </li> 
         <li>Yew Chung International School </li>
         <li>Hong Kong International School</li> 
@@ -118,7 +119,8 @@ function FortuneBagInfo() {
         <li>Approximately 15 volunteers are needed per assembly line.</li></ul>
     </li>
     <li>Contact Sunshine Action to learn more and organize an event at your school!</li>
-
+    <img src="../images/fortune-bags-4.jpg" alt="Fortune Bags 4"></img>
+    <img src="../images/fortune-bags-5.jpg" alt="Fortune Bags 5"></img>
 
 
     </div>
