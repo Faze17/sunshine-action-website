@@ -24,6 +24,8 @@ import MicroFinancePage from './components/pages/MicroFinancePage';
 import StudentSponsorshipPage from './components/pages/StudentSponsorshipPage';
 import _SaveSea_Page from './components/pages/_SaveSea_Page';
 import WaterWorldPage from './components/pages/WaterWorldPage';
+import CHD from './components/pages/CHD';
+import Donate from './components/pages/Donate';
 
 
 
@@ -61,6 +63,8 @@ function App() {
           <Route path='/microfinace' exact component={MicroFinancePage} />
           <Route path='/studentsponsorship' exact component={StudentSponsorshipPage} />
           <Route path='/save-the-sea' exact component={_SaveSea_Page} />
+          <Route path='/chd' exact component={CHD} />
+          <Route path='/donate' exact component={Donate} />
 
           </div>
         </Switch>

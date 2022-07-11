@@ -99,6 +99,9 @@ function NavBar() {
         <li class="nav-item">
           <Link class="nav-link" to="/contact-us">Contact Us</Link>
         </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="/donate">Donate</Link>
+        </li>
       </ul>
     </div>
   </div>

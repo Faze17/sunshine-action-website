@@ -11,8 +11,7 @@ function FortuneBagInfo() {
          <div className="col-md-2"></div>
          <div className="col-md-8">
             <div className="container">
-               <div id="sunshinefortunebags" className="p-4 text-dark rounded-3">
-                  <h1>Sunshine Fortune Bags</h1> </div>
+
               
 <br />
 

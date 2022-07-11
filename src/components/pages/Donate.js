@@ -2,20 +2,20 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
-import CHDInfo from '../CHDInfo';
+import DonateInfo from '../DonateInfo';
 import HeroComp from '../HeroComp';
 
 
-function CHD() {
+function Donate() {
   return (
     <>
-      <HeroComp name = "PLANT THE PLANET" />
+      <HeroComp name = "DONATE" />
       <HomePageLogo />
-    <CHDInfo />
+    <DonateInfo />
       
       <Footer />
     </>
   );
 }
 
-export default CHD;
+export default Donate;
