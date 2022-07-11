@@ -4,16 +4,20 @@ import Cards from '../Cards';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
 import HomePageInfo from '../HomePageInfo';
-import HeroComp from '../HeroComp';
+import HeroHome from '../HeroHome';
+import CardProjects from '../CardsProjects';
 
 
 function Home() {
   return (
     <>
-      <HeroComp name = "SUNSHINE ACTION" />
-      <HomePageLogo />
+      <HeroHome name = "FEED THE HUNGARY AND WARM THE ABANDONED" subtitle = "Sunshine Action&#8217;s mission is a long-term commitment to help people on
+      a regular basis with permanent growth in the coming years&#8218;therefore
+      funding is crucial for the long-term."/>
       <HomePageInfo />
-      <Cards />
+
+      <CardProjects />
+      {/* <Cards /> */}
       <Footer />
     </>
   );
