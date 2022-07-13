@@ -23,7 +23,7 @@ function FortuneBagInfo() {
     <li><b>The Fortune Bag Program packs and distributes bags full of rice, pasta, dry foods, sauces, toiletries, and other necessities to low-income individuals supported by our partner beneficiaries. </b></li>
     <li>The Sunshine Fortune Bag Program is the biggest program in the organization, which focuses on poverty relief. </li>
     <li>The Sunshine Fortune Bags have been distributed in many countries around the world, including Vietnam, Kenya, China, Bangladesh, Myanmar, Hong Kong, Mongolia, India, Macau, Nepal, Thailand, Sri Lanka, Cambodia, Indonesia, Vietnam & the Philippines in the last 13 years. </li>
-    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Fortune Bag Program. Your contribution would mean a lot to us. Learn how to donate here. </b></li>
+    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Fortune Bag Program. Your contribution would mean a lot to us. <a href="/donate">Learn how to donate here.</a></b></li>
     <img src="../fortune-bags-1.jpg" alt="Fortune Bags 1"></img>
       </div>
 </div>

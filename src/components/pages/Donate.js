@@ -10,7 +10,7 @@ function Donate() {
   return (
     <>
       <HeroComp name = "DONATE" />
-      <HomePageLogo />
+      
     <DonateInfo />
       
       <Footer />

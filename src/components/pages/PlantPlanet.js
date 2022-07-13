@@ -10,7 +10,7 @@ function PlantPlanet() {
   return (
     <>
       <HeroComp name = "PLANT THE PLANET" />
-      <HomePageLogo />
+      
     <PlantPlanetInfo />
       
       <Footer />

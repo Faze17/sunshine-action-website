@@ -21,7 +21,7 @@ function SleeperInfo() {
     <li><b>The Street-Sleepers Program distributes dinner boxes, drinks, dry foods, blankets, haircuts, legal aid, and other essential services to street-sleepers. The program also educates youth on the issue of homelessness and raises money to provide services to those in need.</b></li>
     <li>The program has continued providing services during the Covid-19 pandemic, while many other charitable organizations temporarily decreased or stopped providing services. </li>
     <li>The Street-Sleepers Program is the oldest flagship program within Sunshine Action and has been running for over 13 years, starting before the organization was officially founded. </li>
-    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Street-sleepers Program. Your contribution would mean a lot to us. Learn how to donate here.</b></li>
+    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Street-sleepers Program. Your contribution would mean a lot to us. <a href="/donate">Learn how to donate here.</a></b></li>
     <img src="../images/street-sleepers-1.jpg" alt="Street Sleepers 1" class="Center"></img>
     </div>
 </div>

@@ -14,7 +14,7 @@ function GlobalProjects() {
     return (
         <>
             <HeroGlobal />
-            <HomePageLogo />
+            
             <div className = "branchWebsites">
                 <div className='cards'>
                     <h1>Sunshine Action Official Branches</h1>

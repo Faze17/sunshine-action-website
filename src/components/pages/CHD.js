@@ -9,8 +9,7 @@ import HeroComp from '../HeroComp';
 function CHD() {
   return (
     <>
-      <HeroComp name = "PLANT THE PLANET" />
-      <HomePageLogo />
+      <HeroComp name = "CONGENITAL HEART DISEASE" />
     <CHDInfo />
       
       <Footer />

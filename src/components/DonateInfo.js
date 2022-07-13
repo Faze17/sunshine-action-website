@@ -47,6 +47,31 @@ function DonateInfo() {
     <p>Bank Address: Head Office 1 Garden Road, Hong Kong</p>
     <p>Bank Tel: (852)-2826-6888</p>
       </div>
+      <div className="row">
+    <div>
+    <p><u>Cheque:</u></p>
+    <p>To donate via cheque, please provide a crossed cheque with payee 'SUNSHINE ACTION Ltd.' Please attach the donor’s name, contact telephone and complete address for tax-deductible receipt.</p>
+    <p>Sunshine Action Mailing Address: Room D, 13/F Wing Kin Industrial Building, 4-6 Wing Kin Road, Kwai Chung</p>
+    <p><u>Donation of Items:</u></p>
+    <p>At Sunshine Action we welcome enterprises and donors to donate the following items:</p>
+    <p></p>
+    <p>Food items:</p>
+    <li>White/brown rice, oats, and nuts</li>
+    <li>Canned food with at least 6 months until expiration date</li>
+    <li>Pasta and noodles</li>
+    <li>Cooking oils such as canola, coconut, vegetable, etc.</li>
+    <li>Any form of condiments</li>
+    <li>Juices and other healthy drinks</li>
+    <p></p>
+    <p>Non-Food Items:</p>
+    <li>Detergent</li>
+    <li>Shampoo and conditioner</li>
+    <li>Face and moisturising cream</li>
+    <li>Toilet paper and tissue</li>
+    <li>Notebooks and general stationery</li>
+    <li>Children and adult clothing (either new or secondhand, in good condition)</li>
+      </div>
+      </div>
 </div>
 
 </div>

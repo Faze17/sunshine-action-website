@@ -21,7 +21,7 @@ function CHDInfo() {
     <li><b>Sunshine Action raises money to give children with congenital heart defects (CHD) access to lifesaving surgery and medication.</b></li>
     <li>To date, 60 surgeries have been completed thanks to funding from Sunshine Action. Donors can personally visit the patients they donate to, both before and after the surgery.</li>
     <li>Recipients of surgeries are often those who could not afford surgery without help.</li>
-    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the CHD Program. Your contribution would mean a lot to us. Learn how to donate here.</b></li>
+    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the CHD Program. Your contribution would mean a lot to us. <a href="/donate">Learn how to donate here.</a></b></li>
     <img src="../CHD-1.jpg" alt="CHD 1"></img>
       </div>
 </div>

@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <HeroComp name = "SUNSHINE ACTION" />
-      <HomePageLogo />
+      
       <HomePageInfo />
       <Cards />
       <Footer />

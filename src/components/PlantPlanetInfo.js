@@ -24,7 +24,7 @@ import '../components/HomePageInfo';
     <li><b>Plant the Planet plants trees, flowers, and other plants in countries around the world to help combat climate change.</b></li>
     <li>To date, Sunshine Action has planted over 322,000 trees, plants, fruit trees and flowers in Hong Kong, Kenya, China, Sri Lanka, Mongolia, Thailand, Nepal, and India.</li>
     <li>Newly planted trees are sponsored by local farmers and schools. Sunshine Action plants new trees/plants on all charity trips outside of Hong Kong.</li>
-    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Plant the Planet Program. Your contribution would mean a lot to us. Learn how to donate here.</b></li>
+    <li><b>In 2022, Sunshine Action is struggling to financially sustain all programs, including the Plant the Planet Program. Your contribution would mean a lot to us. <a href="/donate">Learn how to donate here.</a></b></li>
     <img src="../plant-the-planet-1.jpg" alt="Plant the Planet 1"></img>
       </div>
 </div>

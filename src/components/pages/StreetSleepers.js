@@ -10,7 +10,7 @@ function StreetSleepers() {
   return (
     <>
       <HeroComp name = "STREET SLEEPERS PROGRAM" />
-      <HomePageLogo />
+      
     <SleeperInfo />
       
       <Footer />

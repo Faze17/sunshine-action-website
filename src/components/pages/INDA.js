@@ -19,7 +19,7 @@ function INDAPage() {
     return (
       <>
         <HeroComp name = "INDIA" />
-        <HomePageLogo />
+        
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "2017 Volunteer Tour" />
