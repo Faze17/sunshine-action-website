@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+	<!--<link href = "../../../App.css" rel = "stylesheet" />-->
+	<style>
+		#preview .navbar {
+		    background: linear-gradient(90deg, rgb(2, 77, 216) 0%, rgb(253, 137, 4) 100%);
+		    font-weight: bold;
+		    position: fixed;
+		    z-index: 50;
+		    width: 100%;
+		}
+		#preview .navbar li {
+			font-size: 21px;
+		}
+		#preview .navbar-nav > li > .dropdown-menu { 
+		    background-color: rgb(64, 134, 247);
+		}
+		#preview .navbar-brand > span
+		{
+			position: absolute;
+			width: 40px;
+			left: 90px;
+			top: 25px;
+			text-align: left;
+			margin: auto;
+			font-size: 30px; 
+		}
+		#preview {
+		    box-sizing: border-box;
+		    margin: 0;
+		    padding: 0;
+		    font-family: 'PT Sans', sans-serif;
+		    position: relative;
+		    height: 90vh;
+		    overflow: auto;
+		}
+		#preview video {
+			object-fit: cover;
+		    width: 100%;
+		    height: 100%;
+		    position: fixed;
+		    z-index: -1;
+		}
+		#preview .hero-container {
+		    height: 100vh;
+		    width: 100%;
+		    display: flex;
+		    justify-content: center;
+		    flex-direction: column;
+		    align-items: center;
+		    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+		    object-fit: contain;
+		}
+		#preview .hero-container > h1 {
+			color: #fff;
+			font-size: 100px;
+			margin-top: -100px;
+		}
+		#preview .hero-container > p {
+		    margin-top: 8px;
+		    color: #fff;
+		    font-size: 32px;
+		    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+		#preview .hero-btns {
+		    margin-top: 32px;
+		}
+		#preview .hero-btns .btn {
+		    margin: 6px;
+		    font-weight: bold;
+		}
+		#preview .actual-logo-page {
+			align-items: center;
+			margin: auto;
+			display: block;
+			width: 200px;
+		}
+		#preview h1 {
+		  text-align: center;
+		}
+		#preview .cards {
+			padding: 4rem;
+			background: #fff;
+		}
+		#preview .cards__container {
+		  display: flex;
+		  flex-flow: column;
+		  align-items: center;
+		  max-width: 1120px;
+		  width: 90%;
+		  margin: 0 auto;
+		}
+		#preview .cards__wrapper {
+			width: 100%;
+			position: relative;
+			margin: 50px 0 45px;
+		}
+		#preview .cards__items {
+			margin-bottom: 24px;
+		}
+		#preview .cards__item {
+			display: flex;
+			flex: 1;
+			margin: 0 1rem;
+			border-radius: 10px;
+		}
+		#preview .cards__item__link {
+			display: flex;
+			flex-flow: column;
+			width: 100%;
+			box-shadow: 0 6px 20px rgba(250, 164, 4, 0.5);
+			-webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+			filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+			border-radius: 10px;
+			overflow: hidden;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		#preview .cards__item__pic-wrap {
+			position: relative;
+			width: 100%;
+			padding-top: 67%;
+			overflow: hidden;
+		}
+		#preview .fade-img {
+			animation-name: fade-img;
+			animation-duration: 2s;
+		}
+		#preview .cards__item__img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			height: 100%;
+			max-height: 100%;
+			object-fit: cover;
+			transition: all 0.2s linear;
+		}
+		#preview .cards__item__img:hover {
+			transform: scale(1.0125);
+		}
+		#preview .cards__item__info {
+			padding: 20px 30px 30px;
+		}
+		#preview .cards__item__text {
+			color: #252e48;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: bold;
+		}
+		@media only screen and (min-width: 1200px) {
+			#preview .content__blog__container {
+				width: 84%;
+			}
+		}
+		@media only screen and (min-width: 1024px) {
+			#preview .cards__items {
+				display: flex;
+			}
+		}
+		@media only screen and (max-width: 1024px) {
+			#preview .cards__item {
+				margin-bottom: 2rem;
+			}
+		}
+		#preview .global {
+			padding: 4rem;
+			background:rgba(250, 164, 4);
+			text-align: center;
+		}
+		#preview .footer-container {
+		    background: linear-gradient(90deg, rgb(2, 77, 216) 0%, rgb(253, 137, 4) 100%);
+		    padding: 4rem 0 2rem 0;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		}
+		#preview .footer-subscription {
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    text-align: center;
+		    margin-bottom: 24px;
+		    padding: 24px;
+		    color: #fff;
+		}
+		#preview .footer-subscription > p {
+		    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+		#preview .footer-subscription-heading {
+		    margin-bottom: 24px;
+		    font-size: 24px;
+		}
+		#preview .footer-subscription-text {
+		    margin-bottom: 24px;
+		    font-size: 20px;
+		}
+		#preview .footer-input {
+		    padding: 8px 20px;
+		    border-radius: 2px;
+		    margin-right: 10px;
+		    outline: none;
+		    border: none;
+		    font-size: 18px;
+		    margin-bottom: 16px;
+		    border: 1px solid #fff;
+		}
+		#preview .footer-links {
+		    width: 100%;
+		    max-width: 1000px;
+		    display: flex;
+		    justify-content: center;
+		}
+		#preview .footer-link-wrapper {
+		    display: flex;
+		}
+		#preview .footer-link-items {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: flex-start;
+		    margin: 16px;
+		    text-align: left;
+		    width: 160px;
+		    box-sizing: border-box;
+		}
+		#preview .footer-link-items h2 {
+		    margin-bottom: 16px;
+		}
+		#preview .footer-link-items > h2 {
+		    color: #fff;
+		}
+		#preview .footer-link-items a {
+		    color: #fff;
+		    text-decoration: none;
+		    margin-bottom: 0.5rem;
+		}
+		#preview .footer-link-items a:hover {
+		    color: #e9e9e9;
+		    transition: 0.3s ease-out;
+		}
+		#preview .footer-email-form h2 {
+		    margin-bottom: 2rem;
+		}
+		#preview .footer-input::placeholder {
+		    color: #b1b1b1;
+		}
+		#preview .social-icon-link {
+		    color: #fff;
+		    font-size: 28px;
+		}
+		#preview .social-media {
+		    max-width: 1000px;
+		    width: 100%;
+		}
+		#preview .social-media-wrap {
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    width: 90%;
+		    max-width: 1000px;
+		    margin: 40px auto 0 auto;
+		    flex-direction: column;
+		}
+		#preview .social-icons {
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    width: 240px;
+		}
+		#preview .social-logo {
+		    color: #fff;
+		    justify-self: start;
+		    margin-left: 20px;
+		    cursor: pointer;
+		    text-decoration: none;
+		    font-size: 2rem;
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 16px;
+		}
+		#preview .website-rights {
+		    color: #fff;
+		    margin-bottom: 16px;
+		    align-items: center;
+		}
+		@media screen and (max-width: 820px) {
+		    #preview .footer-links {
+		        padding-top: 2rem;
+		    }
+		    #preview .footer-input {
+		        width: 100%;
+		    }
+		    #preview .btn {
+		        width: 100%;
+		    }
+		    #preview .footer-link-wrapper {
+		        flex-direction: column;
+		    }
+		    #preview .social-media-wrap {
+		        flex-direction: column;
+		    }
+		}
+		#navigation {
+			width: 100%;
+			padding: 1rem;
+			display: flex;
+			justify-content: center;
+			height: calc(10vh - 4px);
+			border-bottom: 4px solid black;
+		}
+		#navigation button {
+			flex-basis: 0;
+			min-width: 9rem;
+		}
+		#preview {
+			display: none;
+		}
+		#editor {
+			width: 100%;
+			height: 90vh;
+			padding-top: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<div id = "navigation">
+		<button class = "btn btn-warning">Edit</button><button class = "btn btn-outline-warning ms-2">Preview</button><button class = "btn btn-primary ms-2">Save and Close</button>
+	</div>
+	<div id = "editor">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-3">
+					<div class = "list-group">
+						<a href = "#" class = "list-group-item list-group-item-action list-group-item-primary">+ Create new project page</a>
+					</div>
+				</div>
+				<div class = "col-9">
+					<div class = "d-flex justify-content-center w-100">
+						<button id = "savePage" class = "btn btn-primary btn-sm">Save Page</button>
+						<button id = "deletePage" class = "btn btn-danger btn-sm ms-2">Delete Page</button>
+					</div>
+					<h5 class = "text-center my-3" id = "editTitle"></h5>
+					<textarea class = "form-control" style = "resize: none; line-height: 1.75rem" disabled rows = "20"></textarea>
+					<h6 class = "text-center mt-3" id = "editStatus"></h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "preview">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-light"><div class="container-fluid"><a class="navbar-brand"> <img src="images/actual-logo.png" width="70" height="70"> <span>Sunshine Action</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link">Home</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item">Our Story</a></li><li><a class="dropdown-item">Beneficiaries</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item">Hong Kong</a></li><li><a class="dropdown-item">Global</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Students</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item">Sunshine Ambassadors</a></li><li><a class="dropdown-item">Sunshine 45 Club</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Get Involved</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><li><a class="dropdown-item">Volunteers</a></li><li><a class="dropdown-item">Companies</a></li></ul></li><li class="nav-item"><a class="nav-link">Contact Us</a></li></ul></div></div></nav>
+		<div class="hero-container"><video src="videos/video-4.mov" autoplay loop muted></video><h1>PROJECTS</h1><div class="hero-btns"><a type="button" class="btn btn-outline-light btn-lg" style="border-radius: 0px; margin-bottom: 5px;">Donate Now</a></div></div>
+		<div class="home-page-logo" style="padding: 30px; background: rgb(82, 97, 147);"><img class="actual-logo-page" src="images/actual-logo.png"></div>
+		<div class="cards"><h1>Current Projects</h1><div class="cards__container"><div class="cards__wrapper"><ul class="cards__items"><li class="cards__item"><a class="cards__item__link" href="/street-sleepers"><figure class="cards__item__pic-wrap"><img class="cards__item__img" src="../../../../images/StreetSleeper1.jpg"></figure><div class="cards__item__info"><h5 class="cards__item__text">Street Sleepers Program</h5></div></a></li><li class="cards__item"><a class="cards__item__link" href="/street-sleepers"><figure class="cards__item__pic-wrap"><img class="cards__item__img" src="../../../../images/StreetSleeper1.jpg"></figure><div class="cards__item__info"><h5 class="cards__item__text">Street Sleepers Program</h5></div></a></li><li class="cards__item"><a class="cards__item__link" href="/street-sleepers"><figure class="cards__item__pic-wrap"><img class="cards__item__img" src="images/StreetSleeper1.jpg"></figure><div class="cards__item__info"><h5 class="cards__item__text">Street Sleepers Program</h5></div></a></li></ul></div></div></div>
+		<div class="global"><h1>Explore our Global Projects</h1><br><a type="button" class="btn btn-outline-light btn-lg"  style="border-radius: 0px; margin-bottom: 5px; font-weight: bold">Global Projects</a></div>
+		<div class="footer-container"><section class="footer-subscription"><p class="footer-subscription-heading">Subscribe to our Sunshine Action newsletter to get the latest updates</p><p class="footer-subscription-text">You can unsubscribe at any time.</p><div class="input-areas"><form><input class="footer-input" name="email" type="email" placeholder="Your Email"><a type="button" class="btn btn-outline-light btn-lg" style="border-radius: 0px; margin-bottom: 5px;">Subscribe</a></form></div></section><section class="social-media"><div class="social-media-wrap"><div class="footer-logo"></div><small class="website-rights">Sunshine Action © 2021</small><div class="social-icons"><a class="social-icon-link facebook" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a class="social-icon-link instagram" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a><a class="social-icon-link youtube" rel="noopener noreferrer" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a><a class="social-icon-link twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a class="social-icon-link twitter" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></div></div></section></div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+	<script>
+		$(() => {
+			$.get("projects/get").done(data => {
+				data.forEach(p => {
+					$(".list-group").append("<a href = '#' class = 'list-group-item list-group-item-action' onclick = 'editPage(\"" + p.substring(0, p.length - 3) + "\")'>" + p.substring(0, p.length - 3) + "</a>");
+				});
+			});
+		});
+		function editPage(p) {
+			$("#editTitle").html("Editing " + p);
+			$.get("projects/get/" + p).done(data => {
+				$("textarea").removeAttr("disabled");
+				let output = "";
+				let parseList = [];
+				data.forEach(t => {
+					if (t.indexOf("<BigHeader") != -1) {
+						output += ("### " + t.substring(t.indexOf('<BigHeader text = "') + 19, t.length - 4));
+						output += "\n";
+					} else if (t.indexOf("<SmallHeader") != -1) {
+						output += ("--- " + t.substring(t.indexOf('<SmallHeader text = "') + 21, t.length - 4));
+						output += "\n";
+					} else if (t.indexOf("<ImageComp") != -1) {
+						output += ("+++ " + t.substring(t.indexOf('<ImageComp src = "') + 18, t.length - 4));
+						output += "\n";
+					} else if (t.indexOf("<p>") != -1) {
+						output += (t.substring(3, t.length - 4));
+						output += "\n";
+					} else if (t.indexOf("<li>") != -1) {
+						parseList.push("** " + t.substring(4, t.length - 5));
+					} else if (t == "</ul>") {
+						output += (parseList.join("\n") + "\n");
+						parseList = [];
+					}
+				});
+				output = output.substring(0, output.length - 1);
+				$("textarea").val(output);
+				$("#savePage").off("click").click(() => { savePage(p) });
+			});
+		}
+		function savePage(p) {
+			let input = $("textarea").val().split("\n");
+			let parsingList = false;
+			for (let i = 0; i < input.length; i++) {
+				if (input[i].substring(0, 4) == "### ") {
+					input[i] = ('<BigHeader text = "' + input[i].substring(4) + '" />');
+				} else if (input[i].substring(0, 4) == "--- ") {
+					input[i] = ('<SmallHeader text = "' + input[i].substring(4) + '" />');
+				} else if (input[i].substring(0, 4) == "+++ ") {
+					input[i] = ('<ImageComp src = "' + input[i].substring(4) + '" />');
+				} else if (input[i].substring(0, 3) == "** ") {
+					if (!parsingList) {
+						input.splice(i, 0, "<ul>");
+						i++;
+						parsingList = true;
+					}
+					input[i] = ("<li>" + input[i].substring(3) + "</li>");
+					if ((i == input.length - 1 && parsingList) || input[i + 1].substring(0, 3) != "** ") {
+						input.splice(i + 1, 0, "</ul>");
+						i++;
+						parsingList = false;
+					}
+				} else {
+					input[i] = ("<p>" + input[i] + "</p>");
+				}
+			}
+			$.ajax({
+				url: "projects/edit/" + p,
+				method: "POST",
+				contentType: "application/json",
+				data: JSON.stringify({ title: p, data: input, name: p })
+			});
+		}
+	</script>
+</body>
+</html>
