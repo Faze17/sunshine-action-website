@@ -14,7 +14,7 @@ function HomePageInfo() {
             <br />
             {/* The round text box */}
                 <div class='float-center'>
-                    <p class="numberCircle" id="c1" > <b>210,000</b><br></br>PEOPLE HELPED</p>
+                    <p class="numberCircle" id="c1" > <b>300,000</b><br></br>PEOPLE HELPED</p>
                     <p class="numberCircle" id="c2"><b>19</b><br></br> COUNTRIES</p>
                     <p class="numberCircle" id="c3">NON-POLITICAL<br></br>NON-RELIGIOUS</p>
                     <p class="numberCircle" id="c4"><b>100%</b> <br></br>FUNDING FROM THE PUBLIC</p>
@@ -76,13 +76,13 @@ function HomePageInfo() {
             <h1>ISSURE WE TACKLE</h1>
             <p>We work to tackle the global issue of
             poverty. </p>
-            <p>&#8216;Around the world, 821 million people do
+            <p><span>&#8216;Around the world, 821 million people do
             not have enough of the food they need to
             live an active, healthy life. One in every
             nine people goes to bed hungry each night,
             including 20 million people currently at
             risk of famine in South Sudan, Somalia,
-            Yemen and Nigeria.&#8217; (Mercy Corps 2020)</p>
+            Yemen and Nigeria.&#8217;</span><br></br>(Mercy Corps 2020)</p>
             </div>
             </div>
         </div>
