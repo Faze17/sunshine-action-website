@@ -10,7 +10,7 @@ function FortuneBags() {
   return (
     <>
       <HeroComp name = "FORTUNE BAG PROGRAM" />
-      <HomePageLogo />
+      
       <FortuneBagInfo />
       <Footer />
     </>

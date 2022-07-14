@@ -18,8 +18,8 @@ export default _Project_Page;
 function _Project_Page() {
     return (
       <>
-        <HeroComp name = "UNITED STATES" />
-        
+        <HeroComp name = "_Project_" />
+        <HomePageLogo />
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "Project Info" />
@@ -37,7 +37,7 @@ function _Project_Page() {
                 <p>During the major crisis in Hong Kong due to the Covid-19 outbreak, many Sunshine Ambassadors and students joined this program. They helped on a weekly basis by distributing essential food and anti-pandemic items.</p> 
                 <p>Since the first year of the pandemic, a dedicated team of volunteers have been taking care of the street-sleepers every Tuesday & Wednesday. They drive around to several spots in Hong Kong and Kowloon side, even during the typhoon.</p> 
                 <ImageComp src = "savethesea.jpeg" />
-                <p>Image of Sunny, Founder of Sunshine Action Fishing.. I need help</p>
+                <p>This is a test paragraph to demonstrate that content placed after the image is formatted nicely.</p>
             </div>
         </div>       
         <Footer />

@@ -21,6 +21,8 @@ import GlobalProjects from './components/pages/Global';
 import _Project_Page from './components/pages/ProjectPage';
 import MicroFinancePage from './components/pages/MicroFinancePage';
 import StudentSponsorshipPage from './components/pages/StudentSponsorshipPage';
+import CHD from './components/pages/CHD';
+import Donate from './components/pages/Donate';
 import SaveSea from './components/pages/_SaveSea_Page';
 import WaterWorld from './components/pages/WaterWorldPage';
 import INDAPage from './components/pages/projects/INDA';
@@ -110,6 +112,8 @@ function App() {
               <Route path='/microfinace' component={MicroFinancePage} />
               <Route path='/studentsponsorship' component={StudentSponsorshipPage} />
               <Route path='/save-the-sea' component={SaveSea} />
+              <Route path='/chd' exact component={CHD} />
+              <Route path='/donate' exact component={Donate} />
             </Switch>
           </Route>
         </Switch>

@@ -9,7 +9,7 @@ function StreetSleepers() {
   return (
     <>
       <HeroComp name = "PROJECTS" />
-      <HomePageLogo />
+      
     <CardProjects />
       
       <Footer />

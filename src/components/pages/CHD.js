@@ -2,20 +2,19 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
-import SleeperInfo from '../SleeperInfo';
+import CHDInfo from '../CHDInfo';
 import HeroComp from '../HeroComp';
 
 
-function StreetSleepers() {
+function CHD() {
   return (
     <>
-      <HeroComp name = "STREET SLEEPERS PROGRAM" />
-      
-    <SleeperInfo />
+      <HeroComp name = "CONGENITAL HEART DISEASE" />
+    <CHDInfo />
       
       <Footer />
     </>
   );
 }
 
-export default StreetSleepers;
+export default CHD;
