@@ -26,6 +26,13 @@ function Footer() {
 
           </form>
         </div>
+        <br></br>
+        <small className='charity-number'>
+          Charity number: IRO-91/10271
+        </small>
+        <small className='registration'>
+          Registered in HongKong
+        </small>
       </section>
     
       <section class='social-media'>
