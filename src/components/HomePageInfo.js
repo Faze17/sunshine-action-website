@@ -73,7 +73,7 @@ function HomePageInfo() {
         <div class='right_half'>
             <div className ='container'>
             <div className="col-md-12">
-            <h1>ISSURE WE TACKLE</h1>
+            <h1>ISSUES WE TACKLE</h1>
             <p>We work to tackle the global issue of
             poverty. </p>
             <p><span>&#8216;Around the world, 821 million people do
