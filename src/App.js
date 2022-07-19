@@ -66,23 +66,23 @@ function App() {
           <NavBarUS />
           <ScrollToTop />
           <Switch>
-            <Route path = '/uk/home' component={Home} />
-            <Route path='/uk/fourty-five-club'  component={SunshineFourty} />
-            <Route path='/uk/ambassadors'  component={Ambassadors} />
-            <Route path='/uk/contact-us'  component={ContactUs} />
-            <Route path='/uk/street-sleepers'  component={StreetSleepers} />
-            <Route path='/uk/our-story'  component={OurStory} />
-            <Route path='/uk/fortune-bags'  component={FortuneBags} />
-            <Route path='/uk/volunteers'  component={Volunteers} />
-            <Route path='/uk/companies'  component={Companies} />
-            <Route path='/uk/beneficaries'  component={Beneficaries} />
-            <Route path='/uk/projects'  component={Projects} />
-            <Route path='/uk/save-the-sea'  component={SaveSea} />
-            <Route path='/uk/plant-the-planet'  component={PlantPlanet} />
-            <Route path='/uk/building-project'  component={BuildingProject} />
-            <Route path='/uk/water-for-the-world'  component={WaterWorld} />
-            <Route path='/uk/global'  component={GlobalProjects} />
-            <Route path='/uk/projectpage'  component={_Project_Page} />
+            <Route path = '/us/home' component={Home} />
+            <Route path='/us/fourty-five-club'  component={SunshineFourty} />
+            <Route path='/us/ambassadors'  component={Ambassadors} />
+            <Route path='/us/contact-us'  component={ContactUs} />
+            <Route path='/us/street-sleepers'  component={StreetSleepers} />
+            <Route path='/us/our-story'  component={OurStory} />
+            <Route path='/us/fortune-bags'  component={FortuneBags} />
+            <Route path='/us/volunteers'  component={Volunteers} />
+            <Route path='/us/companies'  component={Companies} />
+            <Route path='/us/beneficaries'  component={Beneficaries} />
+            <Route path='/us/projects'  component={Projects} />
+            <Route path='/us/save-the-sea'  component={SaveSea} />
+            <Route path='/us/plant-the-planet'  component={PlantPlanet} />
+            <Route path='/us/building-project'  component={BuildingProject} />
+            <Route path='/us/water-for-the-world'  component={WaterWorld} />
+            <Route path='/us/global'  component={GlobalProjects} />
+            <Route path='/us/projectpage'  component={_Project_Page} />
           </Switch>
         </Route>
         <Route path='/'>

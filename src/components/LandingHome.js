@@ -12,15 +12,15 @@ function LandingHome () {
 
         <div className='hero-btns'>
   
+        <Link to='/home' type="button" class="btn btn-outline-light btn-lg" 
+              style={{borderRadius: '0px', marginBottom: '5px',}}>Hong Kong
+              </Link>
+
         <Link to='/uk/home' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>United Kingdom
               </Link>
 
         <Link to='/us/home' type="button" class="btn btn-outline-light btn-lg" 
-              style={{borderRadius: '0px', marginBottom: '5px',}}>Hong Kong
-              </Link>
-
-        <Link to='/home' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>United States of America
               </Link>
 
