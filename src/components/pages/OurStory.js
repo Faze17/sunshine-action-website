@@ -10,7 +10,7 @@ function OurStory() {
   return (
     <>
       <HeroComp name = "OUR STORY" />
-      <HomePageLogo />
+      
       <OurStoryPage />
       
       <Footer />

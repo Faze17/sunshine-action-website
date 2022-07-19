@@ -19,7 +19,7 @@ function _Project_Page() {
     return (
       <>
         <HeroComp name = "UNITED STATES" />
-        <HomePageLogo />
+        
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "Project Info" />

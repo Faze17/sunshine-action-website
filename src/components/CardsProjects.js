@@ -11,7 +11,7 @@ function CardsProjects() {
           <ul className='cards__items'>
             <CardItem
               src='images/StreetSleeper1.jpg'
-              text='Street Sleepers Program &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+              text='Street-Sleepers Program &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
               path='/street-sleepers'
             />
             <CardItem
@@ -50,6 +50,28 @@ function CardsProjects() {
               src='images/Microfinance2.jpg'
               text='MicroFinance'
               path='/microfinace'
+            />
+          </ul>
+          <ul className='cards__items'>
+            <CardItem
+              src='images/CHD-3.jpg'
+              text='Congenital Heart Disease &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+              path='/chd'
+            />
+            <CardItem
+              src='images/blank.jpg'
+              text='Blank'
+              path='/blank'
+            />
+            <CardItem
+              src='images/blank.jpg'
+              text='Blank'
+              path='/blank'
+            />
+            <CardItem
+              src='images/blank.jpg'
+              text='Blank'
+              path='/blank'
             />
           </ul>
         </div>

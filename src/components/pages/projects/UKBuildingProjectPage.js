@@ -21,9 +21,10 @@ function UKBuildingProjectPage() {
                 <p>The main function of these shelters would be as an emergency measure for those who cannot afford or are struggling to find a home for a short period of time. We hope to incorporate regular charity or fundraising events to raise awareness of this issue and dispel some of the stigma surrounding homelessness.</p>
                 <ImageComp src = "image003.jpg" />
                 <SmallHeader text = "Research and Design" />
-                <p>Our interns have carried out extensive research into existing designs for similar mobile shelters. You can see the full design process here. We have also researched planning requirements in the UK and hope to put this project into action over the next few months. We are looking for charities that may be interested in partnering with us to construct these shelters or to run them once they have been built.</p>
+                <p>Our interns have carried out extensive research into existing designs for similar mobile shelters. You can see the full design process in the PDF at the bottom. We have also researched planning requirements in the UK and hope to put this project into action over the next few months. We are looking for charities that may be interested in partnering with us to construct these shelters or to run them once they have been built.</p>
                 <ImageComp src = "image028.jpg" />
                 <p>If you are a homelessness charity and you are interested in getting involved with this project, please contact sunshine@sunshine-action.org. We look forward to hearing from you!</p>
+                <iframe src = "8 Structures Case Study Research.pdf" style = {{ width: "100%", height: "720px" }}></iframe>
                 </div>
         </div>       
         <Footer />

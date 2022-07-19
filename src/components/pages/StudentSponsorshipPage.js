@@ -12,7 +12,7 @@ function StudentSponsorshipPage() {
     return (
       <>
         <HeroComp name = "Student Sponsorship" />
-        <HomePageLogo />
+        
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "Sponsoring Low-Income Students Around the World" />
