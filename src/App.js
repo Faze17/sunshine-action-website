@@ -25,14 +25,21 @@ import CHD from './components/pages/CHD';
 import Donate from './components/pages/Donate';
 import SaveSea from './components/pages/_SaveSea_Page';
 import WaterWorld from './components/pages/WaterWorldPage';
-import INDAPage from './components/pages/projects/INDA';
 import NavBarUK from './components/NavBarUK';
 import NavBarUS from './components/NavBarUS';
 import ProjectsUK from './components/pages/ProjectsUK';
 import UKBuildingProjectPage from './components/pages/projects/UKBuildingProjectPage';
 import DigitalInequality from './components/pages/projects/DigitalInequality';
+import * as ProjectPages from './components/pages/ProjectPages.js';
 
 function App() {
+  let projectRoutes = [];
+  for (let p in ProjectPages) {
+    if (p == "projectPageInfo") {
+      continue;
+    }
+    projectRoutes.push(<Route path = {'/' + ProjectPages.projectPageInfo[p][0]} component = {ProjectPages[p]} />);
+  }
   return (
     <>
       <Router>
@@ -108,12 +115,12 @@ function App() {
               <Route path='/water-for-the-world'  component={WaterWorld} />
               <Route path='/global'  component={GlobalProjects} />
               <Route path='/projectpage'  component={_Project_Page} />
-              <Route path='/INDA'  component={INDAPage} />
               <Route path='/microfinace' component={MicroFinancePage} />
               <Route path='/studentsponsorship' component={StudentSponsorshipPage} />
               <Route path='/save-the-sea' component={SaveSea} />
               <Route path='/chd' exact component={CHD} />
               <Route path='/donate' exact component={Donate} />
+              {projectRoutes}
             </Switch>
           </Route>
         </Switch>

@@ -1,3 +1,4 @@
+//EDITABLE
 import React from 'react';
 import '../../../App.css';
 import '../Project.css';
@@ -17,12 +18,11 @@ export default INDAPage;
 function INDAPage() {
 return (
 <>
-<HeroComp name = "INDA" />
+<HeroComp name = "INDIA" />
 <HomePageLogo />
 <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
 <div className="container" id = "BEGINREADHERE">
 <BigHeader text = "Test Header" />
-<p>asdlkfhasdiofhaspofh</p>
 <BigHeader text = "2017 Volunteer Tour" />
 <ImageComp src = "india2017.jpeg" />
 <p>這個農曆新年旅程嘅經歷係非筆墨可形容！好有意義！首先在Calcutta 加爾各答 "Nirmal Hriday垂死者之家”做義工和捐贈食物衣服，然後在泰姬陵 Taj Mahal 過新年行大運... 之後，第二天捐贈藥物到在Seemapuri 的麻瘋中心... 最後去孟買Mumbai的仁愛之家，再捐贈過.. 超開心..2個星期去了5城市 : Kolkata - New Delhi - Agra - Mumbai - Fatehpur Sikri</p>
@@ -57,8 +57,6 @@ return (
 <ImageComp src = "India 180.jpeg" />
 <ImageComp src = "India 145.jpeg" />
 <BigHeader text = "2009 Volunteer Tour" />
-<ImageComp src = "India 72.jpeg" />
-<p>Nov 2009, 4 Sunshine Action volunteers went to Kolkata, New Delhi, Agra and Vrindavan for the Charity Mission with over 3'000 kg of Rice, over 1'000 kg of DAL, 800 kg of Potatoes, others food products, medicines and </p>
 </div>
 </div>
 <Footer />
