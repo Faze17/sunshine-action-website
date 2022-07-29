@@ -1,4 +1,4 @@
-//EDITABLE
+//DO NOT EDIT DIRECTLY, USE THE PROJECT PAGES EDITOR
 import React from 'react';
 import '../../../App.css';
 import '../Project.css';

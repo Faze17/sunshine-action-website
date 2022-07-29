@@ -446,7 +446,7 @@
 					input[i] = ("<p>" + input[i] + "</p>");
 				}
 			}
-			if (!p) {
+			if (typeof p == "undefined") {
 				p = $("#pagePath").val();
 				$("<a href = '#' class = 'list-group-item list-group-item-action' data-project = '" + p + "'>/" + p + "</a>").appendTo(".list-group").click(() => { editPage(p) });
 				$("#editTitle").html("Editing " + p);

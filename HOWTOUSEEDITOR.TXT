@@ -1,4 +1,11 @@
 HOW TO USE THE PROJECT PAGES EDITOR
 
-Navigate to this directory using the shell and run "npm run editor"
+Navigate to this directory using the command line and run "npm run editor".
 
+Syntax guide:
+Regular paragraph
++++ Big Header
+--- Small Header
++++ image.jpeg (searches the public/images folder)
+~~~ embed.pdf (searches the public folder)
+** List item
