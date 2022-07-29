@@ -1,8 +1,16 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import * as ProjectPages from './pages/ProjectPages.js';
 
 function CardsProjects() {
+  let projectCards = [];
+  for (let p in ProjectPages) {
+    if (p == "projectPageInfo" || ProjectPages.projectPageInfo[p][2] != 0) {
+      continue;
+    }
+    projectCards.push(<CardItem path = {'/' + ProjectPages.projectPageInfo[p][0]} src = {"images/" + ProjectPages.projectPageInfo[p][3]} text={ProjectPages.projectPageInfo[p][1]} />);
+  }
   return (
     <div className='cards'>
         <h1>Current Projects</h1>
@@ -73,6 +81,9 @@ function CardsProjects() {
               text='Blank'
               path='/blank'
             />
+          </ul>
+          <ul className = 'cards__items' id = 'customProjects'>
+            {projectCards}
           </ul>
         </div>
       </div>

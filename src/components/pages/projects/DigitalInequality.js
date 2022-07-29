@@ -15,7 +15,7 @@ function DigitalInequality() {
         <HomePageLogo />
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
-                <iframe src = "6 Digital Inequality White Paper.pdf" style = {{ width: "100%", height: "720px" }}></iframe>
+                <iframe src = "6 Digital Inequality White Paper.pdf" style = {{ width: "100%", height: "720px", border: "1px solid gray" }}></iframe>
             </div>
         </div>       
         <Footer />

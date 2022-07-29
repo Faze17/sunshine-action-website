@@ -9,3 +9,12 @@
 li {
     margin-bottom: 0.75rem
 }
+.imageComp img {
+    max-width: 100%;
+}
+iframe {
+    margin-top: 1rem;
+    width: 100%;
+    height: 720px;
+    border: 1px solid gray;
+}

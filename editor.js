@@ -70,7 +70,8 @@ app.post('/projects/edit/:project', (req, res) => {
   input += req.body.data.join("\n");
   input += `\n</div>\n</div>\n<Footer />\n</>\n);\n};`;
   fs.writeFile(__dirname + "/src/components/pages/projects/" + req.body.name + ".js", input, (err, data) => {
-    projectPageInfo[req.body.name + "Page"] = [req.body.name, req.body.title, 0, req.body.img];
+    const pageCat = typeof projectPageInfo[req.body.name + "Page"] != "undefined" ? projectPageInfo[req.body.name + "Page"][2] : 0;
+    projectPageInfo[req.body.name + "Page"] = [req.body.name, req.body.title, Number(req.body.cat), req.body.img];
     if (err) {
       res.status(500).send(err);
     } else {

@@ -24,17 +24,17 @@ function GlobalProjects() {
                         <CardItem
                             src='images/StreetSleeper1.jpg'
                             text='United Kingdom'
-                            path='/projectpage'
+                            path='/uk/home'
                         />
                         <CardItem
                             src='images/FortuneBag1.jpg'
-                            path='/fortune-bags'
+                            path='/us/home'
                             text='United States'
                         />
                         <CardItem
                             src='images/BuildingProjects1.jpg'
                             text='Singapore'
-                            path='/building-project'
+                            path='/home'
                         />
                         </ul>
                     </div>

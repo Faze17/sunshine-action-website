@@ -351,7 +351,7 @@
 						<button id = "deletePage" class = "btn btn-danger btn-sm ms-2">Delete Page</button>
 					</div>
 					<h5 class = "text-center my-3" id = "editTitle"></h5>
-					<p class = "d-flex"><input class = "form-control" placeholder = "Page Path" id = "pagePath"><input class = "form-control mx-2" placeholder = "Page Title" id = "pageTitle"><input class = "form-control" placeholder = "Thumbnail image filename" id = "pageImg"></p>
+					<p class = "d-flex"><input class = "form-control" placeholder = "Page Path" id = "pagePath"><input class = "form-control mx-2" placeholder = "Page Title" id = "pageTitle"><input class = "form-control" placeholder = "Thumbnail image filename" id = "pageImg"><select name = "pageCat" id = "pageCat" class = "form-control ms-2"><option value = "0">HK</option><option value = "1">None</option><option value = "2">UK</option><option value = "3">US</option></select></select></p>
 					<textarea class = "form-control" style = "resize: none; line-height: 1.75rem" disabled rows = "16"></textarea>
 					<h6 class = "text-center mt-3" id = "editStatus"></h6>
 				</div>
@@ -388,6 +388,7 @@
 				$("#pagePath").val(p);
 				$("#pageTitle").val(data.title);
 				$("#pageImg").val(data.img);
+				$("#pageCat").val(data.cat.toString());
 				data.output.forEach(t => {
 					if (t.indexOf("<BigHeader") != -1) {
 						output += ("### " + t.substring(t.indexOf('<BigHeader text = "') + 19, t.length - 4));
@@ -397,6 +398,9 @@
 						output += "\n";
 					} else if (t.indexOf("<ImageComp") != -1) {
 						output += ("+++ " + t.substring(t.indexOf('<ImageComp src = "') + 18, t.length - 4));
+						output += "\n";
+					} else if (t.indexOf("<iframe") != -1) {
+						output += ("~~~ " + t.substring(t.indexOf('<iframe src = "') + 15, t.length - 11));
 						output += "\n";
 					} else if (t.indexOf("<p>") != -1) {
 						output += (t.substring(3, t.length - 4));
@@ -424,6 +428,8 @@
 					input[i] = ('<SmallHeader text = "' + input[i].substring(4) + '" />');
 				} else if (input[i].substring(0, 4) == "+++ ") {
 					input[i] = ('<ImageComp src = "' + input[i].substring(4) + '" />');
+				} else if (input[i].substring(0, 4) == "~~~ ") {
+					input[i] = ('<iframe src = "' + input[i].substring(4) + '"></iframe>');
 				} else if (input[i].substring(0, 3) == "** ") {
 					if (!parsingList) {
 						input.splice(i, 0, "<ul>");
@@ -449,7 +455,7 @@
 				url: "projects/edit/" + p,
 				method: "POST",
 				contentType: "application/json",
-				data: JSON.stringify({ title: $("#pageTitle").val(), data: input, name: $("#pagePath").val(), img: $("#pageImg").val() })
+				data: JSON.stringify({ title: $("#pageTitle").val(), data: input, name: $("#pagePath").val(), img: $("#pageImg").val(), cat: $("#pageCat option:selected").val() })
 			});
 			if (p != $("#pagePath").val()) {
 				let _p = $("#pagePath").val();

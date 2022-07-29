@@ -64,7 +64,10 @@ function NavBarUK() {
           </ul>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <Link class="nav-link" to="projects">Projects</Link>
+        </li>
+        {/*<li class="nav-item dropdown">
           <Link class="nav-link dropdown-toggle" to="projects" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Projects
           </Link>
@@ -72,7 +75,7 @@ function NavBarUK() {
             <li><Link class="dropdown-item" to="projects">UK</Link></li>
             <li><Link class="dropdown-item" to="global">Global</Link></li>
           </ul>
-        </li>
+        </li>*/}
         
         
         <li class="nav-item dropdown">

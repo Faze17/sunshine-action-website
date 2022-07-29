@@ -24,9 +24,9 @@ function LandingHome () {
               style={{borderRadius: '0px', marginBottom: '5px',}}>United States of America
               </Link>
 
-        <Link to='/global' type="button" class="btn btn-outline-light btn-lg" style={{borderRadius: '0px', marginBottom: '5px'}}>
+        {/*<Link to='/global' type="button" class="btn btn-outline-light btn-lg" style={{borderRadius: '0px', marginBottom: '5px'}}>
             Global Projects
-        </Link>
+    </Link>*/}
 
         </div>
       </div>
