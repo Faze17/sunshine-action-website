@@ -1,6 +1,11 @@
 import React from 'react';
 import './Footer.css';
 import { HashLink as Link } from 'react-router-hash-link';
+import { readFileSync } from "fs";
+import { read } from "xlsx/xlsx.mjs";
+
+let emailList = []
+
 
 function Footer() {
   return (
@@ -20,7 +25,7 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <a href="mailto:sunshine@sunshine-action.org" type="button" class="btn btn-outline-light btn-lg" 
+            <a type="button" class="btn btn-outline-light btn-lg" id="userEmail"
             style={{borderRadius: '0px', marginBottom: '5px',}}>Subscribe
             </a>
 
@@ -94,3 +99,11 @@ function Footer() {
 }
 
 export default Footer;
+
+const addEmail = (ev)=> {
+  let newEmail = {
+    userEmail: document.getElementById("userEmail").value,
+  }
+  emailList.push(newEmail);
+  localStorage.setItem("emails", JSON.stringify(emailList))
+}

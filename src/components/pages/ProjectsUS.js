@@ -9,7 +9,7 @@ function ProjectsUS() {
   return (
     <>
       <HeroProjects />
-      <HomePageLogo />
+      
     <CardProjectsUS />
       
       <Footer />

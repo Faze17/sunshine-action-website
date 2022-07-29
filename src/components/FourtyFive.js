@@ -10,6 +10,7 @@ function FourtyFive() {
 <div className="container">
    <div className="row">
       <div className="col-md-3">
+      <div className="sticky-top">
          <br />
          <div id="sidebar" className="d-flex flex-column flex-shrink-0 p-3 text-dark" style={{width: '100%'}}>
             <img src="/images/logo.png" className="img-fluid" />
@@ -46,36 +47,20 @@ function FourtyFive() {
 
             <hr />
             
-            <span class="text-dark fs-4 text-center">Contact</span>
-               <hr />
-               <span style={{textAlign: 'center', fontSize:'18px'}}><strong>Adrian Yan</strong></span><br />
-               <address style={{fontSize: '18px'}}>
-                  Email:<br />
-                  <a href="mailto:ambassador@sunshine-action.org" class="text-dark">ambassador@sunshine-action.org</a>
-                  <br /><br />
-                  Whatsapp:<br />
-                  (+852) 5544 9656
-               </address>
+            <span className="text-dark fs-4 text-center"> <a href="/contact-us" className="  text-dark" aria-current="page">Contact Us</a></span>
+                  <hr />
 
 
-            
-            <hr />
-            <span className="text-dark fs-4 text-center">Social Media</span>
-            <hr />
-            Ambassador Media:
-            <a href="https://www.youtube.com/watch?v=VSf5sbIsk78&list=PLwSy58i5yYL7DYNpcePL7Ivfoz7UN8E8a&ab_channel=SunshineAction" className="text-dark">
-               YouTube
-            </a>
-            <br />
-            <br />
-            <span><br />General Media:</span>
-            <a href="https://www.facebook.com/SunshineAction/" className="text-dark">
-               Facebook
-            </a>
-            <a href="https://www.instagram.com/sunshineactionhk/" className="text-dark">Instagram</a>
-            <a href="https://twitter.com/SunshineAction" className="text-dark">Twitter</a>
-            <br /><br />
-         </div>
+
+               
+                  <hr />
+                  <span className="text-dark fs-4 text-center">Social Media</span>
+                  <hr />
+                  <span style={{fontSize: '18px'}}>Ambassador Media:</span>
+                  <a style={{fontSize: '18px'}} href="https://www.youtube.com/watch?v=VSf5sbIsk78&list=PLwSy58i5yYL7DYNpcePL7Ivfoz7UN8E8a&ab_channel=SunshineAction" className="text-dark">
+                     YouTube
+                  </a>
+            </div>
 
          
          
@@ -83,6 +68,7 @@ function FourtyFive() {
 
 
 
+      </div>
       </div>
 
 

@@ -14,7 +14,7 @@ function HeroProjects() {
       <div className='hero-btns'>
 
 
-      <Link to='contact-us#HowToDonate' type="button" class="btn btn-outline-light btn-lg" 
+      <Link to='/donate' type="button" class="btn btn-outline-light btn-lg" 
             style={{borderRadius: '0px', marginBottom: '5px',}}>Donate Now
             </Link>
       </div>
