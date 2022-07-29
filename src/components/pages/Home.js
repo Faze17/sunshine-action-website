@@ -12,9 +12,9 @@ function Home() {
   return (
     <>
       <HeroHome name = "FEED THE HUNGRY AND WARM THE ABANDONED" selfintro = "We are a charity which aims to help people facing poverty 
-      and homelessness." subtitle = "Sunshine Action&#8217;s mission is a long-term commitment to help people on
-      a regular basis with permanent growth in the coming years&#8218;therefore
-      funding is crucial for the long-term."/>
+      and homelessness." subtitle = "Sunshine Action has made a long-term commitment to help those in need on
+      achieve lasting growth and success in the coming years, and therefore funding
+      is crucial for the future."/>
       <HomePageInfo />
 
       <CardProjects />
