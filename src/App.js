@@ -19,50 +19,113 @@ import PlantPlanet from './components/pages/PlantPlanet';
 import BuildingProject from './components/pages/BuildingProject';
 import GlobalProjects from './components/pages/Global';
 import _Project_Page from './components/pages/ProjectPage';
-import INDAPage from './components/pages/INDA';
 import MicroFinancePage from './components/pages/MicroFinancePage';
 import StudentSponsorshipPage from './components/pages/StudentSponsorshipPage';
-import _SaveSea_Page from './components/pages/_SaveSea_Page';
-import WaterWorldPage from './components/pages/WaterWorldPage';
-
-
-
+import CHD from './components/pages/CHD';
+import Donate from './components/pages/Donate';
+import SaveSea from './components/pages/_SaveSea_Page';
+import WaterWorld from './components/pages/WaterWorldPage';
+import NavBarUK from './components/NavBarUK';
+import NavBarUS from './components/NavBarUS';
+import ProjectsUK from './components/pages/ProjectsUK';
+import UKBuildingProjectPage from './components/pages/projects/UKBuildingProjectPage';
+import DigitalInequality from './components/pages/projects/DigitalInequality';
+import * as ProjectPages from './components/pages/ProjectPages.js';
+import ComingSoon from './components/pages/ComingSoon.js';
+import ProjectsUS from './components/pages/ProjectsUS';
 
 function App() {
+  let projectRoutes = [];
+  for (let p in ProjectPages) {
+    if (p == "projectPageInfo") {
+      continue;
+    }
+    projectRoutes.push(<Route path = {'/' + ProjectPages.projectPageInfo[p][0]} component = {ProjectPages[p]} />);
+  }
   return (
     <>
       <Router>
   
         <Switch>
-        
         <Route path='/' exact component={LandingPage} />
-        
-        <div>
-        <NavBar />
-        <ScrollToTop />
-          
-          <Route path='/home' exact component={Home} />
-          <Route path='/fourty-five-club' exact component={SunshineFourty} />
-          <Route path='/ambassadors' exact component={Ambassadors} />
-          <Route path='/contact-us' exact component={ContactUs} />
-          <Route path='/street-sleepers' exact component={StreetSleepers} />
-          <Route path='/our-story' exact component={OurStory} />
-          <Route path='/fortune-bags' exact component={FortuneBags} />
-          <Route path='/volunteers' exact component={Volunteers} />
-          <Route path='/companies' exact component={Companies} />
-          <Route path='/beneficaries' exact component={Beneficaries} />
-          <Route path='/projects' exact component={Projects} />
-          <Route path='/plant-the-planet' exact component={PlantPlanet} />
-          <Route path='/building-project' exact component={BuildingProject} />
-          <Route path='/water-for-the-world' exact component={WaterWorldPage} />
-          <Route path='/global' exact component={GlobalProjects} />
-          <Route path='/projectpage' exact component={_Project_Page} />
-          <Route path='/INDA' exact component={INDAPage} />
-          <Route path='/microfinace' exact component={MicroFinancePage} />
-          <Route path='/studentsponsorship' exact component={StudentSponsorshipPage} />
-          <Route path='/save-the-sea' exact component={_SaveSea_Page} />
-
-          </div>
+        <Route path='/uk'>
+          <NavBarUK />
+          <ScrollToTop />
+          <Switch>
+            <Route path = '/uk/home' component={Home} />
+            <Route path='/uk/fourty-five-club'  component={SunshineFourty} />
+            <Route path='/uk/ambassadors'  component={Ambassadors} />
+            <Route path='/uk/contact-us'  component={ContactUs} />
+            <Route path='/uk/street-sleepers'  component={StreetSleepers} />
+            <Route path='/uk/our-story'  component={OurStory} />
+            <Route path='/uk/fortune-bags'  component={FortuneBags} />
+            <Route path='/uk/volunteers'  component={Volunteers} />
+            <Route path='/uk/companies'  component={Companies} />
+            <Route path='/uk/beneficaries'  component={Beneficaries} />
+            <Route path='/uk/projects'  component={ProjectsUK} />
+            <Route path='/uk/save-the-sea'  component={SaveSea} />
+            <Route path='/uk/plant-the-planet'  component={PlantPlanet} />
+            <Route path='/uk/building-project'  component={BuildingProject} />
+            <Route path='/uk/water-for-the-world'  component={WaterWorld} />
+            <Route path='/uk/global'  component={GlobalProjects} />
+            <Route path='/uk/projectpage'  component={_Project_Page} />
+            <Route path='/uk/buildingproject' component={UKBuildingProjectPage} />
+            <Route path='/uk/digitalinequality' component={DigitalInequality} />
+          </Switch>
+        </Route>
+        <Route path='/us'>
+          <NavBarUS />
+          <ScrollToTop />
+          <Switch>
+            <Route path = '/us/home' component={Home} />
+            <Route path='/us/fourty-five-club'  component={SunshineFourty} />
+            <Route path='/us/ambassadors'  component={Ambassadors} />
+            <Route path='/us/contact-us'  component={ContactUs} />
+            <Route path='/us/street-sleepers'  component={StreetSleepers} />
+            <Route path='/us/our-story'  component={OurStory} />
+            <Route path='/us/fortune-bags'  component={FortuneBags} />
+            <Route path='/us/volunteers'  component={Volunteers} />
+            <Route path='/us/companies'  component={Companies} />
+            <Route path='/us/beneficaries'  component={Beneficaries} />
+            <Route path='/us/projects'  component={ProjectsUS} />
+            <Route path='/us/save-the-sea'  component={SaveSea} />
+            <Route path='/us/plant-the-planet'  component={PlantPlanet} />
+            <Route path='/us/building-project'  component={BuildingProject} />
+            <Route path='/us/water-for-the-world'  component={WaterWorld} />
+            <Route path='/us/global'  component={GlobalProjects} />
+            <Route path='/us/projectpage'  component={_Project_Page} />
+          </Switch>
+        </Route>
+        <Route path='/'>
+          <NavBar />
+          <ScrollToTop />
+            <Switch>
+              <Route path='/home'  component={Home} />
+              <Route path='/fourty-five-club'  component={SunshineFourty} />
+              <Route path='/ambassadors'  component={Ambassadors} />
+              <Route path='/contact-us'  component={ContactUs} />
+              <Route path='/street-sleepers'  component={StreetSleepers} />
+              <Route path='/our-story'  component={OurStory} />
+              <Route path='/fortune-bags'  component={FortuneBags} />
+              <Route path='/volunteers'  component={Volunteers} />
+              <Route path='/companies'  component={Companies} />
+              <Route path='/beneficaries'  component={Beneficaries} />
+              <Route path='/projects'  component={Projects} />
+              <Route path='/save-the-sea'  component={SaveSea} />
+              <Route path='/plant-the-planet'  component={PlantPlanet} />
+              <Route path='/building-project'  component={BuildingProject} />
+              <Route path='/water-for-the-world'  component={WaterWorld} />
+              <Route path='/global'  component={GlobalProjects} />
+              <Route path='/projectpage'  component={_Project_Page} />
+              <Route path='/microfinace' component={MicroFinancePage} />
+              <Route path='/studentsponsorship' component={StudentSponsorshipPage} />
+              <Route path='/save-the-sea' component={SaveSea} />
+              <Route path='/chd' exact component={CHD} />
+              <Route path='/donate' exact component={Donate} />
+              <Route path='/comingsoon' exact component={ComingSoon} />
+              {projectRoutes}
+            </Switch>
+          </Route>
         </Switch>
       </Router> 
     </>

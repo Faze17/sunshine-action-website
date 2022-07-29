@@ -30,6 +30,8 @@ h1 {
 
 .cards__items {
   margin-bottom: 24px;
+  justify-content: center;
+  padding-left: 0;
 }
 
 .cards__item {
@@ -37,6 +39,7 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  max-width: 30%;
 }
 
 .cards__item__link {
@@ -109,4 +112,12 @@ h1 {
   .cards__item {
     margin-bottom: 2rem;
   }
+}
+
+#customProjects {
+  flex-wrap: wrap;
+}
+
+#customProjects li {
+  max-width: calc(25% - 30px);
 }

@@ -1,8 +1,16 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import * as ProjectPages from './pages/ProjectPages.js';
 
 function CardsProjects() {
+  let projectCards = [];
+  for (let p in ProjectPages) {
+    if (p == "projectPageInfo" || ProjectPages.projectPageInfo[p][2] != 0) {
+      continue;
+    }
+    projectCards.push(<CardItem path = {'/' + ProjectPages.projectPageInfo[p][0]} src = {"images/" + ProjectPages.projectPageInfo[p][3]} text={ProjectPages.projectPageInfo[p][1]} />);
+  }
   return (
     <div className='cards'>
         <h1>Current Projects</h1>
@@ -11,7 +19,7 @@ function CardsProjects() {
           <ul className='cards__items'>
             <CardItem
               src='images/StreetSleeper1.jpg'
-              text='Street Sleepers Program &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+              text='Street-Sleepers Program &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
               path='/street-sleepers'
             />
             <CardItem
@@ -51,6 +59,31 @@ function CardsProjects() {
               text='MicroFinance'
               path='/microfinace'
             />
+          </ul>
+          <ul className='cards__items'>
+            <CardItem
+              src='images/CHD-3.jpg'
+              text='Congenital Heart Disease &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+              path='/chd'
+            />
+            <CardItem
+              src='images/blank.jpg'
+              text='Blank'
+              path='/blank'
+            />
+            <CardItem
+              src='images/blank.jpg'
+              text='Blank'
+              path='/blank'
+            />
+            <CardItem
+              src='images/blank.jpg'
+              text='Blank'
+              path='/blank'
+            />
+          </ul>
+          <ul className = 'cards__items' id = 'customProjects'>
+            {projectCards}
           </ul>
         </div>
       </div>

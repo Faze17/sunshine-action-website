@@ -12,7 +12,7 @@ function _SaveSea_Page() {
     return (
         <>
           <HeroComp name = "SAVE THE SEA" />
-          <HomePageLogo />
+          
           <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "Project Info" />

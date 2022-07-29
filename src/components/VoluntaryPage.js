@@ -14,7 +14,7 @@ function VoluntaryPage() {
                 <br />
                 <br />
                <div id="ourstory" className="p-4 text-dark rounded-3">
-                  <h1>Voluntary with us!</h1> </div>
+                  <h1>Volunteer with us!</h1> </div>
 
 
  <div className="row">
