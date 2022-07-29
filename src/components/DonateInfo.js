@@ -13,19 +13,24 @@ function DonateInfo() {
               
 <br />
 
-    <div id="whydowehelp" className="p-4 text-dark rounded-3"><h1>How to Donate</h1> </div>
+    <div id="whydowehelp" className="p-4 text-dark rounded-3"><h1>Donate Online</h1> </div>
 <br />
 
 <div className="row">
     <div>
+    
     <p>Thank you for considering a donation to Sunshine Action! Both monetary donations and select donation items are welcome.</p>
+    <p><b>You can make a donation via Give.Asia by clicking the button below.</b></p>
+    <a href="https://give.asia/charity/sunshine-action" type="button" class="btn btn-outline-light btn-lg" 
+            style={{borderRadius: '0px', marginBottom: '5px',}}>Donate Now
+            </a>
     <p>Note that Sunshine Action is NOT subverted by the Hong Kong Government or any Government, the Community Chest of HK, or the Lottery Fund of Jockey Club of HK. 100% of Sunshine Action’s funding comes from the general public and corporate donations. On average, 98% of the food, materials and contribution delivered to the final beneficiaries by Sunshine Action are purchased with donated funds, with the remaining 2% being directly donated items.</p>
       </div>
 </div>
 <br />
 <br />
 
-<div id="whydowehelp" className="p-4 text-dark rounded-3"><h1>Monetary Donations</h1> </div>
+<div id="whydowehelp" className="p-4 text-dark rounded-3"><h1>Other Donations</h1> </div>
     <br />
 
 <div className="row">
