@@ -23,6 +23,9 @@ function LandingHome () {
         <Link to='/us/home' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>United States of America
               </Link>
+        <Link to='/comingsoon' type="button" class="btn btn-outline-light btn-lg" 
+              style={{borderRadius: '0px', marginBottom: '5px',}}>Singapore
+              </Link>
 
         {/*<Link to='/global' type="button" class="btn btn-outline-light btn-lg" style={{borderRadius: '0px', marginBottom: '5px'}}>
             Global Projects

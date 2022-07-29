@@ -31,6 +31,8 @@ import ProjectsUK from './components/pages/ProjectsUK';
 import UKBuildingProjectPage from './components/pages/projects/UKBuildingProjectPage';
 import DigitalInequality from './components/pages/projects/DigitalInequality';
 import * as ProjectPages from './components/pages/ProjectPages.js';
+import ComingSoon from './components/pages/ComingSoon.js';
+import ProjectsUS from './components/pages/ProjectsUS';
 
 function App() {
   let projectRoutes = [];
@@ -85,7 +87,7 @@ function App() {
             <Route path='/us/volunteers'  component={Volunteers} />
             <Route path='/us/companies'  component={Companies} />
             <Route path='/us/beneficaries'  component={Beneficaries} />
-            <Route path='/us/projects'  component={Projects} />
+            <Route path='/us/projects'  component={ProjectsUS} />
             <Route path='/us/save-the-sea'  component={SaveSea} />
             <Route path='/us/plant-the-planet'  component={PlantPlanet} />
             <Route path='/us/building-project'  component={BuildingProject} />
@@ -120,6 +122,7 @@ function App() {
               <Route path='/save-the-sea' component={SaveSea} />
               <Route path='/chd' exact component={CHD} />
               <Route path='/donate' exact component={Donate} />
+              <Route path='/comingsoon' exact component={ComingSoon} />
               {projectRoutes}
             </Switch>
           </Route>
