@@ -106,20 +106,20 @@ function FourtyFive() {
                   <div id="carouselExampleControls" className="carousel slide card-img-top" data-bs-ride="carousel">
                      <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="5000">
-                           <div class="item peopleCarouselImg">
+                           <div className="item peopleCarouselImg">
                               <img id="three" src="/images/45slide2.jpg" className="d-block w-100"></img>
                            </div>
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
-                           <div className="d-flex justify-content-center">
-                              <div class="item peopleCarouselImg">
+                           <div>
+                              <div className="item peopleCarouselImg">
                                  <img src="/images/45slide5.jpg" className="d-block w-100"  />
                               </div>
                            </div>
                         </div>
                         <div className="carousel-item" data-bs-interval="6000">
-                           <div className="d-flex justify-content-center">
-                              <div class="item peopleCarouselImg">
+                           <div>
+                              <div className="item peopleCarouselImg">
                                  <img src="/images/45slide3.jpg" className="d-block w-100"  />
                               </div>
                            </div>

@@ -25,3 +25,7 @@ body {
  .beneficiaryFilter select {
    width: auto;
  }
+ .carousel-item img {
+   height: 270px;
+   object-fit: cover;
+ }
