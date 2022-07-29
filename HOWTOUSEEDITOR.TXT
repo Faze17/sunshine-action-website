@@ -1,0 +1,4 @@
+HOW TO USE THE PROJECT PAGES EDITOR
+
+Navigate to this directory using the shell and run "npm run editor"
+
