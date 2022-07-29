@@ -116,15 +116,15 @@ function AmbassadorPage() {
                      <div id="carouselExampleControls" className="carousel slide card-img-top" data-bs-ride="carousel">
                         <div className="carousel-inner">
                            <div className="carousel-item active" data-bs-interval="500">
-                              <div className="d-flex justify-content-center">
+                           <div className="d-flex justify-content-center">
                                  <img id="one" src="images/ambassadorHKMain.jpg" className="d-block w-100" />
-                              </div>
+                           </div>
                            </div>
                           
                            <div className="carousel-item" data-bs-interval="3000">
                            <div className="d-flex justify-content-center">
                            <img id="two" src="images/slide2.jpg" className="d-block w-100"  />
-                        </div>
+                           </div>
                      </div>
                
                   <div className="carousel-item" data-bs-interval="3000">
