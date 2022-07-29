@@ -21,9 +21,11 @@ function DonateInfo() {
     
     <p>Thank you for considering a donation to Sunshine Action! Both monetary donations and select donation items are welcome.</p>
     <p><b>You can make a donation via Give.Asia by clicking the button below.</b></p>
-    <a href="https://give.asia/charity/sunshine-action" type="button" class="btn btn-outline-light btn-lg" 
+    <p></p>
+    <a href="https://give.asia/charity/sunshine-action" type="button" class="btn btn-outline-light btn-lg Donate-button" 
             style={{borderRadius: '0px', marginBottom: '5px',}}>Donate Now
             </a>
+    <p></p>
     <p>Note that Sunshine Action is NOT subverted by the Hong Kong Government or any Government, the Community Chest of HK, or the Lottery Fund of Jockey Club of HK. 100% of Sunshine Action’s funding comes from the general public and corporate donations. On average, 98% of the food, materials and contribution delivered to the final beneficiaries by Sunshine Action are purchased with donated funds, with the remaining 2% being directly donated items.</p>
       </div>
 </div>
@@ -35,6 +37,7 @@ function DonateInfo() {
 
 <div className="row">
     <div>
+    <p>Sunshine Action accepts donations in other forms, including bank wire transfer, cheque, and select donation items.</p>
     <p><u>Bank Wire Transfer:</u></p>
     <p>HSBC:</p>
     <p>Account No.: 400-595989-838</p>
