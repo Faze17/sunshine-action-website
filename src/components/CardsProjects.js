@@ -65,21 +65,7 @@ function CardsProjects() {
               src='images/CHD-3.jpg'
               text='Congenital Heart Disease &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
               path='/chd'
-            />
-            <CardItem
-              src='images/blank.jpg'
-              text='Blank'
-              path='/blank'
-            />
-            <CardItem
-              src='images/blank.jpg'
-              text='Blank'
-              path='/blank'
-            />
-            <CardItem
-              src='images/blank.jpg'
-              text='Blank'
-              path='/blank'
+              width='30%'
             />
           </ul>
           <ul className = 'cards__items' id = 'customProjects'>
