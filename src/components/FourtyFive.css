@@ -36,3 +36,7 @@ h1 {
  h1 a{
     text-decoration: none;
  }
+
+.carousel-inner div {
+   clear: none;
+ }

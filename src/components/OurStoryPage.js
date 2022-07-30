@@ -6,6 +6,7 @@ function OurStoryPage() {
     return (
         <>
         <div className="homepageinfo" style={{background: 'rgb(82,97,147'}}>
+            <br></br>
    <div className="container">
       <div className="row">
          <div className="col-md-2"></div>

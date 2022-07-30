@@ -14,9 +14,9 @@ function HomePageInfo() {
             <br />
             {/* The round text box */}
                 <div class='float-center'>
-                    <p class="numberCircle" id="c1" > <b>300,000</b><br></br>PEOPLE HELPED</p>
-                    <p class="numberCircle" id="c2"><b>19</b><br></br> COUNTRIES</p>
-                    <p class="numberCircle" id="c3">NON-POLITICAL<br></br>NON-RELIGIOUS</p>
+                    <p class="numberCircle" id="c1" > <b>340,000</b><br></br>PEOPLE HELPED</p>
+                    <p class="numberCircle" id="c2"><b>20</b><br></br> COUNTRIES</p>
+                    <p class="numberCircle" id="c3"><b>642</b><br></br>PARTNERSHIPS</p>
                     <p class="numberCircle" id="c4"><b>100%</b> <br></br>FUNDING FROM THE PUBLIC</p>
                     <p class="numberCircle" id="c5"><b>10,000</b> <br></br>VOLUNTEERS</p>
                     <p class="numberCircle" id="c6">ENTIRELY VOLUNTEER RUN</p>
@@ -73,7 +73,7 @@ function HomePageInfo() {
         <div class='right_half'>
             <div className ='container'>
             <div className="col-md-12">
-            <h1>ISSURE WE TACKLE</h1>
+            <h1>ISSUES WE TACKLE</h1>
             <p>We work to tackle the global issue of
             poverty. </p>
             <p><span>&#8216;Around the world, 821 million people do

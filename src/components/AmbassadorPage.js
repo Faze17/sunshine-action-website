@@ -6,87 +6,73 @@ import './AmbassadorPage.css';
 function AmbassadorPage() {
     return(
 <div className="AmbassadorPage" style={{backgroundColor: 'rgb(82,97,147)'}}>
-   <div className="container">
-      <div className="row">
-         <div className="col-md-3">
-            <br />
-
-            <div id="sidebar" className="d-flex flex-column flex-shrink-0 p-3 text-dark" style={{width: '100%'}}>
-           
-               <img src="images/logo.png" className="img-fluid" />
-               <hr />
-
-           <span className="text-dark fs-4 text-center">Table of Contents</span>
-               <ol className="flex-column mb-auto">
-                  <li className="text-dark">
-                     <a href="#intro" className="  text-dark" aria-current="page">
-                        Intro
-                     </a>
-                  </li>
-                  <li className="text-dark">
-                     <a href="#why" className="  text-dark" aria-current="page">
-                        Why Join Us
-                     </a>
-                  </li>
-                  <li className="text-dark">
-                     <a href="#why-SA" className="  text-dark" aria-current="page">
-                        Why Sunshine Action
-                     </a>
-                  </li>
-                  <li className="text-dark">
-                     <a href="#apply" className="  text-dark" aria-current="page">
-                        How to Apply
-                     </a>
-                  </li>
-                  <li className="text-dark">
-                     <a href="#university" className="  text-dark" aria-current="page">
-                        Universities&nbsp;That <br/> Joined
-                     </a>
-                  </li>
-                  <li className="text-dark">
-                     <a href="#schools" className="  text-dark" aria-current="page">
-
-                        Schools That Joined
-                     </a>
-                  </li>
-               </ol>
-
-               <hr />
-              
-               <span className="text-dark fs-4 text-center">Contact</span>
-               <hr />
-               <span style={{textAlign:'center', fontSize:'20px'}}><strong>Adrian Yan</strong></span><br />
-               <address style={{fontSize:'18px'}}>
-                  Email:<br />
-                  <a href="mailto:ambassador@sunshine-action.org" className="text-dark">ambassador@sunshine-action.org</a>
-                  <br /><br />
-                  Whatsapp:<br />
-                  (+852) 5544 9656
-               </address>
-
-             
-               <hr />
-               <span className="text-dark fs-4 text-center">Social Media</span>
-               <hr />
-               <span style={{fontSize: '18px'}}>Ambassador Media:</span>
-               <a style={{fontSize: '18px'}} href="https://www.youtube.com/watch?v=VSf5sbIsk78&list=PLwSy58i5yYL7DYNpcePL7Ivfoz7UN8E8a&ab_channel=SunshineAction" className="text-dark">
-                  YouTube
-               </a>
+      <div className="container">
+         <div className="row">
+            <div className="col-md-3">
+            <div className="sticky-top">
                <br />
-               <span style={{fontSize: '18px'}}><br />General Media:</span>
-               <a style={{fontSize: '18px'}} href="https://www.facebook.com/SunshineAction/" className="text-dark">
-                  Facebook
-               </a>
-               <a style={{fontSize: '18px'}} href="https://www.instagram.com/sunshineactionhk/" className="text-dark">Instagram</a>
-               <a style={{fontSize: '18px'}} href="https://twitter.com/SunshineAction" className="text-dark">Twitter</a>
+               <div id="sidebar" className="d-flex flex-column flex-shrink-0 p-3 text-dark" style={{width: '100%'}}>
 
-            </div>
+                  <img src="images/logo.png" className="img-fluid" />
+                  <hr />
+
+            <span className="text-dark fs-4 text-center">Table of Contents</span>
+                  <ol className="flex-column mb-auto">
+                     <li className="text-dark">
+                        <a href="#intro" className="  text-dark" aria-current="page">
+                           Intro
+                        </a>
+                     </li>
+                     <li className="text-dark">
+                        <a href="#why" className="  text-dark" aria-current="page">
+                           Why Join Us
+                        </a>
+                     </li>
+                     <li className="text-dark">
+                        <a href="#why-SA" className="  text-dark" aria-current="page">
+                           Why Sunshine Action
+                        </a>
+                     </li>
+                     <li className="text-dark">
+                        <a href="#apply" className="  text-dark" aria-current="page">
+                           How to Apply
+                        </a>
+                     </li>
+                     <li className="text-dark">
+                        <a href="#university" className="  text-dark" aria-current="page">
+                           Universities&nbsp;That <br/> Joined
+                        </a>
+                     </li>
+                     <li className="text-dark">
+                        <a href="#schools" className="  text-dark" aria-current="page">
+
+                           Schools That Joined
+                        </a>
+                     </li>
+                  </ol>
+
+                  <hr />
+                  
+                  <span className="text-dark fs-4 text-center"> <a href="/contact-us" className="  text-dark" aria-current="page">Contact Us</a></span>
+                  <hr />
 
 
 
+               
+                  <hr />
+                  <span className="text-dark fs-4 text-center">Social Media</span>
+                  <hr />
+                  <span style={{fontSize: '18px'}}>Ambassador Media:</span>
+                  <a style={{fontSize: '18px'}} href="https://www.youtube.com/watch?v=VSf5sbIsk78&list=PLwSy58i5yYL7DYNpcePL7Ivfoz7UN8E8a&ab_channel=SunshineAction" className="text-dark">
+                     YouTube
+                  </a>
 
 
-         </div>
+               </div>               
+               </div>
+
+
+               </div>
 
 
 
@@ -116,15 +102,15 @@ function AmbassadorPage() {
                      <div id="carouselExampleControls" className="carousel slide card-img-top" data-bs-ride="carousel">
                         <div className="carousel-inner">
                            <div className="carousel-item active" data-bs-interval="500">
-                              <div className="d-flex justify-content-center">
+                           <div className="d-flex justify-content-center">
                                  <img id="one" src="images/ambassadorHKMain.jpg" className="d-block w-100" />
-                              </div>
+                           </div>
                            </div>
                           
                            <div className="carousel-item" data-bs-interval="3000">
                            <div className="d-flex justify-content-center">
                            <img id="two" src="images/slide2.jpg" className="d-block w-100"  />
-                        </div>
+                           </div>
                      </div>
                
                   <div className="carousel-item" data-bs-interval="3000">
