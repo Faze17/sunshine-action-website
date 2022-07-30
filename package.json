@@ -20,7 +20,8 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^2.1.8",
     "tree-kill": "^1.2.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "predeploy": "npm run build",
