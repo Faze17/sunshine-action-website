@@ -61,6 +61,7 @@ function NavBarUK() {
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><Link class="dropdown-item" to="our-story">Our Story</Link></li>
             <li><Link class="dropdown-item" to="beneficaries">Beneficiaries</Link></li>
+            <li><Link class="dropdown-item" to="reports">Reports</Link></li>
           </ul>
         </li>
 

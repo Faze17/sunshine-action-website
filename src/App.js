@@ -33,8 +33,10 @@ import DigitalInequality from './components/pages/projects/DigitalInequality';
 import * as ProjectPages from './components/pages/ProjectPages.js';
 import ComingSoon from './components/pages/ComingSoon.js';
 import ProjectsUS from './components/pages/ProjectsUS';
+import Reports from './components/pages/Reports';
 
 function App() {
+  const reload = () => window.location.reload();
   let projectRoutes = [];
   for (let p in ProjectPages) {
     if (p == "projectPageInfo") {
@@ -52,7 +54,9 @@ function App() {
           <NavBarUK />
           <ScrollToTop />
           <Switch>
-            <Route path = '/uk/home' component={Home} />
+          <Route path='/uk/home'>
+                <Home country = 'uk' />
+              </Route>
             <Route path='/uk/fourty-five-club'  component={SunshineFourty} />
             <Route path='/uk/ambassadors'  component={Ambassadors} />
             <Route path='/uk/contact-us'  component={ContactUs} />
@@ -71,13 +75,16 @@ function App() {
             <Route path='/uk/projectpage'  component={_Project_Page} />
             <Route path='/uk/buildingproject' component={UKBuildingProjectPage} />
             <Route path='/uk/digitalinequality' component={DigitalInequality} />
+            <Route path='/uk/reports' exact component={Reports} />
           </Switch>
         </Route>
         <Route path='/us'>
           <NavBarUS />
           <ScrollToTop />
           <Switch>
-            <Route path = '/us/home' component={Home} />
+          <Route path='/us/home'>
+                <Home country = 'us' />
+              </Route>
             <Route path='/us/fourty-five-club'  component={SunshineFourty} />
             <Route path='/us/ambassadors'  component={Ambassadors} />
             <Route path='/us/contact-us'  component={ContactUs} />
@@ -94,13 +101,16 @@ function App() {
             <Route path='/us/water-for-the-world'  component={WaterWorld} />
             <Route path='/us/global'  component={GlobalProjects} />
             <Route path='/us/projectpage'  component={_Project_Page} />
+            <Route path='/us/reports' exact component={Reports} />
           </Switch>
         </Route>
         <Route path='/'>
           <NavBar />
           <ScrollToTop />
             <Switch>
-              <Route path='/home'  component={Home} />
+              <Route path='/home'>
+                <Home country = 'hk' />
+              </Route>
               <Route path='/fourty-five-club'  component={SunshineFourty} />
               <Route path='/ambassadors'  component={Ambassadors} />
               <Route path='/contact-us'  component={ContactUs} />
@@ -123,6 +133,8 @@ function App() {
               <Route path='/chd' exact component={CHD} />
               <Route path='/donate' exact component={Donate} />
               <Route path='/comingsoon' exact component={ComingSoon} />
+              <Route path='/reports' exact component={Reports} />
+              
               {projectRoutes}
             </Switch>
           </Route>

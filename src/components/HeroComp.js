@@ -10,7 +10,7 @@ function HeroComp(props) {
   return (
     <div className='hero-container'>
       <video src='/videos/video-4.mov' autoPlay loop muted webkit-playsinline playsinline />
-      <h1>{props.name}</h1>
+      <h1>{props.name.toUpperCase()}</h1>
       <div className='hero-btns'>
       </div>
     </div>

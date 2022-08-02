@@ -1,16 +1,16 @@
 import INDAPage from "./projects/INDA.js"
 import myprojectPage from "./projects/myproject.js"
 import publichealthPage from "./projects/publichealth.js"
-import usfortunebagsPage from "./projects/usfortunebags.js"
 import ukfortunebagsPage from "./projects/ukfortunebags.js"
+import usfortunebagsPage from "./projects/usfortunebags.js"
 
 export {
 projectPageInfo,
 INDAPage,
 myprojectPage,
 publichealthPage,
-usfortunebagsPage,
-ukfortunebagsPage
+ukfortunebagsPage,
+usfortunebagsPage
 }
 
 //PROJECTPAGEINFO

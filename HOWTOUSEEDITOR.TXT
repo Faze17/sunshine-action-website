@@ -1,6 +1,7 @@
 HOW TO USE THE PROJECT PAGES EDITOR
 
 Navigate to this directory using the command line and run "npm run editor".
+Alternatively, on macOS you can run editor-mac.command
 
 Syntax guide:
 Regular paragraph

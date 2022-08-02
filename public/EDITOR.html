@@ -450,6 +450,8 @@
 				p = $("#pagePath").val();
 				$("<a href = '#' class = 'list-group-item list-group-item-action' data-project = '" + p + "'>/" + p + "</a>").appendTo(".list-group").click(() => { editPage(p) });
 				$("#editTitle").html("Editing " + p);
+				$("#savePage").off("click").click(() => { savePage(p) });
+				$("#deletePage").off("click").click(() => { deletePage(p) });
 			}
 			$.ajax({
 				url: "projects/edit/" + p,
