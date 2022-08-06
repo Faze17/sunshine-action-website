@@ -140,6 +140,16 @@
     align-items: center;
   }
   
+/* smart phone */
+@media (max-width:480px) {
+  .footer-subscription-heading {
+    margin-bottom: 24px;
+    font-size: 24px;
+    padding:10px 0px;
+  }
+}
+
+
   @media screen and (max-width: 820px) {
     .footer-links {
       padding-top: 2rem;

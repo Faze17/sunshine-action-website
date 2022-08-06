@@ -1,9 +1,11 @@
 import React from 'react';
 import './HomePageInfo.css';
+import { render } from "react-dom";
 
 
 function HomePageInfo() {
-    return (
+    return(
+
         <div className="homepageinfo" style={{background: 'rgb(82,97,147'}}>
     <div className="container">
       <div className="row">
