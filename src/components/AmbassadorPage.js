@@ -90,7 +90,9 @@ function AmbassadorPage() {
          <div className="col-md-8">
             <br />
             <div className="container">
-           
+               <img src="https://i.imgur.com/rb16TGu.gif" className="img-fluid" />
+               <br />
+               <br />
                <div id="intro" className="p-4 text-dark   rounded-3">
                   <h1>Become a Sunshine Ambassador</h1>
                </div>
