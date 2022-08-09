@@ -118,7 +118,11 @@ body {
    color:rgba(0, 47, 189, 0.858);
 }
 
-
+#helptext .reportsBanner{
+   font-size:25px;
+   color:rgba(0, 47, 189, 0.858);
+   background-color: rgb(255, 244, 179);
+}
 
 /* we tackle section */
 .wetackle{
@@ -228,7 +232,6 @@ body {
    /* how we help section */
    #wehelp{
       width:100%;
-      height:50vh;
       background-color: rgb(255, 244, 179);
    }
 
@@ -255,6 +258,10 @@ body {
    #helptext p{
       font-size:18px;
       color:rgba(0, 47, 189, 0.858);
+   }
+
+   #helptext .reportsBanner{
+      font-size:18px;
    }
 
    /* we tackle section */

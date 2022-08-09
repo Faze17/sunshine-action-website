@@ -21,3 +21,25 @@ margin: auto;
 font-size: 30px;
 
 }
+
+
+/* smart phone */
+@media (max-width:480px) {
+  .navbar-brand > span {
+    top: 30px;
+    font-size: 25px;
+  }
+
+
+}
+
+/* medium screen */
+@media (min-width:481px){
+
+
+} 
+
+
+/* large screen */
+@media (min-width:769px){
+}

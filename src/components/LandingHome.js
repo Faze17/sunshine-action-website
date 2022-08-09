@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 function LandingHome () {
     return(
-        <div className='hero-container'>
+        <div className='hero-container2'>
         <video src='/videos/video-5.mp4' autoPlay loop muted />
         <h1>SUNSHINE ACTION</h1>
 

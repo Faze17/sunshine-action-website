@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePageInfo.css';
 import { render } from "react-dom";
-
+import { Link } from 'react-router-dom';
 
 function HomePageInfo() {
     return(
@@ -49,6 +49,9 @@ function HomePageInfo() {
                             tours to assist other countries where
                             they are too, in need.
                         </p>
+                        <Link to="/reports" className = "reportsBanner">
+                        SUNSHINE ACTION PERFORMANCE REPORTS
+                         </Link>
                     </div>
                     </div>
 
