@@ -107,7 +107,6 @@ margin-top: 100px;
 /* medium screen */
 @media (min-width:481px){
     .hero-container1 > h1 {
-        color: bisque;
         font-size: 50px;
         margin-top: 100px;
         }
@@ -140,7 +139,6 @@ margin-top: 100px;
 /* large screen */
 @media (min-width:769px){
     .hero-container1 > h1 {
-        color: aqua;
         font-size: 70px;
         margin-top: 100px;
         }
