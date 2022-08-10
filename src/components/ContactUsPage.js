@@ -25,16 +25,18 @@ import '../components/HomePageInfo';
     <p>Email: <a href="mailto:sunshine@sunshine-action.org">sunshine@sunshine-action.org</a></p>
     <p>Whatsapp: <a href="tel:85268884028">(+852) 6888 4028</a></p>
     <p></p>
+    <br></br>
     <p><b>Adrian Yan, Director and Head of Sunshine Ambassadors</b></p>
     <p>Email: <a href="mailto:ambassador@sunshine-action.org">ambassador@sunshine-action.org</a></p>
     <p>Whatsapp: <a href="tel:85255449656">(+852) 5544 9656</a></p>
     <p></p>
+    <br></br>
     <p><b>Mailing Address:</b></p>
-        <p>13/F Wing Kin Industrial Building, Room D, 4-6 Wing Kin Road, Kwai Chung, Hong Kong
+        <p>Room D, 13/F Wing Kin Industrial Building, 4-6 Wing Kin Road, Kwai Chung, HONG KONG</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.1241274301947!2d114.11895370156222!3d22.35864454915119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f8c0872f06f7%3A0x4d347019df78c220!2sWing%20Kin%20Industrial%20Building%2C%204-6%20Wing%20Kin%20Rd%2C%20Kwai%20Chung%2C%20Hong%20Kong!5e0!3m2!1sen!2sus!4v1657509759069!5m2!1sen!2sus" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
    
 
-</p>
+
       </div>
 </div>
 <br />

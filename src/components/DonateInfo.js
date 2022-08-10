@@ -78,6 +78,7 @@ function DonateInfo() {
     <li>Toilet paper and tissue</li>
     <li>Notebooks and general stationery</li>
     <li>Children and adult clothing (either new or secondhand, in good condition)</li>
+    <br></br>
       </div>
       </div>
 </div>
