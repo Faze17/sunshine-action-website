@@ -38,6 +38,7 @@ function DonateInfo() {
 <div className="row">
     <div>
     <p>Sunshine Action accepts donations in other forms, including bank wire transfer, cheque, and select donation items.</p>
+    <br></br>
     <p><u>Bank Wire Transfer:</u></p>
     <p>HSBC:</p>
     <p>Account No.: 400-595989-838</p>
@@ -57,9 +58,11 @@ function DonateInfo() {
       </div>
       <div className="row">
     <div>
+    <br></br>
     <p><u>Cheque:</u></p>
     <p>To donate via cheque, please provide a crossed cheque with payee 'SUNSHINE ACTION Ltd.' Please attach the donor’s name, contact telephone and complete address for tax-deductible receipt.</p>
     <p>Sunshine Action Mailing Address: Room D, 13/F Wing Kin Industrial Building, 4-6 Wing Kin Road, Kwai Chung</p>
+    <br></br>
     <p><u>Donation of Items:</u></p>
     <p>At Sunshine Action we welcome enterprises and donors to donate the following items:</p>
     <p></p>
@@ -71,6 +74,7 @@ function DonateInfo() {
     <li>Any form of condiments</li>
     <li>Juices and other healthy drinks</li>
     <p></p>
+    <br></br>
     <p>Non-Food Items:</p>
     <li>Detergent</li>
     <li>Shampoo and conditioner</li>

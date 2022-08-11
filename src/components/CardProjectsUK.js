@@ -19,6 +19,7 @@ function CardsProjectsUK() {
         <div className='cards__container'>
           <div className='cards__wrapper'>
             <ul className='cards__items'>
+              {projectCards}
               <CardItem
                 src='images/image003.jpg'
                 text='Building Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
@@ -29,7 +30,6 @@ function CardsProjectsUK() {
                 path='digitalinequality'
                 text='Digital Inequality &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
               />
-              {projectCards}
             </ul>
           </div>
         </div>

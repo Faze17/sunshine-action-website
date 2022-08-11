@@ -10,7 +10,6 @@ function FourtyFive() {
 <div className="container">
    <div className="row">
       <div className="col-md-3">
-      <div className="sticky-top">
          <br />
          <div id="sidebar" className="d-flex flex-column flex-shrink-0 p-3 text-dark" style={{width: '100%'}}>
             <img src="/images/logo.png" className="img-fluid" />
@@ -68,7 +67,6 @@ function FourtyFive() {
 
 
 
-      </div>
       </div>
 
 

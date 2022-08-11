@@ -9,7 +9,6 @@ function AmbassadorPage() {
       <div className="container">
          <div className="row">
             <div className="col-md-3">
-            <div className="sticky-top">
                <br />
                <div id="sidebar" className="d-flex flex-column flex-shrink-0 p-3 text-dark" style={{width: '100%'}}>
 
@@ -68,8 +67,7 @@ function AmbassadorPage() {
                   </a>
 
 
-               </div>               
-               </div>
+               </div>  
 
 
                </div>

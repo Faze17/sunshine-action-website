@@ -103,8 +103,8 @@ function NavBarUK() {
         <li class="nav-item">
           <Link class="nav-link" to="contact-us">Contact Us</Link>
         </li>
-        <li class="nav-item">
-        <Link class="nav-link" text-color="white" to="/donate"><b><u>Donate</u></b></Link>
+        <li class="nav-item" id='donatebutton'>
+        <Link class="nav-link" text-color="white" to="/donate"><b>Donate</b></Link>
         </li>
       </ul>
     </div>
