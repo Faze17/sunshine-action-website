@@ -4,14 +4,14 @@ import './Project.css';
 
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
-
+import HomePageLogo from '../HomePageLogo';
 export default StreetSleepers;
 
 function StreetSleepers() {
     return (
       <>
         <HeroComp name = "STREET-SLEEPERS" />
-        
+        <HomePageLogo/>
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <br></br>
             <div className="container">
