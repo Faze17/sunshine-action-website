@@ -10,7 +10,7 @@ function HeroOurStory() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-4.mov' autoPlay loop muted />
-      <h1>OUR STORY</h1>
+      <h1>MY STORY</h1>
       <div className='hero-btns'>
 
 
