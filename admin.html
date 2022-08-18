@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SA Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <style>
+        input[type=number] {
+            width: 3.5rem;
+            margin: 0 0.5rem;
+            text-align: center;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container-fluid p-4">
+        <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-events-tab" data-bs-toggle="pill" data-bs-target="#pills-events" type="button" role="tab" aria-controls="pills-events" aria-selected="true">Events</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-feeds-tab" data-bs-toggle="pill" data-bs-target="#pills-feeds" type="button" role="tab" aria-controls="pills-feeds" aria-selected="false">Feeds</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab" tabindex="0">
+                <div class = "container-fluid">
+                    <div class = "row">
+                        <div class = "col-3">
+                            <div class="list-group" id = "list-events">
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">+ Create event</a>
+                                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Event 1</a>
+                                <a href="#" class="list-group-item list-group-item-action">Event 2</a>
+                            </div>
+                        </div>
+                        <div class = "col-9">
+                            <div class = "row">
+                                <div class = "col-8 px-5">
+                                    <input class = "form-control form-control-lg mb-2" value = "Event 1">
+                                    <input class = "form-control mb-2" readonly value = "TTuLi1sHlokqpvUbxZHc">
+                                    <form class = "row row-cols-lg-auto g-3 align-items-center mt-1">
+                                        <div class = "col-12">
+                                            <p class = "mb-0">Start</p>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-month">
+                                                <option selected>August</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-day">
+                                                <option selected>20</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-year">
+                                                <option selected>2022</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12 d-flex justify-content-center align-items-center">
+                                            <input type = "number" class = "form-control form-control-sm" id = "start-hour" placeholder = "HH" maxlength = "2"> : <input type = "number" class = "form-control form-control-sm" id = "start-minute" placeholder = "MM" maxlength = "2">
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-ampm">
+                                                <option selected>AM</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <form class = "row row-cols-lg-auto g-3 align-items-center mt-1 mb-4">
+                                        <div class = "col-12">
+                                            <p class = "mb-0">End</p>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-month">
+                                                <option selected>August</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-day">
+                                                <option selected>20</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-year">
+                                                <option selected>2022</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12 d-flex justify-content-center align-items-center">
+                                            <input type = "number" class = "form-control form-control-sm" id = "start-hour" placeholder = "HH" maxlength = "2"> : <input type = "number" class = "form-control form-control-sm" id = "start-minute" placeholder = "MM" maxlength = "2">
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-ampm">
+                                                <option selected>AM</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <input class = "form-control mb-2" value = "Peng Chau Ferry">
+                                </div>
+                                <div class = "col-4">
+                                    <h4>Registered (1)</h4>
+                                    <ul class="list-group mt-3">
+                                        <li class="list-group-item">Jack Rong</li>
+                                    </ul>                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-feeds" role="tabpanel" aria-labelledby="pills-feeds-tab" tabindex="0">Feeds</div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

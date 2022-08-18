@@ -19,32 +19,32 @@ function AmbassadorPage() {
             <span className="text-dark fs-4 text-center">Table of Contents</span>
                   <ol className="flex-column mb-auto">
                      <li className="text-dark">
-                        <a href="#intro" className="  text-dark" aria-current="page">
+                        <a href={window.location.pathname + "#intro"} className="  text-dark" aria-current="page">
                            Intro
                         </a>
                      </li>
                      <li className="text-dark">
-                        <a href="#why" className="  text-dark" aria-current="page">
+                        <a href={window.location.pathname + "#why"} className="  text-dark" aria-current="page">
                            Why Join Us
                         </a>
                      </li>
                      <li className="text-dark">
-                        <a href="#why-SA" className="  text-dark" aria-current="page">
+                        <a href={window.location.pathname + "#why-SA"} className="  text-dark" aria-current="page">
                            Why Sunshine Action
                         </a>
                      </li>
                      <li className="text-dark">
-                        <a href="#apply" className="  text-dark" aria-current="page">
+                        <a href={window.location.pathname + "#apply"} className="  text-dark" aria-current="page">
                            How to Apply
                         </a>
                      </li>
                      <li className="text-dark">
-                        <a href="#university" className="  text-dark" aria-current="page">
+                        <a href={window.location.pathname + "#university"} className="  text-dark" aria-current="page">
                            Universities&nbsp;That <br/> Joined
                         </a>
                      </li>
                      <li className="text-dark">
-                        <a href="#schools" className="  text-dark" aria-current="page">
+                        <a href={window.location.pathname + "#schools"} className="  text-dark" aria-current="page">
 
                            Schools That Joined
                         </a>

@@ -18,27 +18,27 @@ function FourtyFive() {
             <span className="text-dark fs-4 text-center">Table of Contents</span>
             <ol className="flex-column mb-auto">
                <li className="text-dark">
-                  <a href="#IntroFourty" className="  text-dark" aria-current="page">
+                  <a href={window.location.pathname + "#IntroFourty"} className="  text-dark" aria-current="page">
                      Introduction
                   </a>
                </li>
                <li className="text-dark">
-                  <a href="#whyjoin" className=" text-dark" aria-current="page">
+                  <a href={window.location.pathname + "#whyjoin"} className=" text-dark" aria-current="page">
                      Why Join Us
                   </a>
                </li>
                <li className="text-dark">
-                  <a href="#WhySunshineFourty" className="  text-dark" aria-current="page">
+                  <a href={window.location.pathname + "#WhySunshineFourty"} className="  text-dark" aria-current="page">
                      Why Sunshine Action
                   </a>
                </li>
                <li className="text-dark">
-                  <a href="#ApplyFourty" className="  text-dark" aria-current="page">
+                  <a href={window.location.pathname + "#ApplyFourty"} className="  text-dark" aria-current="page">
                      How to Apply
                   </a>
                </li>
                <li className="text-dark">
-                  <a href="#SchoolFourty" className="  text-dark" aria-current="page">
+                  <a href={window.location.pathname + "#SchoolFourty"} className="  text-dark" aria-current="page">
 
                      Schools That Joined
                   </a>
