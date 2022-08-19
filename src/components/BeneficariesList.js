@@ -7,6 +7,10 @@ BENEFICIARIES.forEach((c, i) => {
     if (c.country.charAt(c.country.length - 1) === " ") {
         BENEFICIARIES[i].country = c.country.substring(0, c.country.length - 1);
     }
+    // remove space in country name
+    var str = BENEFICIARIES[i].country;
+    str = str.replace(/\s+/g, '');
+    BENEFICIARIES[i].country = str;
 });
 
 class BeneficariesList extends React.Component {

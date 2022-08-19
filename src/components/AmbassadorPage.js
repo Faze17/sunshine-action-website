@@ -1,15 +1,16 @@
 import React from 'react';
+import { Button } from 'bootstrap';
 import './AmbassadorPage.css';
-
 
 
 function AmbassadorPage() {
     return(
+
+
 <div className="AmbassadorPage" style={{backgroundColor: 'rgb(82,97,147)'}}>
       <div className="container">
          <div className="row">
             <div className="col-md-3">
-            <div className="sticky-top">
                <br />
                <div id="sidebar" className="d-flex flex-column flex-shrink-0 p-3 text-dark" style={{width: '100%'}}>
 
@@ -68,8 +69,7 @@ function AmbassadorPage() {
                   </a>
 
 
-               </div>               
-               </div>
+               </div>  
 
 
                </div>
@@ -277,11 +277,13 @@ function AmbassadorPage() {
 
 
 <br />
-<div id="university" className="p-4 text-dark rounded-3">
-   <h1>Universities That Joined</h1>
-</div>
 
-<div className="row" style={{fontSize:'20px'}}>
+{/* <a href="#Auni" class="btn btn-info" data-toggle="collapse">Universities That Joined</a> */}
+
+<div id="university" className="p-4 text-dark rounded-3">
+<h1>Universities That Joined</h1>
+</div>
+<div className='row' style={{fontSize:'20px'}}>
 
    <div className="col-md-3 text-center"><br />
       University of Oxford, UK
@@ -312,7 +314,45 @@ function AmbassadorPage() {
    </div>
 
 
+<br></br>
 </div>
+
+
+{/* <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Auni">
+  <h1>Universities That J</h1>
+</button> */}
+{/* <div id="Auni" class="collapse" style={{fontSize:'20px'}}>
+
+   <div className="col-md-3 text-center"><br />
+      University of Oxford, UK
+   </div>
+   <div className="col-md-3 text-center"><br />
+      University of Cambridge, UK
+   </div>
+   <div className="col-md-3 text-center"><br />
+      Imperial College London, UK
+   </div>
+   <div className="col-md-3 text-center"><br />
+      University College London, UK
+   </div>
+   <div className="col-md-3 text-center"><br />
+      University of Hong Kong, Hong Kong
+   </div>
+   <div className="col-md-3 text-center"><br />
+      University of Warwick, UK
+   </div>
+   <div className="col-md-3 text-center"><br />
+      University of Keele, UK
+   </div>
+   <div className="col-md-3 text-center"><br />
+      University of Queen Mary, UK
+   </div>
+   <div className="col-md-3 text-center"><br />
+      University of Southampton, UK
+   </div>
+
+
+</div> */}
 <br />
 <br />
 
@@ -365,9 +405,11 @@ function AmbassadorPage() {
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"> </script>
 
-
 </div>
+
+
     );
 }
+
 
 export default AmbassadorPage;

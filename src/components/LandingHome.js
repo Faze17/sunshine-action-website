@@ -10,18 +10,18 @@ function LandingHome () {
         <h1>SUNSHINE ACTION</h1>
 
 
-        <div className='hero-btns'>
+        <div className='home-buttons'>
   
         <Link to='/home' type="button" class="btn btn-outline-light btn-lg" 
-              style={{borderRadius: '0px', marginBottom: '5px',}}>Hong Kong
+              style={{borderRadius: '0px', marginBottom: '5px',}}>Hong&nbsp;Kong
               </Link>
 
         <Link to='/uk/home' type="button" class="btn btn-outline-light btn-lg" 
-              style={{borderRadius: '0px', marginBottom: '5px',}}>United Kingdom
+              style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;Kingdom
               </Link>
 
         <Link to='/us/home' type="button" class="btn btn-outline-light btn-lg" 
-              style={{borderRadius: '0px', marginBottom: '5px',}}>United States of America
+              style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;States&nbsp;of&nbsp;America
               </Link>
         <Link to='/comingsoon' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>Singapore

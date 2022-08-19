@@ -56,7 +56,7 @@ body {
 #c2 {
    background-color:rgb(51, 107, 89);
    border:none;
-   padding: 60px 0;
+   padding: 50px 0;
 }
 
 #c2 > b{
@@ -69,6 +69,7 @@ body {
 }
 
 #c4 {
+   padding: 50px 0;
 }
 
 #c5 {
@@ -215,6 +216,7 @@ body {
 
    #c4 {
       font-size: 17px;
+      padding: 20px 0px;
    }
 
    #c5 {

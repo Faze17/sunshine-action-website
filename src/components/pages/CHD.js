@@ -4,6 +4,7 @@ import './Project.css';
 
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
+import HomePageLogo from '../HomePageLogo';
 
 export default CHD;
 
@@ -11,7 +12,7 @@ function CHD() {
     return (
       <>
         <HeroComp name = "CONGENITAL HEART DISEASE" />
-        
+        <HomePageLogo />
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "Project Info" />

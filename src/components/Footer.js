@@ -14,9 +14,6 @@ function Footer() {
         <p className='footer-subscription-heading'>
           Subscribe to our Sunshine Action newsletter to get the latest updates
         </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
         <div className='input-areas'>
           <form>
             <input
@@ -33,11 +30,9 @@ function Footer() {
         </div>
         <br></br>
         <small className='charity-number'>
-          Charity number: IRO-91/10271
+         Charity Number: IRO-91/10271 (Hong Kong)
         </small>
-        <small className='registration'>
-          Registered in HongKong
-        </small>
+        
       </section>
     
       <section class='social-media'>

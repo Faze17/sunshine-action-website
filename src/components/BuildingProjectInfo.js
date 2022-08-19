@@ -1,9 +1,10 @@
 import React from 'react';
 import './HomePageInfo.css';
-
+import HomePageLogo from '../HomePageLogo';
 
 function BuildingProjectInfo() {
     return (
+    <HomePageLogo/>
         <div className="homepageinfo" style={{background: 'rgb(82,97,147'}}>
    <div className="container">
       <div className="row">
