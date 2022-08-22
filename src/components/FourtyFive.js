@@ -265,49 +265,50 @@ function FourtyFive() {
             <br /><br />Please note that this is a long-term role, as we at Sunshine Action value long-term networking.
             <br /><br />If you have any further questions, contact Adrian Yan at ambassador@sunshine-action.org or WhatsApp (+852) 5544 9656 for more information. We hope to hear from you soon!
          </p>
-       
+         <br />
+
+         <p>Check out some of the Schools that have joined by pressing the button below!</p>
 
      
          <br />
-         <div id="SchoolFourty" className="p-4 text-dark rounded-3">
+         <button class="btn btn-info" data-bs-toggle="collapse" type="button" data-bs-target="#schoollist" id="SchoolButton">
             <h1>Schools That Joined</h1>
-         </div>
-
-         <div className="row">
-            <div className="col-md-4 text-center"><br />
+         </button>
+         <div id="schoollist" class="collapse" style={{fontSize:'20px'}}>
+         <div className="row"><br />
                University of Cambridge, UK
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                Imperial College London, UK
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                University College London, UK
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                University of Warwick, UK
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                Cardiff University, UK
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                University of Edinburgh, UK
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                University of British Columbia, Canada
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                Diocesan Boys' School, Hong Kong
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                Canadian International School, Hong Kong
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                ESF West Island School, Hong Kong
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                ESF King George V School, Hong Kong
             </div>
-            <div className="col-md-4 text-center"><br />
+            <div className="row"><br />
                Yew Chung International School, Hong Kong
             </div>
 

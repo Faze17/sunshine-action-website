@@ -278,115 +278,75 @@ function AmbassadorPage() {
 
 <br />
 
-{/* <a href="#Auni" class="btn btn-info" data-toggle="collapse">Universities That Joined</a> */}
+<p> Check out some of the Univerisities and Schools that have joined by pressing the buttons below!</p>
 
-<div id="university" className="p-4 text-dark rounded-3">
-<h1>Universities That Joined</h1>
-</div>
-<div className='row' style={{fontSize:'20px'}}>
 
-   <div className="col-md-3 text-center"><br />
+<button class="btn btn-info" data-bs-toggle="collapse" type="button" data-bs-target="#unilist" id="UniButton">
+  <h1>Universities That Joined</h1>
+</button>
+<div id="unilist" class="collapse" style={{fontSize:'20px'}}>
+   <div className="row"><br />
       University of Oxford, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       University of Cambridge, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       Imperial College London, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       University College London, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       University of Hong Kong, Hong Kong
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       University of Warwick, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       University of Keele, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       University of Queen Mary, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       University of Southampton, UK
    </div>
-
-
-<br></br>
 </div>
 
-
-{/* <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Auni">
-  <h1>Universities That J</h1>
-</button> */}
-{/* <div id="Auni" class="collapse" style={{fontSize:'20px'}}>
-
-   <div className="col-md-3 text-center"><br />
-      University of Oxford, UK
-   </div>
-   <div className="col-md-3 text-center"><br />
-      University of Cambridge, UK
-   </div>
-   <div className="col-md-3 text-center"><br />
-      Imperial College London, UK
-   </div>
-   <div className="col-md-3 text-center"><br />
-      University College London, UK
-   </div>
-   <div className="col-md-3 text-center"><br />
-      University of Hong Kong, Hong Kong
-   </div>
-   <div className="col-md-3 text-center"><br />
-      University of Warwick, UK
-   </div>
-   <div className="col-md-3 text-center"><br />
-      University of Keele, UK
-   </div>
-   <div className="col-md-3 text-center"><br />
-      University of Queen Mary, UK
-   </div>
-   <div className="col-md-3 text-center"><br />
-      University of Southampton, UK
-   </div>
-
-
-</div> */}
 <br />
 <br />
 
 <br />
-<div id="schools" className="p-4 text-dark rounded-3">
-   <h1>Schools That Joined</h1>
-</div>
-<div className="row" style={{fontSize:'20px'}}>
-
-   <div className="col-md-3 text-center"><br />
+<button class="btn btn-info" data-bs-toggle="collapse" type="button" data-bs-target="#schoollist" id="SchoolButton">
+  <h1>Schools That Joined</h1>
+</button>
+<div id="schoollist" class="collapse" style={{fontSize:'20px'}}>
+   <div className="row"><br />
       Diocesan Boys’ School, Hong Kong
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       ESF King George V School, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       ESF Discovery College, UK
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       ESF West Island School, Hong Kong
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       Canadian International School, Hong Kong
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       Hong Kong International School, Hong Kong
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       Yew Chung International School, Hong Kong
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       St. Paul’s Convent School, Hong Kong
    </div>
-   <div className="col-md-3 text-center"><br />
+   <div className="row"><br />
       German Swiss International School, Hong Kong
    </div>
 
