@@ -131,6 +131,8 @@ function App() {
               <Route path='/studentsponsorship' component={StudentSponsorshipPage} />
               <Route path='/save-the-sea' component={SaveSea} />
               <Route path='/chd' exact component={CHD} />
+              <Route path='/buildingproject' component={UKBuildingProjectPage} />
+              <Route path='/digitalinequality' component={DigitalInequality} />
               <Route path='/donate' exact component={Donate} />
               <Route path='/comingsoon' exact component={ComingSoon} />
               <Route path='/reports' exact component={Reports} />
