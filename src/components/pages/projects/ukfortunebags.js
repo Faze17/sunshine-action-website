@@ -38,9 +38,61 @@ return (
     families from the Omicron outbreak.</p>
 <p>The packed bags were then donated and delivered to the centers of <b>Feast with Us</b>, where they will be further delivered to families in need.</p>
 <p>SUNSHINE ACTION UK is newly stablished with the support from <b>MAYER BROWN UK</b> <a href = "https://www.mayerbrown.com/en/locations/london?tab=overview" target = "_blank">https://www.mayerbrown.com/en/locations/london?tab=overview</a></p>
-<ImageComp src = "fortunebaguk.jpeg" />
+{/* <ImageComp src = "fortunebaguk.jpeg" /> */}
+<div className="row">
+    <div className="col-md-2"></div>
+        <div className="col-md-8" id='ukcarosel'>
+            <div id="carouselExampleControls" className="carousel slide card-img-top" data-bs-ride="carousel">
+            <div className="carousel-inner">
+                <div className="carousel-item active" data-bs-interval="500">
+                    <div className="d-flex justify-content-center">
+                            <img src="images/ukfortunebag1.JPG" className="d-block w-100" />
+                    </div>
+                </div>
+                
+                <div className="carousel-item" data-bs-interval="3000">
+                    <div className="d-flex justify-content-center">
+                    <img src="images/ukfortunebag2.JPG" className="d-block w-100"  />
+                    </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="3000">
+                    <div className="d-flex justify-content-center">
+                    <img src="images/ukfortunebag3.jpg" className="d-block w-100"  />
+                    </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="3000">
+                    <div className="d-flex justify-content-center">
+                    <img src="images/ukfortunebag4.jpg" className="d-block w-100"  />
+                    </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="3000">
+                    <div className="d-flex justify-content-center">
+                    <img src="images/ukfortunebag5.jpg" className="d-block w-100"  />
+                    </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="3000">
+                    <div className="d-flex justify-content-center">
+                    <img src="images/ukfortunebag6.jpg" className="d-block w-100"  />
+                    </div>
+                </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+            </div>
+            
+        </div>
 </div>
 </div>
+<br></br>
+</div>
+
+
 <Footer />
 </>
 );
