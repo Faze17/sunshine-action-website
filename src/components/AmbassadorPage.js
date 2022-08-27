@@ -3,10 +3,73 @@ import { Button } from 'bootstrap';
 import './AmbassadorPage.css';
 
 
-function AmbassadorPage() {
-    return(
+const UNIVERSITIES = [{name:"University of Oxford", country:"UK"}, {name:"University of Cambridge", country:"UK"}, {name:"Imperial College London", country:"UK"}, {name:"University College London", country:"UK"}, {name:"University of Warwick", country:"UK"}, {name:"University of Keele", country:"UK"}, {name:"University of Queen Mary", country:"UK"}, {name:"University of Southampton", country:"UK"}, {name:"University of Hong Kong", country:"Hong Kong"}]
 
+const SCHOOLS = [{name:"ESF King George V School", schoolscountry:"UK"}, {name:"ESF Discovery College", schoolscountry:"UK"}, {name:"Diocesan Boys’ School", schoolscountry:"Hong Kong"}, {name:"ESF West Island School", schoolscountry:"Hong Kong"}, {name:"Canadian International School", schoolscountry:"Hong Kong"}, {name:"Hong Kong International School", schoolscountry:"Hong Kong"}, {name:"Yew Chung International School", schoolscountry:"Hong Kong"}, {name:"St. Paul’s Convent School", schoolscountry:"Hong Kong"}, {name:"German Swiss International School", schoolscountry:"Hong Kong"}]
 
+UNIVERSITIES.forEach((c, i) => {
+   if (c.country.charAt(c.country.length - 1) === " ") {
+       UNIVERSITIES[i].country = c.country.substring(0, c.country.length - 1);
+   }
+   // remove space in country name
+   var str = UNIVERSITIES[i].country;
+   str = str.replace(/\s+/g, '');
+   UNIVERSITIES[i].country = str;
+});
+
+SCHOOLS.forEach((c, i) => {
+   if (c.schoolscountry.charAt(c.schoolscountry.length - 1) === " ") {
+       SCHOOLS[i].schoolscountry = c.schoolscountry.substring(0, c.schoolscountry.length - 1);
+   }
+   // remove space in country name
+   var str = SCHOOLS[i].schoolscountry;
+   str = str.replace(/\s+/g, '');
+   SCHOOLS[i].schoolscountry = str;
+});
+
+class AmbassadorPage extends React.Component {
+   constructor(props) {
+      super(props);
+      this.handleSearch = this.handleSearch.bind(this);
+      this.handleFilter = this.handleFilter.bind(this);
+      this.state = {value:"", filter:"all"};
+  }
+  handleSearch(e) {
+      this.setState({ value: e.target.value });
+  }
+  handleFilter(e) {
+      this.setState({ filter: e.target.value });
+  }
+  render() {
+      let universitiesList = [];
+      let countryList = [];
+      let schoolsList = [];
+      let schoolscountryList = [];
+      UNIVERSITIES.forEach((b) => {
+          if (countryList.indexOf(b.country) === -1) {
+              countryList.push(b.country);
+          }
+          if (((b.chinese ? b.chinese : "") + " " + b.name + " (" + b.country + ")").toLowerCase().indexOf(this.state.value.toLowerCase()) !== -1 && (this.state.filter === "all" || b.country === this.state.filter)) {
+              universitiesList.push(<li>{((b.chinese ? b.chinese : "") + " " + b.name + (this.state.filter === "all" ? (" (" + b.country + ")") : ""))}</li>);
+          }
+      });
+      countryList.sort();
+      countryList.forEach((c, i) => {
+          countryList[i] = <option value = {c}>{c + " (" + UNIVERSITIES.filter(b => b.country === c).length + ")"}</option>;
+      });
+      SCHOOLS.forEach((b) => {
+         if (schoolscountryList.indexOf(b.schoolscountry) === -1) {
+             schoolscountryList.push(b.schoolscountry);
+         }
+         if (((b.chinese ? b.chinese : "") + " " + b.name + " (" + b.schoolscountry + ")").toLowerCase().indexOf(this.state.value.toLowerCase()) !== -1 && (this.state.filter === "all" || b.schoolscountry === this.state.filter)) {
+             schoolsList.push(<li>{((b.chinese ? b.chinese : "") + " " + b.name + (this.state.filter === "all" ? (" (" + b.schoolscountry + ")") : ""))}</li>);
+         }
+     });
+     schoolscountryList.sort();
+     schoolscountryList.forEach((c, i) => {
+         schoolscountryList[i] = <option value = {c}>{c + " (" + SCHOOLS.filter(b => b.schoolscountry === c).length + ")"}</option>;
+     });
+   return(
 <div className="AmbassadorPage" style={{backgroundColor: 'rgb(82,97,147)'}}>
       <div className="container">
          <div className="row">
@@ -275,43 +338,20 @@ function AmbassadorPage() {
 </p>
 
 
-
 <br />
 
-<p> Check out some of the Univerisities and Schools that have joined by pressing the buttons below!</p>
+<p> Check out some of the Universities and Schools that have joined by pressing the buttons below!</p>
 
 
 <button class="btn btn-info" data-bs-toggle="collapse" type="button" data-bs-target="#unilist" id="UniButton">
   <h1>Universities That Joined</h1>
 </button>
 <div id="unilist" class="collapse" style={{fontSize:'20px'}}>
-   <div className="row"><br />
-      University of Oxford, UK
-   </div>
-   <div className="row"><br />
-      University of Cambridge, UK
-   </div>
-   <div className="row"><br />
-      Imperial College London, UK
-   </div>
-   <div className="row"><br />
-      University College London, UK
-   </div>
-   <div className="row"><br />
-      University of Hong Kong, Hong Kong
-   </div>
-   <div className="row"><br />
-      University of Warwick, UK
-   </div>
-   <div className="row"><br />
-      University of Keele, UK
-   </div>
-   <div className="row"><br />
-      University of Queen Mary, UK
-   </div>
-   <div className="row"><br />
-      University of Southampton, UK
-   </div>
+<p className = "universitiesFilter d-flex"><input type = "text" className = "form-control me-3" placeholder = "Search universities..."  value = {this.state.value} onInput = {this.handleSearch} /><select class = "form-select" value = {this.state.filter} onChange = {this.handleFilter}><option value = "all">Country...</option>{countryList}</select></p>
+<p style = {{"text-align": "center", "font-size": "0.8rem"}}>Showing {universitiesList.length} {universitiesList.length === 1 ? "university" : "universities"}</p>
+<ul style={{listStyleType:'none'}}>
+{universitiesList}
+</ul>
 </div>
 
 <br />
@@ -322,33 +362,11 @@ function AmbassadorPage() {
   <h1>Schools That Joined</h1>
 </button>
 <div id="schoollist" class="collapse" style={{fontSize:'20px'}}>
-   <div className="row"><br />
-      Diocesan Boys’ School, Hong Kong
-   </div>
-   <div className="row"><br />
-      ESF King George V School, UK
-   </div>
-   <div className="row"><br />
-      ESF Discovery College, UK
-   </div>
-   <div className="row"><br />
-      ESF West Island School, Hong Kong
-   </div>
-   <div className="row"><br />
-      Canadian International School, Hong Kong
-   </div>
-   <div className="row"><br />
-      Hong Kong International School, Hong Kong
-   </div>
-   <div className="row"><br />
-      Yew Chung International School, Hong Kong
-   </div>
-   <div className="row"><br />
-      St. Paul’s Convent School, Hong Kong
-   </div>
-   <div className="row"><br />
-      German Swiss International School, Hong Kong
-   </div>
+<p className = "schoolsFilter d-flex"><input type = "text" className = "form-control me-3" placeholder = "Search schools..."  value = {this.state.value} onInput = {this.handleSearch} /><select class = "form-select" value = {this.state.filter} onChange = {this.handleFilter}><option value = "all">Country...</option>{schoolscountryList}</select></p>
+<p style = {{"text-align": "center", "font-size": "0.8rem"}}>Showing {schoolsList.length} {schoolsList.length === 1 ? "school" : "schools"}</p>
+<ul style={{listStyleType:'none'}}>
+{schoolsList}
+</ul>
 
 
 </div>
@@ -370,6 +388,6 @@ function AmbassadorPage() {
 
     );
 }
+}
 
-
-export default AmbassadorPage;
+export default AmbassadorPage
