@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SA Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <style>
+        input[type=number] {
+            width: 3.5rem;
+            margin: 0 0.5rem;
+            text-align: center;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        #event-image, #post-image {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container-fluid p-4">
+        <div class = "d-flex">
+            <ul class="nav nav-pills mb-4 flex-grow-1" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-events-tab" data-bs-toggle="pill" data-bs-target="#pills-events" type="button" role="tab" aria-controls="pills-events" aria-selected="true">Events</button>
+                </li>
+                <li class="nav-item mx-2" role="presentation">
+                <button class="nav-link" id="pills-feeds-tab" data-bs-toggle="pill" data-bs-target="#pills-feeds" type="button" role="tab" aria-controls="pills-feeds" aria-selected="false">Feeds</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-users-tab" data-bs-toggle="pill" data-bs-target="#pills-users" type="button" role="tab" aria-controls="pills-feeds" aria-selected="false">Users</button>
+                </li>
+            </ul>
+            <div>
+                <button class = "btn btn-secondary" id = "button-refresh">Refresh</button>
+                <button class = "btn btn-danger" id = "button-close">Close</button>
+            </div>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab" tabindex="0">
+                <div class = "container-fluid">
+                    <div class = "row">
+                        <div class = "col-3">
+                            <div class="list-group" id = "list-events">
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-primary" id = "create-event">+ Create event</a>
+                            </div>
+                        </div>
+                        <div class = "col-9">
+                            <div class = "row">
+                                <div class = "col-8 px-5" id = "event-edit">
+                                    <input class = "form-control form-control-lg mb-2" placeholder = "Event Title" id = "event-title">
+                                    <input class = "form-control mb-2" readonly value = "Event ID" id = "event-id">
+                                    <form class = "row row-cols-lg-auto g-2 align-items-center mt-1">
+                                        <div class = "col-12 me-3">
+                                            <p class = "mb-0">Start</p>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-month">
+                                                <option selected disabled value = "">Select...</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12">
+                                            <input type = "number" class = "form-control form-control-sm" id = "start-date" placeholder = "DD" maxlength = "2"> 
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-year">
+                                                <option selected disabled value = "">Select...</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12 d-flex justify-content-center align-items-center">
+                                            <input type = "number" class = "form-control form-control-sm" id = "start-hour" placeholder = "HH" maxlength = "2"> : <input type = "number" class = "form-control form-control-sm" id = "start-minute" placeholder = "MM" maxlength = "2">
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "start-ampm">
+                                                <option selected value = "am">AM</option>
+                                                <option value = "pm">PM</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <form class = "row row-cols-lg-auto g-2 align-items-center mt-1 mb-4">
+                                        <div class = "col-12 me-3">
+                                            <p class = "mb-0">End</p>
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "end-month">
+                                                <option selected disabled value = "">Select...</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12">
+                                            <input type = "number" class = "form-control form-control-sm" id = "end-date" placeholder = "DD" maxlength = "2"> 
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "end-year">
+                                                <option selected disabled value = "">Select...</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-12 d-flex justify-content-center align-items-center">
+                                            <input type = "number" class = "form-control form-control-sm" id = "end-hour" placeholder = "HH" maxlength = "2"> : <input type = "number" class = "form-control form-control-sm" id = "end-minute" placeholder = "MM" maxlength = "2">
+                                        </div>
+                                        <div class = "col-12">
+                                            <select class = "form-select form-select-sm" id = "end-ampm">
+                                                <option selected value = "am">AM</option>
+                                                <option value = "pm">PM</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <input class = "form-control mb-2" placeholder = "Event Location" id = "event-location">
+                                    <div class = "row mt-3">
+                                        <div class = "col-6">
+                                            <p>Current image:</p>
+                                            <img id = "event-image" class = "d-none mb-3">
+                                            <p><input class = "form-control form-control-sm" type = "file" id = "image-upload" accept = "image/*"></p>
+                                            <p><button class = "btn btn-secondary btn-sm" id = "image-remove">Remove Image</button><button class = "btn btn-secondary btn-sm ms-2" id = "image-cancel">Cancel Upload</button></p>
+                                        </div>
+                                        <div class = "col-6">
+                                            <p>Event description:</p>
+                                            <textarea class = "form-control mb-3" id = "event-description" rows = "9"></textarea>
+                                            <p class = "text-end"><button class = "btn btn-sm btn-primary" id = "event-save">Save Event</button><button class = "btn btn-sm btn-danger ms-2" id = "event-delete">Delete Event</button><br><button class = "btn btn-sm btn-secondary ms-2 mt-2" id = "event-cancel">Revert Edits</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "col-4">
+                                    <h4 id = "registered-count">Registered (0)</h4>
+                                    <ul class="list-group mt-3" id = "list-registered">
+                                    </ul>                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-feeds" role="tabpanel" aria-labelledby="pills-feeds-tab" tabindex="0">
+                <div class = "container-fluid">
+                    <div class = "row">
+                        <div class = "col-3">
+                            <div class="list-group" id = "list-posts">
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-primary" id = "create-post">+ Create post</a>
+                            </div>
+                        </div>
+                        <div class = "col-9">
+                            <div class = "row">
+                                <div class = "col-12 px-5" id = "post-edit">
+                                    <input class = "form-control form-control-lg mb-2" placeholder = "Post Title" id = "post-title">
+                                    <input class = "form-control mb-2" placeholder = "Post Author" id = "post-author">
+                                    <div class = "row mt-3">
+                                        <div class = "col-6">
+                                            <p>Current image:</p>
+                                            <img id = "post-image" class = "d-none mb-3">
+                                            <p><input class = "form-control form-control-sm" type = "file" id = "post-image-upload" accept = "image/*"></p>
+                                            <p><button class = "btn btn-secondary btn-sm" id = "post-image-remove">Remove Image</button><button class = "btn btn-secondary btn-sm ms-2" id = "image-cancel">Cancel Upload</button></p>
+                                        </div>
+                                        <div class = "col-6">
+                                            <p id = "post-date"></p>
+                                            <textarea class = "form-control mb-3" id = "post-body" rows = "18"></textarea>
+                                            <p class = "text-end"><button class = "btn btn-sm btn-primary" id = "post-save">Publish Post</button><button class = "btn btn-sm btn-danger ms-2" id = "post-delete">Delete Post</button><br><button class = "btn btn-sm btn-secondary ms-2 mt-2" id = "post-cancel">Revert Edits</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-users" role="tabpanel" aria-labelledby="pills-users-tab" tabindex="0">
+                Users
+            </div>
+        </div>
+    </div>
+    <div class = "toast-container position-fixed bottom-0 end-0 p-3">
+        <div id = "liveToast" class = "toast" role = "alert" aria-live = "assertive" aria-atomic = "true">
+            <div class = "d-flex">
+                <div class = "toast-body">
+                </div>
+                <button type = "button" class = "btn-close me-2 m-auto" data-bs-dismiss = "toast" aria-label = "Close"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="module">
+        const toastElList = document.querySelectorAll('.toast');
+        const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl));
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+        import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-storage.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyBY7mnxC1Qt3UpOENwPTPmUzGalU-FZjpg",
+          authDomain: "sunshine-action-app.firebaseapp.com",
+          projectId: "sunshine-action-app",
+          storageBucket: "sunshine-action-app.appspot.com",
+          messagingSenderId: "812985980379",
+          appId: "1:812985980379:web:b0f15b41fa0f47819803fe",
+          measurementId: "G-7VLYZNHMKB"
+        };
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const storage = getStorage(app);
+        const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const DAYS = [31, 28, 31, 30, 31, 30, 30, 31, 30, 31, 30, 31];
+        let users, events, feeds;
+        let removeImage = false;
+        let newEvent = false;
+        let postRemoveImage = false;
+        let newPost = false;
+        function resetEditor() {
+            $("#event-edit input, #event-edit textarea, #event-edit select").each(function() {
+                $(this).val(""); 
+            });
+            $("#event-id").val("Event ID");
+            $("#start-ampm, #end-ampm").val("am");
+            $("#event-image").attr("src", "").addClass("d-none");
+            removeImage = false;
+            $("#image-remove").html("Remove Image");
+            $("#registered-count").html("Registered (0)");
+            $("#list-registered").empty();
+            $("#event-edit button").off("click");
+        }
+        function resetPostEditor() {
+            $("#post-edit input, #post-edit textarea").each(function() {
+                $(this).val(""); 
+            });
+            $("#post-image").attr("src", "").addClass("d-none");
+            postRemoveImage = false;
+            $("#post-image-remove").html("Remove Image");
+            $("#post-edit button").off("click");
+            $("#post-date").html("");
+        }
+        function editEvent(e) {
+            removeImage = false;
+            newEvent = false;
+            resetEditor();
+            $("#image-remove").html("Remove Image");
+            $("#list-events a.active").removeClass("active");
+            $("#event_" + e).addClass("active");
+            $("#registered-count").html("Registered (" + (events[e].registered.length + Object.values(events[e].extra).reduce((p, v) => p + v, 0)) + ")");
+            $("#event-title").val(events[e].name);
+            $("#event-id").val(e);
+            $("#event-location").val(events[e].location);
+            $("#event-description").val(events[e].description);
+            if (events[e].image) {
+                getDownloadURL(ref(storage, "events/" + e + "." + events[e].image)).then((url) => {
+                    $("#event-image").attr("src", url).removeClass("d-none");
+                });
+            } else {
+                $("#event-image").attr("src", "").addClass("d-none");
+            }
+            const startDate = new Date(events[e].start);
+            $("#start-month").val(startDate.getMonth().toString());
+            $("#start-date").val(startDate.getDate().toString());
+            $("#start-year").val(startDate.getFullYear().toString());
+            let startHour = startDate.getHours(), startAmpm = "am";
+            if (startHour >= 12) {
+                startHour -= 12;
+                startAmpm = "pm";
+            }
+            startHour = !startHour ? 12 : startHour;
+            $("#start-hour").val(startHour.toString());
+            $("#start-minute").val((startDate.getMinutes() < 10 ? "0" : "") + startDate.getMinutes());
+            $("#start-ampm").val(startAmpm);
+            const endDate = new Date(events[e].end);
+            $("#end-month").val(endDate.getMonth().toString());
+            $("#end-date").val(endDate.getDate().toString());
+            $("#end-year").val(endDate.getFullYear().toString());
+            let endHour = endDate.getHours(), endAmpm = "am";
+            if (endHour >= 12) {
+                endHour -= 12;
+                endAmpm = "pm";
+            }
+            endHour = !endHour ? 12 : endHour;
+            $("#end-hour").val(endHour.toString());
+            $("#end-minute").val((endDate.getMinutes() < 10 ? "0" : "") + endDate.getMinutes());
+            $("#end-ampm").val(endAmpm);
+            $("#list-registered").empty();
+            events[e].registered.forEach(u => {
+                $("#list-registered").append("<li class = 'list-group-item'>" + users[u].first + " " + users[u].last + (events[e].extra[u] ? (" + " + events[e].extra[u]) : "") + (users[u].young ? " <span class = 'text-danger fw-bold'>(under 16)</span>" : "") + "</li>");
+            });
+            $("#image-cancel").off("click").click(() => {
+                $("#image-upload").val("");
+            });
+            $("#image-remove").off("click").click(() => {
+                $("#image-cancel").click();
+                if (!removeImage && events[e].image) {
+                    removeImage = true;
+                    $("#event-image").addClass("d-none");
+                    $("#image-remove").html("Restore Image");
+                } else if (removeImage) {
+                    removeImage = false;
+                    $("#event-image").removeClass("d-none");
+                    $("#image-remove").html("Remove Image");
+                }
+            });
+            $("#event-cancel").off("click").click(() => {
+                $("#event_" + e).click();
+            });
+            $("#event-delete").off("click").click(() => {
+                $.ajax({
+                    url: "event/" + e,
+                    method: "DELETE"
+                }).done(() => {
+                    $("#event_" + e).remove();
+                    $("#liveToast .toast-body").html("Event deleted");
+                    $("#liveToast").toast("show");
+                    resetEditor();
+                    $.get("/events").done((jqxhr) => {
+                        events = jqxhr;
+                    });
+                });
+            });
+            $("#event-save").off("click").click(() => {
+                function vn(s, min, max) {
+                    if (!$("#" + s).val()) {
+                        return false;
+                    }
+                    const num = Number($("#" + s).val());
+                    return (!Number.isNaN(num) && num >= min && num <= max);
+                }
+                if (!$("#event-title").val() || ["start-month", "end-month", "start-year", "end-year"].some(s => !$("#" + s).val()) || !vn("start-minute", 0, 59) || !vn("end-minute", 0, 59) || !vn("start-hour", 1, 12) || !vn("end-hour", 1, 12) || !vn("start-date", 1, 31) || !vn("end-date", 1, 31) || DAYS[Number($("#start-month").val())] < Number($("#start-date").val()) || DAYS[Number($("#end-month").val())] < Number($("#end-date").val())) {
+                    return;
+                }
+                const startMinute = Number($("#start-minute").val());
+                if (Number(startMinute) < 10) {
+                    $("#start-minute").val("0" + startMinute);
+                }
+                const startDate = new Date(0);
+                startDate.setMonth(Number($("#start-month").val()));
+                startDate.setDate(Number($("#start-date").val()));
+                startDate.setFullYear(Number($("#start-year").val()));
+                let startHour = Number($("#start-hour").val());
+                startHour = startHour == 12 ? 0 : startHour;
+                startHour += $("#start-ampm").val() == "pm" ? 12 : 0;
+                startDate.setHours(startHour);
+                startDate.setMinutes(Number($("#start-minute").val()));
+                const endMinute = Number($("#end-minute").val());
+                if (Number(startMinute) < 10) {
+                    $("#start-minute").val("0" + startMinute);
+                }
+                const endDate = new Date(0);
+                endDate.setMonth(Number($("#end-month").val()));
+                endDate.setDate(Number($("#end-date").val()));
+                endDate.setFullYear(Number($("#end-year").val()));
+                let endHour = Number($("#end-hour").val());
+                endHour = endHour == 12 ? 0 : endHour;
+                endHour += $("#end-ampm").val() == "pm" ? 12 : 0;
+                endDate.setHours(endHour);
+                endDate.setMinutes(Number($("#end-minute").val()));
+                if (Number(endMinute) < 10) {
+                    $("#end-minute").val("0" + endMinute);
+                }
+                $.ajax({
+                    url: "event/" + e,
+                    method: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ name: $("#event-title").val(), location: $("#event-location").val(), start: startDate.getTime(), end: endDate.getTime(), description: $("#event-description").val() })
+                }).done(() => {
+                    if (removeImage) {
+                        $.ajax({
+                            url: "event/" + e + "/image",
+                            method: "DELETE"
+                        }).done(() => {
+                            $("#liveToast .toast-body").html("Event saved");
+                            $("#liveToast").toast("show");
+                            $.get("/events").done((jqxhr) => {
+                                events = jqxhr;
+                            });
+                        });
+                    } else if ($("#image-upload").val()) {
+                        const imageUpload = new FormData();
+                        imageUpload.append("image", $("#image-upload")[0].files[0], $("#image-upload")[0].files[0].name);
+                        $.ajax({
+                            url: "event/" + e + "/image",
+                            method: "POST",
+                            data: imageUpload,
+                            processData: false,
+                            contentType: false,
+                            enctype: "multipart/form-data"
+                        }).done(() => {
+                            $("#liveToast .toast-body").html("Event saved");
+                            $("#liveToast").toast("show");
+                            $.get("/events").done((jqxhr) => {
+                                events = jqxhr;
+                            });
+                        });
+                    } else {
+                        $("#liveToast .toast-body").html("Event saved");
+                        $("#liveToast").toast("show");
+                        $.get("/events").done((jqxhr) => {
+                            events = jqxhr;
+                        });
+                    }
+                });
+                $("#event_" + e).html($("#event-title").val() + " (" + fd(startDate.getTime()) + ")");
+            });
+        }
+        function editPost(e) {
+            postRemoveImage = false;
+            newPost = false;
+            resetPostEditor();
+            $("#post-image-remove").html("Remove Image");
+            $("#list-posts a.active").removeClass("active");
+            $("#post_" + e).addClass("active");
+            $("#post-title").val(feeds[e].title);
+            $("#post-author").val(feeds[e].author);
+            $("#post-body").val(feeds[e].body);
+            const postDate = new Date(feeds[e].time);
+            $("#post-date").html("Post date: " + MONTHS[postDate.getMonth()] + " " + postDate.getDate() + ", " + postDate.getFullYear() + ", " + postDate.getHours() + ":" + (postDate.getMinutes() < 10 ? "0" : "") + postDate.getMinutes());
+            if (feeds[e].image) {
+                getDownloadURL(ref(storage, "posts/" + e + "." + feeds[e].image)).then((url) => {
+                    $("#post-image").attr("src", url).removeClass("d-none");
+                });
+            } else {
+                $("#post-image").attr("src", "").addClass("d-none");
+            }
+            $("#post-image-cancel").off("click").click(() => {
+                $("#post-image-upload").val("");
+            });
+            $("#post-image-remove").off("click").click(() => {
+                $("#post-image-cancel").click();
+                if (!postRemoveImage && feeds[e].image) {
+                    postRemoveImage = true;
+                    $("#post-image").addClass("d-none");
+                    $("#post-image-remove").html("Restore Image");
+                } else if (postRemoveImage) {
+                    postRemoveImage = false;
+                    $("#post-image").removeClass("d-none");
+                    $("#post-image-remove").html("Remove Image");
+                }
+            });
+            $("#post-cancel").off("click").click(() => {
+                $("#post_" + e).click();
+            });
+            $("#post-delete").off("click").click(() => {
+                $.ajax({
+                    url: "posts/" + e,
+                    method: "DELETE"
+                }).done(() => {
+                    $("#posts_" + e).remove();
+                    $("#liveToast .toast-body").html("Post deleted");
+                    $("#liveToast").toast("show");
+                    resetPostEditor();
+                    $.get("/posts").done((jqxhr) => {
+                        feeds = jqxhr;
+                    });
+                });
+            });
+            $("#post-save").off("click").click(() => {
+                if (!$("#post-title").val() || !$("#post-body").val()) {
+                    return;
+                }
+                $.ajax({
+                    url: "posts/" + e,
+                    method: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ name: $("#post-title").val(), author: $("#post-author").val(), body: $("#post-body").val() })
+                }).done(() => {
+                    if (postRemoveImage) {
+                        $.ajax({
+                            url: "posts/" + e + "/image",
+                            method: "DELETE"
+                        }).done(() => {
+                            $("#liveToast .toast-body").html("Post saved");
+                            $("#liveToast").toast("show");
+                            $.get("/posts").done((jqxhr) => {
+                                feeds = jqxhr;
+                            });
+                        });
+                    } else if ($("#post-image-upload").val()) {
+                        const imageUpload = new FormData();
+                        imageUpload.append("image", $("#post-image-upload")[0].files[0], $("#post-image-upload")[0].files[0].name);
+                        $.ajax({
+                            url: "posts/" + e + "/image",
+                            method: "POST",
+                            data: imageUpload,
+                            processData: false,
+                            contentType: false,
+                            enctype: "multipart/form-data"
+                        }).done(() => {
+                            $("#liveToast .toast-body").html("Post saved");
+                            $("#liveToast").toast("show");
+                            $.get("/posts").done((jqxhr) => {
+                                feeds = jqxhr;
+                            });
+                        });
+                    } else {
+                        $("#liveToast .toast-body").html("Post saved");
+                        $("#liveToast").toast("show");
+                        $.get("/posts").done((jqxhr) => {
+                            feeds = jqxhr;
+                        });
+                    }
+                });
+                $("#event_" + e).html($("#post-title").val());
+            });
+        }
+        $(() => {
+            $("#button-refresh").click(() => {
+                $.post("/refresh").done(() => {
+                    window.location.reload();
+                });
+            });
+            $("#button-close").click(() => {
+                $.post("/stop").done(() => {
+                    $("#liveToast .toast-body").html("You may close this window now");
+                    $("#liveToast").toast("show");
+                    window.open(location, "_self").close();
+                });
+            });
+            MONTHS.forEach((m, n) => {
+                $("#start-month, #end-month").append("<option value = '" + n + "'>" + m + "</option>");
+            });
+            let now = new Date();
+            for (let y = -1; y <= 1; y++) {
+                const yr = now.getFullYear() + y;
+                $("#start-year, #end-year").append("<option value = '" + yr + "'>" + yr + "</option>");
+            }
+            function fd(t) {
+                const postDate = new Date(t);
+                return (postDate.getMonth() + 1) + "/" + postDate.getDate() + " " + postDate.getHours() + ":" + (postDate.getMinutes() < 10 ? "0" : "") + postDate.getMinutes()
+            }
+            $.get("/users").done((jqxhr) => {
+                users = jqxhr;
+            });
+            $.get("/events").done((jqxhr) => {
+                events = jqxhr;
+                Object.keys(jqxhr).forEach(e => {
+                    $("<a href = '#' class = 'list-group-item list-group-item-action' id = 'event_" + e + "'>" + jqxhr[e].name + " (" + fd(jqxhr[e].start) + ")</a>").appendTo("#list-events").click(() => {
+                        editEvent(e);
+                    });
+                });
+            });
+            $("#create-event").click(() => {
+                removeImage = false;
+                newEvent = true;
+                resetEditor();
+                $("#list-events a.active").removeClass("active");
+                $("#create-event").addClass("active");
+                $("#event-save").off("click").click(() => {
+                    function vn(s, min, max) {
+                        if (!$("#" + s).val()) {
+                            return false;
+                        }
+                        const num = Number($("#" + s).val());
+                        return (!Number.isNaN(num) && num >= min && num <= max);
+                    }
+                    if (!$("#event-title").val() || ["start-month", "end-month", "start-year", "end-year"].some(s => !$("#" + s).val()) || !vn("start-minute", 0, 59) || !vn("end-minute", 0, 59) || !vn("start-hour", 1, 12) || !vn("end-hour", 1, 12) || !vn("start-date", 1, 31) || !vn("end-date", 1, 31) || DAYS[Number($("#start-month").val())] < Number($("#start-date").val()) || DAYS[Number($("#end-month").val())] < Number($("#end-date").val())) {
+                        return;
+                    }
+                    const startMinute = Number($("#start-minute").val());
+                    if (Number(startMinute) < 10) {
+                        $("#start-minute").val("0" + startMinute);
+                    }
+                    const startDate = new Date(0);
+                    startDate.setMonth(Number($("#start-month").val()));
+                    startDate.setDate(Number($("#start-date").val()));
+                    startDate.setFullYear(Number($("#start-year").val()));
+                    let startHour = Number($("#start-hour").val());
+                    startHour = startHour == 12 ? 0 : startHour;
+                    startHour += $("#start-ampm").val() == "pm" ? 12 : 0;
+                    startDate.setHours(startHour);
+                    startDate.setMinutes(Number($("#start-minute").val()));
+                    const endMinute = Number($("#end-minute").val());
+                    if (Number(startMinute) < 10) {
+                        $("#start-minute").val("0" + startMinute);
+                    }
+                    const endDate = new Date(0);
+                    endDate.setMonth(Number($("#end-month").val()));
+                    endDate.setDate(Number($("#end-date").val()));
+                    endDate.setFullYear(Number($("#end-year").val()));
+                    let endHour = Number($("#end-hour").val());
+                    endHour = endHour == 12 ? 0 : endHour;
+                    endHour += $("#end-ampm").val() == "pm" ? 12 : 0;
+                    endDate.setHours(endHour);
+                    endDate.setMinutes(Number($("#end-minute").val()));
+                    if (Number(endMinute) < 10) {
+                        $("#end-minute").val("0" + endMinute);
+                    }
+                    const eventObj = { name: $("#event-title").val(), location: $("#event-location").val(), start: startDate.getTime(), end: endDate.getTime(), description: $("#event-description").val() };
+                    $.ajax({
+                        url: "event/create",
+                        method: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify(eventObj)
+                    }).done((eventId) => {
+                        if ($("#image-upload").val()) {
+                            const imageUpload = new FormData();
+                            imageUpload.append("image", $("#image-upload")[0].files[0], $("#image-upload")[0].files[0].name);
+                            $.ajax({
+                                url: "event/" + eventId + "/image",
+                                method: "POST",
+                                data: imageUpload,
+                                processData: false,
+                                contentType: false,
+                                enctype: "multipart/form-data"
+                            }).done(() => {
+                                $("#liveToast .toast-body").html("Event created");
+                                $("#liveToast").toast("show");
+                                $("<a href = '#' class = 'list-group-item list-group-item-action active' id = 'event_" + eventId + "'>" + $("#event-title").val() + " (" + fd(startDate.getTime()) + ")</a>").appendTo("#list-events").click(() => {
+                                    editEvent(eventId);
+                                });
+                                $.get("/events").done((jqxhr) => {
+                                    events = jqxhr;
+                                    editEvent(eventId);
+                                });
+                            });
+                        } else {
+                            $("#liveToast .toast-body").html("Event created");
+                            $("#liveToast").toast("show");
+                            $("<a href = '#' class = 'list-group-item list-group-item-action active' id = 'event_" + eventId + "'>" + $("#event-title").val() + " (" + fd(startDate.getTime()) + ")</a>").appendTo("#list-events").click(() => {
+                                editEvent(eventId);
+                            });
+                            $.get("/events").done((jqxhr) => {
+                                events = jqxhr;
+                                editEvent(eventId);
+                            });
+                        }
+                    });
+                });
+            });
+            $.get("/posts").done((jqxhr) => {
+                feeds = jqxhr;
+                Object.keys(jqxhr).forEach(e => {
+                    $("<a href = '#' class = 'list-group-item list-group-item-action' id = 'post_" + jqxhr[e].time.toString() + "'>" + jqxhr[e].title + " (" + fd(jqxhr[e].time) + ")</a>").insertAfter("#create-post").click(() => {
+                        editPost(jqxhr[e].time.toString());
+                    });
+                });
+            });
+            $("#create-post").click(() => {
+                postRemoveImage = false;
+                newPost = true;
+                resetPostEditor();
+                $("#list-posts a.active").removeClass("active");
+                $("#create-post").addClass("active");
+                $("#post-save").off("click").click(() => {
+                    if (!$("#post-title").val() || !$("#post-body").val()) {
+                        return;
+                    }
+                    const now = new Date();
+                    const postObj = { title: $("#post-title").val(), author: $("#post-author").val(), time: now.getTime(), body: $("#post-body").val() };
+                    $.ajax({
+                        url: "posts/create",
+                        method: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify(postObj)
+                    }).done(() => {
+                        if ($("#post-image-upload").val()) {
+                            const imageUpload = new FormData();
+                            imageUpload.append("image", $("#post-image-upload")[0].files[0], $("#post-image-upload")[0].files[0].name);
+                            $.ajax({
+                                url: "posts/" + now.getTime() + "/image",
+                                method: "POST",
+                                data: imageUpload,
+                                processData: false,
+                                contentType: false,
+                                enctype: "multipart/form-data"
+                            }).done(() => {
+                                $("#liveToast .toast-body").html("Post created");
+                                $("#liveToast").toast("show");
+                                $("<a href = '#' class = 'list-group-item list-group-item-action active' id = 'post_" + now.getTime() + "'>" + $("#post-title").val() + " (" + fd(now.getTime()) + ")</a>").insertAfter("#create-post").click(() => {
+                                    editPost(now.getTime().toString());
+                                });
+                                $.get("/posts").done((jqxhr) => {
+                                    feeds = jqxhr;
+                                    editPost(now.getTime().toString());
+                                });
+                            });
+                        } else {
+                            $("#liveToast .toast-body").html("Post created");
+                            $("#liveToast").toast("show");
+                            $("<a href = '#' class = 'list-group-item list-group-item-action active' id = 'post_" + now.getTime() + "'>" + $("#post-title").val() + " (" + fd(now.getTime()) + ")</a>").insertAfter("#create-post").click(() => {
+                                editPost(now.getTime().toString());
+                            });
+                            $.get("/posts").done((jqxhr) => {
+                                feeds = jqxhr;
+                                editPost(now.getTime().toString());
+                            });
+                        }
+                    });
+                });
+            });
+            
+        });
+    </script>
+</body>
+</html>
