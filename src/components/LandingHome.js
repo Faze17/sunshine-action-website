@@ -2,11 +2,24 @@ import React from 'react';
 import './LandingHome.css';
 import { HashLink as Link } from 'react-router-hash-link';
 
+// var mainVideo = $('video#homeVideo');
+// var desktopSrc = "/videos/video-5.mp4";
+ 
+// if ($(window).width() < 980) {
+// } else {
+//      mainVideo.append("<source type='video/mp4' src='" + desktopSrc + "' />");
+// }
 
 function LandingHome () {
     return(
         <div className='hero-container2'>
-        <video src='/videos/video-5.mp4' autoPlay loop muted />
+       <video autoPlay loop muted webkit-playsinline playsinline>
+            <source src='/videos/video-5.mp4' media=" (min-width:501px)"></source>
+            {/* <source  media=" (min-width:700px)" src='/videos/video-5.mp4' alt=''></source>
+            <source  media=" (min-width:300px)" srcset='/images/blank.jpg' alt=''></source> */}
+       </video>
+       
+
         <h1>SUNSHINE ACTION</h1>
 
 

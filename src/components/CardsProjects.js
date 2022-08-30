@@ -67,10 +67,21 @@ function CardsProjects() {
               path='/chd'
               width='30%'
             />
+            <CardItem
+                src='images/image003.jpg'
+                text='Building Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+                path='buildingproject'
+              />
+              <CardItem
+                src='images/web-4667406_1280.jpeg'
+                path='digitalinequality'
+                text='Digital Inequality &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+              />
+              {projectCards}
           </ul>
-          <ul className = 'cards__items' id = 'customProjects'>
+          {/* <ul className = 'cards__items' id = 'customProjects'>
             {projectCards}
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

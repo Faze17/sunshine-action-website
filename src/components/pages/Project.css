@@ -21,3 +21,8 @@ iframe {
 p a, li a {
     color: rgb(253, 137, 4);
 }
+
+#ukcarosel img {
+    height: 75vh;
+    object-fit: cover;
+  }

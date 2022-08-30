@@ -9,6 +9,10 @@
     background-color: rgb(253,137,4);
  }
 
+#SchoolButton {
+   background-color: rgb(253,137,4);
+   border-color: black;
+}
 
 body {
     background-color: rgb(82,97,147);

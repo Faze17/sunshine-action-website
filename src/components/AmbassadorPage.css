@@ -19,6 +19,10 @@ body {
  #sidebar,#intro,#why,#why-SA,#apply,#schools,#university {
     background-color: rgb(253,137,4);
  }
+ #UniButton,#SchoolButton {
+   background-color: rgb(253,137,4);
+   border-color: black;
+ }
  .row {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
