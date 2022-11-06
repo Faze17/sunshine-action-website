@@ -1,3 +1,5 @@
+
+
 video {
     object-fit: cover;
     width: 100%;
@@ -19,7 +21,7 @@ video {
 
 .hero-container1 > h1 {
 color: #fff;
-font-size: 80px;
+font-size: 600%;
 margin-top: 100px;
 }
 
@@ -27,8 +29,9 @@ margin-top: 100px;
     color: #fff;
     font-size: 22px;
     margin-top: 20px;
-    margin-left:200px;
-    margin-right:200px;
+    padding: 0px 50px;
+    /* margin-left:200px;
+    margin-right:200px; */
 }
 
 .hero-container1 > p {
@@ -48,17 +51,73 @@ margin-top: 100px;
 
 }
 
-@media screen and (max-width: 960px) {
+
+/* smart phone */
+@media (max-width:480px) {
+    /* eliminate video */
+    video {
+        display: none;
+    }
+
+
+    .hero-container1 {
+        background-color: #ffbc49;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+        object-fit: contain;
+    }
+
     .hero-container1 > h1 {
-        font-size: 70px;
-        margin-top: -150px;
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+    .hero-container1 > h2 {
+        font-size: 15px;
+        margin-top: 30px;
+        padding: 0px 20px;
+        /* margin-left:30px;
+        margin-right:20px; */
+    }
+
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
         }
+    
+    .btn {
+        width: 100%;
+        
+    }
+
+    .hero-btns {
+        margin-top: 15px;
+    
+    }
+    .hero-btns .btn {
+        margin: 6px;
+    
+    }
 }
 
-@media screen and (max-width: 768px) {
+/* medium screen */
+@media (min-width:481px){
     .hero-container1 > h1 {
         font-size: 50px;
-        margin-top: -100px;
+        margin-top: 100px;
+        }
+
+        .hero-container1 > h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left:20px;
+            margin-right:20px;
+    
         }
 
         .hero-container > p {
@@ -75,4 +134,28 @@ margin-top: 100px;
         
     }
 
+} 
+
+
+/* large screen */
+@media (min-width:769px){
+    .hero-container1 > h1 {
+        font-size: 70px;
+        margin-top: 100px;
+        }
+
+        .hero-container1 > h2 {
+            color: #fff;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left:10px;
+            margin-right:10px;
+    
+        }
 }
+
+
+
+
+
+

@@ -39,7 +39,7 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  max-width: 30%;
+  max-width: 23%;
 }
 
 .cards__item__link {
@@ -96,6 +96,15 @@ h1 {
   line-height: 24px;
 }
 
+/* smart phone */
+@media (max-width:480px) {
+  .cards__item {
+    margin: 0 1rem;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;
@@ -112,6 +121,7 @@ h1 {
   .cards__item {
     margin-bottom: 2rem;
   }
+
 }
 
 #customProjects {

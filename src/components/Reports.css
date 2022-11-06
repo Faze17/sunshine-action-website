@@ -1,0 +1,30 @@
+.container a {
+    text-decoration: underline #0e5bac;
+}
+h1 {
+    color: #0e5bac;
+}
+
+/* smart phone */
+@media (max-width:480px) {
+
+    .projectBanner {
+        padding: 0px 0px 3px;
+
+    }
+}
+
+/* medium screen */
+@media (min-width:481px){
+    .projectBanner {
+        padding: 0px 0px 3px;
+
+    }
+
+} 
+
+
+/* large screen */
+@media (min-width:769px){
+}
+

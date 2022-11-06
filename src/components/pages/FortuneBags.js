@@ -4,7 +4,7 @@ import './Project.css';
 
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
-
+import HomePageLogo from '../HomePageLogo';
 
 
 export default FortuneBags;
@@ -13,6 +13,7 @@ function FortuneBags() {
     return (
       <>
         <HeroComp name = "FORTUNE BAG PROGRAM" />
+        <HomePageLogo />
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "What is the Fortune Bag Program?" />

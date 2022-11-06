@@ -4,15 +4,16 @@ import './Project.css';
 
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
-
+import HomePageLogo from '../HomePageLogo';
 export default StreetSleepers;
 
 function StreetSleepers() {
     return (
       <>
         <HeroComp name = "STREET-SLEEPERS" />
-        
+        <HomePageLogo/>
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
+            <br></br>
             <div className="container">
                 <BigHeader text = "Project Info" />
                 <li><b>The Street-Sleepers Program distributes dinner boxes, drinks, dry foods, blankets, haircuts, legal aid, and other essential services to street-sleepers. The program also educates youth on the issue of homelessness and raises money to provide services to those in need.</b></li>

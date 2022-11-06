@@ -1,7 +1,21 @@
 import React from 'react';
 import './AmbassadorPage.css';
 
+
 function VoluntaryPage() {
+    // function renderEmail() {
+    //     switch (props.country) {
+    //       case "hk":
+    //         return <li>Sunny: <a href="mailto:sunshine@sunshine-action.org" class="text-white">sunshine@sunshine-action.org</a> </li>;
+    //         break;
+    //       case "uk":
+    //         return <li>Adrian: <a href="mailto:ambassador@sunshine-action.org" class="text-white">ambassador@sunshine-action.org</a></li>;
+    //         break;
+    //       case "us":
+    //         return <li>Adrian: <a href="mailto:ambassador@sunshine-action.org" class="text-white">ambassador@sunshine-action.org</a></li>;
+    //         break;
+    //     }
+    //   }
     return (
         <div className="homepageinfo" style={{background: 'rgb(82,97,147'}}>
    <div className="container">
@@ -51,11 +65,16 @@ function VoluntaryPage() {
            support to the people around the world who really need it most! </p>
     <br />
 
-    <p>If you are interested in becoming a volunteer with us, please email either: </p>
+    <p>If you are interested in becoming a volunteer with us, please email </p>
+    <p>HongKong:</p>
     <ul>
-        <li>Adrian: <a href="mailto:ambassador@sunshine-action.org" class="text-white">ambassador@sunshine-action.org</a></li>
         <li>Sunny: <a href="mailto:sunshine@sunshine-action.org" class="text-white">sunshine@sunshine-action.org</a> </li>
     </ul>
+    <p>Others:</p>
+    <ul>
+         <li>Adrian: <a href="mailto:ambassador@sunshine-action.org" class="text-white">ambassador@sunshine-action.org</a></li>
+    </ul>
+    <br></br>
     </div>
 </div>
 

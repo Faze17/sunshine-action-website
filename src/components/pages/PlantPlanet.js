@@ -4,6 +4,7 @@ import './Project.css';
 
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
+import HomePageLogo from '../HomePageLogo';
 
 export default PlantPlanet;
 
@@ -11,7 +12,7 @@ function PlantPlanet() {
     return (
       <>
         <HeroComp name = "PLANT THE PLANET" />
-        
+        <HomePageLogo/>
         <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
             <div className="container">
                 <BigHeader text = "Project Info" />

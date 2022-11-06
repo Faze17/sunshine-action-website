@@ -6,8 +6,10 @@ import * as ProjectPages from './pages/ProjectPages.js';
 
 function CardsProjectsUK() {
   let projectCards = [];
+  let _p = "ukfortunebagsPage";
+  projectCards.push(<CardItem path = {'/' + ProjectPages.projectPageInfo[_p][0]} src = {"images/" + ProjectPages.projectPageInfo[_p][3]} text={ProjectPages.projectPageInfo[_p][1]} />);
   for (let p in ProjectPages) {
-    if (p == "projectPageInfo" || ProjectPages.projectPageInfo[p][2] != 2) {
+    if (p == "projectPageInfo" || p == "ukfortunebagsPage" || ProjectPages.projectPageInfo[p][2] != 2) {
       continue;
     }
     projectCards.push(<CardItem path = {'/' + ProjectPages.projectPageInfo[p][0]} src = {"images/" + ProjectPages.projectPageInfo[p][3]} text={ProjectPages.projectPageInfo[p][1]} />);
@@ -19,7 +21,8 @@ function CardsProjectsUK() {
         <div className='cards__container'>
           <div className='cards__wrapper'>
             <ul className='cards__items'>
-              <CardItem
+              {projectCards}
+              {/* <CardItem
                 src='images/image003.jpg'
                 text='Building Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
                 path='buildingproject'
@@ -28,8 +31,7 @@ function CardsProjectsUK() {
                 src='images/web-4667406_1280.jpeg'
                 path='digitalinequality'
                 text='Digital Inequality &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
-              />
-              {projectCards}
+              /> */}
             </ul>
           </div>
         </div>

@@ -21,3 +21,42 @@ margin: auto;
 font-size: 30px;
 
 }
+
+
+
+
+/* smart phone */
+@media (max-width:480px) {
+  .navbar-brand > span {
+    top: 30px;
+    font-size: 25px;
+  }
+  
+
+
+}
+
+/* medium screen */
+@media (min-width:481px){
+
+
+} 
+
+
+/* large screen */
+@media (min-width:769px){
+}
+
+/* before the navbar collapse */
+@media (min-width:992px){
+  #donatebutton
+{
+  background-color:rgba(247, 230, 213, 0.846);
+  border-radius: 10%;
+
+}
+
+#donatebutton b{
+  color:rgb(80, 80, 80);
+}
+}

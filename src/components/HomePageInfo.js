@@ -1,9 +1,11 @@
 import React from 'react';
 import './HomePageInfo.css';
-
+import { render } from "react-dom";
+import { Link } from 'react-router-dom';
 
 function HomePageInfo() {
-    return (
+    return(
+
         <div className="homepageinfo" style={{background: 'rgb(82,97,147'}}>
     <div className="container">
       <div className="row">
@@ -47,6 +49,9 @@ function HomePageInfo() {
                             tours to assist other countries where
                             they are too, in need.
                         </p>
+                        <Link to="/reports" className = "reportsBanner">
+                        SUNSHINE ACTION PERFORMANCE REPORTS
+                         </Link>
                     </div>
                     </div>
 

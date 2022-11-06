@@ -9,8 +9,10 @@ import { Button } from 'react-bootstrap';
 function HeroComp(props) {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-4.mov' autoPlay loop muted webkit-playsinline playsinline />
-      <h1>{props.name}</h1>
+      <video autoPlay loop muted controls webkit-playsinline playsinline >
+        <source media=" (min-width:481px)" srcset='/videos/video-4.mov' alt=''></source>
+      </video>
+      <h1>{props.name.toUpperCase()}</h1>
       <div className='hero-btns'>
       </div>
     </div>

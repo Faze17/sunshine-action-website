@@ -9,7 +9,9 @@ import { Button } from 'react-bootstrap';
 function HeroGlobal() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-4.mov' autoPlay loop muted />
+      <video autoPlay loop muted webkit-playsinline playsinline >
+        <source media=" (min-width:481px)" srcset='/videos/video-4.mov' alt=''></source>
+      </video>
       <h1>GLOBAL PROJECTS</h1>
       <div className='hero-btns'>
 
