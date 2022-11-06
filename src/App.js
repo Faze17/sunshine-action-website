@@ -35,6 +35,7 @@ import ComingSoon from './components/pages/ComingSoon.js';
 import ProjectsUS from './components/pages/ProjectsUS';
 import Reports from './components/pages/Reports';
 
+
 function App() {
   const reload = () => window.location.reload();
   let projectRoutes = [];
@@ -136,6 +137,7 @@ function App() {
               <Route path='/donate' exact component={Donate} />
               <Route path='/comingsoon' exact component={ComingSoon} />
               <Route path='/reports' exact component={Reports} />
+
               
               {projectRoutes}
             </Switch>

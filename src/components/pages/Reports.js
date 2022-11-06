@@ -4,7 +4,7 @@ import '../Project.css';
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
-import Report22 from '../../documents/report2022.pdf';
+import Report22 from '../../documents/sunshine_report_2022_updated.pdf';
 import Report21 from '../../documents/report2021.pdf';
 import Report20 from '../../documents/report2020.pdf';
 import '../Reports.css';
