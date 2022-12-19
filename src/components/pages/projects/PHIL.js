@@ -25,7 +25,7 @@ return (
 <BigHeader text = "Asia volunteering tour" />
 <SmallHeader text = "June 2008 / Jan 2009" />
 <ImageComp src = "IMG_9261_resized.JPG" />
-<p> We visited the garbage mountain at TONDO in Manila Philippine, an area with approx. 1.1 millions peoples and this garbage area cover nearly 25 hectares with few hundred thousands peoples living under poverty line. They spent most of the time collecting plastic, metal, or paper to make a living in a home without a bathroom or a kitchen.</p>
+<p>We visited the garbage mountain at TONDO in Manila Philippine, an area with approx. 1.1 millions peoples and this garbage area cover nearly 25 hectares with few hundred thousands peoples living under poverty line. They spent most of the time collecting plastic, metal, or paper to make a living in a home without a bathroom or a kitchen.</p>
 <ImageComp src = "IMG_9252_resized.JPG" />
 <p>We visited the house with over 70 mentally disorder children in TONDO and then nearly 30 handicapped children in QUEZON CITY.</p>
 

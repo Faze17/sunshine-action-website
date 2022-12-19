@@ -29,7 +29,7 @@ return (
 
 <SmallHeader text = "Kartini Emergency School" />
 <ImageComp src = "public/images/Image_resized (1).png" />
-<p>20 years ago, the twin sisters Rossy & Rian, started the Kartini Emergency School providing free education and food for the street children in the slum area of Jakarta Indonesia. The Twin sisters and others specialized teachers provide free education  for 573 students in this open area. Today, beside the base in Jakarta, their system has expanded to 87 schools in the Urban areas of Indonesia and each of the school is covering approximately 100-200 students. </p>
+<p>20 years ago, the twin sisters Rossy & Rian, started the Kartini Emergency School providing free education and food for the street children in the slum area of Jakarta Indonesia. The Twin sisters and others specialized teachers provide free education  for 573 students in this open area. Today, beside the base in Jakarta, their system has expanded to 87 schools in the Urban areas of Indonesia and each of the school is covering approximately 100-200 students. </p>
 
 </div>
 </div>

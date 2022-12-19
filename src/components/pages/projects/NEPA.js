@@ -36,7 +36,7 @@ return (
 
 <SmallHeader text = " Sept 2013" />
 <ImageComp src = "IMG_DEEA4EB6EED9-1_resized.jpeg" />
-<p> 3 Sunshine Action volunteers traveled to Kathmandu and distributed food & Material for 6 local organizations, including Sunshine Student Sponsorship to 59 poor children in Nepal.</p>
+<p>3 Sunshine Action volunteers traveled to Kathmandu and distributed food & Material for 6 local organizations, including Sunshine Student Sponsorship to 59 poor children in Nepal.</p>
 
 <SmallHeader text = "Sept 2012" />
 <ImageComp src = "IMG_48D2C2E533E6-1_resized.jpeg" />

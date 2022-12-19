@@ -49,6 +49,7 @@ function NavBar() {
           
       <li class="nav-item">
           <Link class="nav-link" to="/home">Home</Link>
+          
         </li>
        
 

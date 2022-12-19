@@ -33,7 +33,7 @@ return (
 <BigHeader text = "2012 Volunteer Tour" />
 <SmallHeader text = "November 2012" />
 <p>Sunshine Action volunteers went to India to donate food, medicine, wheelchairs and other materials. Sunshine Action also contributed to several building projects for those in need.</p>
-<p>Volunteers visited Vrindavan, where the Guild of Service has a house to care for displaced widows. Vrindavan is known as the City of Widows due to the large number of widows who move into the town and surrounding area after losing their husbands. According to some Hindu traditions, upper-caste widows may not remarry, so many of those abandoned by their families make their way here.</p>
+<p>Volunteers visited Vrindavan, where the Guild of Service has a house to care for displaced widows. Vrindavan is known as the City of Widows due to the large number of widows who move into the town and surrounding area after losing their husbands. According to some Hindu traditions, upper-caste widows may not remarry, so many of those abandoned by their families make their way here. </p>
 <p>These efforts are estimated to benefit over 2,360 people through local organizations and centres.</p>
 </div>
 </div>
