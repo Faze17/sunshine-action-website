@@ -18,14 +18,8 @@ export default CHINPage;
 function CHINPage() {
 return (
 <>
-<HeroComp name = "CHINA" />
-
-<div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
-<div className="container" id = "BEGINREADHERE">
-<br />
-<p>Sunshine Action works extensively in China through a variety of programs. Past charity trips have included trips to Mukden, Yunnan, Sichuan, Macau, and other locations in China. Visit other project pages for more details. For information on Sunshine Action Walkathons in China, visit the Congenital Heart Disease page. </p>
-</div>
-</div>
+      <HeroComp name = "COMING SOON" />
+      <Footer />
 <Footer />
 </>
 );
