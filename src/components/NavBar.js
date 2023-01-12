@@ -65,10 +65,6 @@ function NavBar() {
             <li><Link class="dropdown-item" to="/reports">Performance Reports</Link></li>
           </ul>
         </li>
-
-        <li class="nav-item">
-          <Link class="nav-link" to="projects">Projects</Link>
-        </li>
         <li class="nav-item dropdown">
           <Link class="nav-link dropdown-toggle" to="/projects" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Projects
