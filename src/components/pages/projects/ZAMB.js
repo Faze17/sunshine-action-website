@@ -19,7 +19,6 @@ function ZAMBPage() {
 return (
 <>
       <HeroComp name = "COMING SOON" />
-      <Footer />
 <Footer />
 </>
 );

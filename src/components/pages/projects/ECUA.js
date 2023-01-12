@@ -19,7 +19,7 @@ function ECUAPage() {
 return (
 <>
       <HeroComp name = "COMING SOON" />
-<Footer />
+      <Footer />
 </>
 );
 };

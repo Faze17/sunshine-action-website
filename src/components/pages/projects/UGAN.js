@@ -19,7 +19,6 @@ function UGANPage() {
 return (
 <>
       <HeroComp name = "COMING SOON" />
-      <Footer />
 <Footer />
 </>
 );

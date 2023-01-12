@@ -20,7 +20,6 @@ return (
 <>
       <HeroComp name = "COMING SOON" />
       <Footer />
-<Footer />
 </>
 );
 };

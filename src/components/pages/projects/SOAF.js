@@ -19,7 +19,6 @@ function SOAFPage() {
 return (
 <>
       <HeroComp name = "COMING SOON" />
-      <Footer />
 <Footer />
 </>
 );
