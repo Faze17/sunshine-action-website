@@ -28,7 +28,7 @@ return (
 <BigHeader text = "2017 Charity Tour" />
 <SmallHeader text = "June 2017" />
 <p>Together with the CHEER Team of the University of Hong Kong, Sunshine Action used proceeds from the 8th Hike for Hunger in 2017 to provide poverty relief.  On this trip Sunshine Action initiated the first Sunshine Shipping Containers Orphanage Project. Sunshine Action partnered with Sok Orphanage and School, constructing two water purifiers in Sok Orphanage, and two more in the school.</p>
-<p>A vegetable farm was built in the surrounding village, and toilets and water purifiers were repaired. Volunteers also conducted a health and moral education workshop, and conducted a health check in the village.</p>
+<p>A vegetable farm was built in the surrounding village, and toilets and water purifiers were repaired. Volunteers also conducted a health and moral education workshop, and conducted a health check in the village. </p>
 <p>Over 20 tonnes of rice, basic food, materials, hygiene products, and toys were donated to local organizations in Siem Reap, Cambodia.</p>
 <BigHeader text = "2016 Charity Tour" />
 <SmallHeader text = "June 2016" />

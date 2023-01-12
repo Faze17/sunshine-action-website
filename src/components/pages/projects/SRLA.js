@@ -18,9 +18,26 @@ export default SRLAPage;
 function SRLAPage() {
 return (
 <>
-      <HeroComp name = "COMING SOON" />
-      <Footer />
-<Footer />
+<HeroComp name = "SIRI LANKA" />
+      <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
+      <div className="container" id = "BEGINREADHERE">
+
+<BigHeader text = "Charity Program" />
+<SmallHeader text = "Feb 2013" />
+<ImageComp src = "F0259CC6-2C3B-48AF-82BA-F2841AEA6189.jpeg" />
+<p> Four Sunshine Action volunteers went to Chilaw, Siri Lanka with the mission of distributing food and another other material and stationaries for the flood-affected famialies in Seemaweliya village. Volunteers rebuilt 6 completely new houses for those who lost it during the disaster plus a new community hall and new bathrooms in these villages. </p>
+
+<BigHeader text = "Plant the planet"/>
+<SmallHeader text = "Feb 2013" />
+<ImageComp src = "92CE64FE-D80B-47A4-BD05-BC50E3B86414.jpeg" />
+<p>Volunteers in Sunshine Action planted over 100 fruit trees and even obtained guava fruit from these trees two years after.</p>
+
+<BigHeader text = "Asia volunteering tour "/>
+<SmallHeader text = "May 2011" />
+<ImageComp src = "4A3BEAC4-4066-40EB-BFDF-1DA241EEC776 2.jpeg" />
+<p>Two sunshine Action volunteers travelled to Siri Lanka in a charity mission covering 1393 families and cases, estimated to benefit approximately 1953 people directly with more than 12300 kg of food, samba rice, dhal, red rice, beans, green grams, sugar, milk powder, etc... plus many daily hygiene products such as soap, detergents, tooth paste, etc... We also covered some medical items for the cancer patients and planted 800 fruit trees in CHilow area.  </p>
+</div>
+</div>
 </>
 );
 };

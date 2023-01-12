@@ -25,7 +25,7 @@ return (
 
 <BigHeader text = "2016 Charity Tour" />
 <SmallHeader text = "January 2016" />
-<p>The mission of this trip was food distribution to the poorest of the poor. Volunteers visited and volunteered for several local organizations, and provided Sunshine Student Sponsorships to poor children.  This program was founded in 2013, and 30 children are sponsored on a yearly basis. Volunteers also visted long-term supported cases of HIV/AIDs and others with disabilities or chronic illness, and evaluated the Microfinance program in Vietnam.</p>
+<p> The mission of this trip was food distribution to the poorest of the poor. Volunteers visited and volunteered for several local organizations, and provided Sunshine Student Sponsorships to poor children.  This program was founded in 2013, and 30 children are sponsored on a yearly basis. Volunteers also visted long-term supported cases of HIV/AIDs and others with disabilities or chronic illness, and evaluated the Microfinance program in Vietnam.</p>
 
 <BigHeader text = "2014 Charity Tour" />
 <SmallHeader text = "January 2014" />
