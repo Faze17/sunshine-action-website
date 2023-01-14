@@ -5,6 +5,7 @@ import HomePageLogo from "../HomePageLogo";
 import HeroGlobal from "../HeroGlobal";
 import CountryGallery from "../CountryGallery";
 import CardItem from "../CardItem.js";
+import { Link } from "react-router-dom";
 
 function GlobalProjects() {
   // Flags are from www.flags.net
@@ -48,10 +49,34 @@ function GlobalProjects() {
           <div className="cards__container">
             <div className="cards__wrapper">
               <ul className="cards__items">
-                <CardItem
+                {/* <a
+                 
+                  src="images/StreetSleeper1.jpg"
+                  type="button"
+                  class="btn"
+                >
+                  United Kingdom
+                </a> */}
+              
+                <li className="cards__item">
+                  <a className="cards__item__link">
+                    {/* <a  href="https://www.sunshine-action-uk.org/">Link</a> */}
+                    <figure className="cards__item__pic-wrap">
+                      <img className="cards__item__img" src="images/StreetSleeper1.jpg" />
+                    </figure>
+                    <div className="cards__item__info">
+                      <a className="cards__item__text"  style={{textDecoration: "none"}} href="https://www.sunshine-action-uk.org"> United Kingdom</ a>
+                     
+                    </div>
+                  </a>
+                </li>
+                
+
+                {/* <CardItem
                   src="images/StreetSleeper1.jpg"
                   text="United Kingdom"
-                />
+                  href="https://www.sunshine-action-uk.org/"
+                /> */}
                 <CardItem
                   src="images/FortuneBag1.jpg"
                   path="/us/home"

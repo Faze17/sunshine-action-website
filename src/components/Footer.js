@@ -39,7 +39,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
           </div>
-          <small class='website-rights'>Sunshine Action © 2022</small>
+          <small class='website-rights'>Sunshine Action © 2023</small>
           <div class='social-icons'>
           <a
             className='social-icon-link facebook'
