@@ -18,7 +18,7 @@ export default UGANPage;
 function UGANPage() {
 return (
 <>
-      <HeroComp name = "COMING SOON" />
+<HeroComp name = "COMING SOON" />
 <Footer />
 </>
 );

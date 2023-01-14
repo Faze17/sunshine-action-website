@@ -21,6 +21,7 @@ return (
 <HeroComp name = "CAMBODIA" />
 <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
 <div className="container" id = "BEGINREADHERE">
+<HomePageLogo />
 <BigHeader text = "2018 Charity Tour" />
 <SmallHeader text = "27 February – 4 March 2018" />
 

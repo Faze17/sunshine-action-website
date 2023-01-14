@@ -18,8 +18,7 @@ export default CAMEPage;
 function CAMEPage() {
 return (
 <>
-      <HeroComp name = "COMING SOON" />
-      <Footer />
+<HeroComp name = "COMING SOON" />
 <Footer />
 </>
 );

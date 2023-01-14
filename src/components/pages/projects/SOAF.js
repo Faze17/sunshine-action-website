@@ -18,7 +18,7 @@ export default SOAFPage;
 function SOAFPage() {
 return (
 <>
-      <HeroComp name = "COMING SOON" />
+<HeroComp name = "COMING SOON" />
 <Footer />
 </>
 );
