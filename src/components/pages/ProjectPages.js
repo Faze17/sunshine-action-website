@@ -24,6 +24,8 @@ import MOZAPage from "./projects/MOZA.js";
 import SOAFPage from "./projects/SOAF.js";
 import UGANPage from "./projects/UGAN.js";
 import ZAMBPage from "./projects/ZAMB.js";
+import CHILPage from "./projects/CHIL.js"
+import CLMBPage from "./projects/CLMB.js"
 
 
 
@@ -55,6 +57,8 @@ export {
   SOAFPage,
   UGANPage,
   ZAMBPage,
+  CHILPage,
+CLMBPage
 };
 
 //PROJECTPAGEINFO
@@ -82,8 +86,8 @@ const projectPageInfo = {
   SOAFPage: ["SOAF", "SOUTH AFRICA", 1],
   UGANPage: ["UGAN", "UGANDA", 1],
   ZAMBPage: ["ZAMB", "ZAMBIA", 1],
-
-
+  CLMBPage:["CLMB","Columbia",1],
+  CHILPage:["CHIL","Chile",1],"PERUPage":["PERU","Peru",1],
   myprojectPage: ["myproject", "My Project", 1, "1.jpeg"],
   publichealthPage: [
     "publichealth",

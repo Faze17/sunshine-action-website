@@ -18,8 +18,8 @@ export default CLMBPage;
 function CLMBPage() {
 return (
 <>
-      <HeroComp name = "COMING SOON" />
-      <Footer />
+<HeroComp name = "COMING SOON" />
+<Footer />
 </>
 );
 };

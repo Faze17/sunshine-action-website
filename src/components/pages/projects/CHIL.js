@@ -18,8 +18,7 @@ export default CHILPage;
 function CHILPage() {
 return (
 <>
-      <HeroComp name = "COMING SOON" />
-      <Footer />
+<HeroComp name = "COMING SOON" />
 <Footer />
 </>
 );
