@@ -19,7 +19,7 @@ function NEPAPage() {
 return (
 <>
 <HeroComp name = "NEPAL" />
-
+<HomePageLogo />
 <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
 <div className="container" id = "BEGINREADHERE">
 

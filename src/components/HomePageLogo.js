@@ -5,9 +5,9 @@ import './HomePageLogo.css';
 
 function HomePageLogo() {
     return (
-        <div className="home-page-logo" style={{padding: "30px", background:'rgb(82,97,147)'}}>
-            <img className="actual-logo-page" src="images/actual-logo.png"> 
-            </img>
+        <div className="home-page-logo" style={{padding: "15px", background:'rgb(82,97,147)'}}>
+            {/* <img className="actual-logo-page" src="images/actual-logo.png"> 
+            </img> */}
     
 
 

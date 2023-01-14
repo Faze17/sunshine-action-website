@@ -21,8 +21,8 @@ return (
 <HeroComp name = "BANGLADESH" />
       <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
       <div className="container" id = "BEGINREADHERE">
-
-<BigHeader text = "Charity tour" />
+<HomePageLogo />
+<BigHeader text = "Charity Tour" />
 <SmallHeader text = "Nov 2014" />
 <ImageComp src = "IMG_9283.jpeg" />
 <p>Seven Sunshine Action volunteers visited Dhaka, Bangladesh and served 3 local organizations, including the Missionaries of Charity Shishu Bhavan, Smyrna development Society and Missionaries of Charity House of Compassion.</p>
@@ -30,6 +30,7 @@ return (
 
 </div>
 </div>
+<Footer />
 </>
 );
 };

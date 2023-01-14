@@ -10,6 +10,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 //      mainVideo.append("<source type='video/mp4' src='" + desktopSrc + "' />");
 // }
 
+
+//NOTE SINGAPORE HYPERLINK IS BELOW, ONCE SETUP, PLEASE REMOVE THE COMMENT TO ACTIVATE ITS LINK
 function LandingHome () {
     return(
         <div className='hero-container2'>
@@ -36,9 +38,15 @@ function LandingHome () {
         <Link to='/us/home' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;States&nbsp;of&nbsp;America
               </Link>
-        <Link to='/comingsoon' type="button" class="btn btn-outline-light btn-lg" 
+   
+
+          <Link to='/global' type="button" class="btn btn-outline-light btn-lg" 
+              style={{borderRadius: '0px', marginBottom: '5px',}}>Global&nbsp;Projects 
+              </Link> 
+
+          {/* <Link to='/comingsoon' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>Singapore
-              </Link>
+              </Link> */}
 
         {/*<Link to='/global' type="button" class="btn btn-outline-light btn-lg" style={{borderRadius: '0px', marginBottom: '5px'}}>
             Global Projects

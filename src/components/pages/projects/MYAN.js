@@ -21,8 +21,8 @@ return (
 <HeroComp name = "MYANMAR" />
       <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
       <div className="container" id = "BEGINREADHERE">
-
-<BigHeader text = "Asia volunteering tour" />
+<HomePageLogo />
+<BigHeader text = "Asia Volunteering Tour" />
 <SmallHeader text = "Nov 2013" />
 <ImageComp src = "IMG_5BA33100317D-1_resized.jpeg" />
 <p>Four Sunshine Action volunteers went to Yangon & Mae Sot, distributing over 30 tones of food & material through the following several organizations including the Burmese Migrant Worker's Education Committee, Eyes to Burma for the dump site, Boddha Ditta Nun Vihara, Mangalar Parahita Youth Development Center, Tikha Rama nun Vihara,Happy Heaven Humanitarian Project for HIV/AIDS orphans, Mayan Chaung Leprosy village and the Social Action for Women.</p>
