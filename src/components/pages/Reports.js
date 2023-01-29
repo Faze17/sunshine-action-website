@@ -4,11 +4,11 @@ import '../Project.css';
 import HeroComp from '../HeroComp';
 import Footer from '../Footer';
 import HomePageLogo from '../HomePageLogo';
+import ReportG from '../../documents/SUNSHINE ACTION 耀陽行動 2023 GLOBAL BENEFICIARY LIST -Alphabetic order.pdf'
 import Report23 from '../../documents/SUNSHINE ACTION 耀陽行動  2023 Performance and list of partner org.pdf';
 import Report22 from '../../documents/sunshine_report_2022_updated.pdf';
 import Report21 from '../../documents/report2021.pdf';
 import Report20 from '../../documents/report2020.pdf';
-import ReportG from '../../documents/SUNSHINE ACTION 耀陽行動 2023 GLOBAL BENEFICIARY LIST -Alphabetic order.pdf'
 import '../Reports.css';
 function BigHeader(props) {
 return (<div className="p-4 text-dark rounded-3 bigHeader"><h1 className = "mb-0">{props.text}</h1></div>)
