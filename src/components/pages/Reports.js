@@ -23,7 +23,7 @@ export default reportsPage;
 function reportsPage() {
 return (
 <>
-<HeroComp name = "Reports" />
+<HeroComp name = "Performance Reports" />
 <HomePageLogo />
 <div className="projectBanner" style={{background: 'rgb(82,97,147'}}>
 <div className="container" id = "BEGINREADHERE">
