@@ -69,17 +69,18 @@ body {
 }
 
 #c4 {
-   padding: 50px 0;
+   padding: 55px 0;
 }
 
 #c5 {
+   padding-top: 80px;
    background-color:rgb(255, 168, 37);
    color:rgb(240, 237, 156);
    border:none;
 }
 
 #c6 {
-   padding: 70px 0;
+   padding-top: 80px;
    font-size: 40px;
 }
 
@@ -97,7 +98,7 @@ body {
    border-radius: 50%;
    width: 400px;
    height: 400px;
-   margin-top:10%;
+   margin-top:20%;
    margin-left:5%;
 }
 
@@ -117,6 +118,7 @@ body {
 #helptext p{
    font-size:25px;
    color:rgba(0, 47, 189, 0.858);
+   text-align: center;
 }
 
 #helptext .reportsBanner{
@@ -136,43 +138,49 @@ body {
    display: table-cell;
    text-align: center;
    vertical-align: middle;
-   width: 50%;
    padding:50px 100px;
 }
 
-
 .left_half {
    background-color: #ff9e2c;
+   width: 40%;
+   float: left;
+}
+
+.left_half h1 {
+   font-weight:bold;
+   font-size: 100px;
+   color: rgba(0, 47, 189, 0.858);
+}
+
+.hungerMessage {
+   text-align: center;
+   font-weight: bold;
+   font-size:25px;
+   color:rgba(0, 47, 189, 0.858);
 }
 
 .right_half{
    background-color: #3348ad;
-}
-
-.left_half h1{
-   font-size:100px;
-   color:rgba(0, 47, 189, 0.858);
-}
-
-.left_half p{
-   font-size:25px;
-   color:rgba(0, 47, 189, 0.858);
+   width: 60%;
+   float: right;
 }
 
 .right_half h1{
    font-size:50px;
    color:white;
+   font-weight: bold;
 }
 
-.right_half p{
-   font: size 25px;
+.tackleMessage {
+   text-align: center;
+   font-size: 21px;
    color:rgb(232, 232, 186);
 }
 
 .right_half span{
-   font-family: cursive;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 /* smart phone */
 @media (max-width:480px) {
