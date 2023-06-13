@@ -129,22 +129,31 @@ body {
 
 /* we tackle section */
 .wetackle{
-   display: table;
+   display: flex;
    height: 500%;
    width:100%;
 }
 
 .wetackle > div {
-   display: table-cell;
+   display: flex;
    text-align: center;
    vertical-align: middle;
    padding:50px 100px;
+   clear: none;
 }
 
 .left_half {
    background-color: #ff9e2c;
-   width: 40%;
    float: left;
+   flex: 2;
+   align-items: center;
+}
+
+.right_half{
+   background-color: #3348ad;
+   float: right;
+   flex: 3;
+   align-items: center;
 }
 
 .left_half h1 {
@@ -153,23 +162,17 @@ body {
    color: rgba(0, 47, 189, 0.858);
 }
 
+.right_half h1{
+   font-size:50px;
+   color:white;
+   font-weight: bold;
+}
+
 .hungerMessage {
    text-align: center;
    font-weight: bold;
    font-size:25px;
    color:rgba(0, 47, 189, 0.858);
-}
-
-.right_half{
-   background-color: #3348ad;
-   width: 60%;
-   float: right;
-}
-
-.right_half h1{
-   font-size:50px;
-   color:white;
-   font-weight: bold;
 }
 
 .tackleMessage {

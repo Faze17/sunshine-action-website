@@ -1,3 +1,7 @@
+.cards h1 {
+  font-size: 50px;
+}
+
 .cards {
   padding: 4rem;
   background: #fff;
@@ -94,6 +98,9 @@ h1 {
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* smart phone */

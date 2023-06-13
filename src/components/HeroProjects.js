@@ -10,7 +10,7 @@ function HeroProjects() {
   return (
     <div className='hero-container'>
       <video autoPlay loop muted webkit-playsinline playsinline >
-        <source src='/videos/video-4.mov' media=" (min-width:481px)"></source>
+        <source src='/videos/video-5.mp4' media=" (min-width:481px)"></source>
       </video>
       <h1>PROJECTS</h1>
       <div className='hero-btns'>

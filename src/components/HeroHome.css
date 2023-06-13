@@ -33,7 +33,7 @@ video {
     text-align: center;
     font-weight: bold;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
-    /*horizontal offset, vertical offset, blue radius, color*/
+    /*horizontal offset, vertical offset, blur radius, color*/
     z-index: 1;
 }
 

@@ -13,19 +13,19 @@ function CardsProjects() {
   }
   return (
     <div className='cards'>
-        <h1>Current Projects</h1>
+        <h1><strong>Current Projects</strong></h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
               src='images/StreetSleeper1.jpg'
-              text='Street-Sleepers Program &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+              text='Street-Sleepers Program'
               path='/street-sleepers'
             />
             <CardItem
               src='images/FortuneBag1.jpg'
               path='/fortune-bags'
-              text='Fortune Bag Program &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'
+              text='Fortune Bag Program'
             />
             <CardItem
               src='images/BuildingProjects1.jpg'
