@@ -33,9 +33,9 @@ function LandingHome () {
               style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;Kingdom
               </Link>
 
-        <Link to='/us/home' type="button" class="btn btn-outline-light btn-lg" 
+        <a href="https://sunshine-action-us.org" type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;States&nbsp;of&nbsp;America
-              </Link>
+              </a>
         <Link to='/comingsoon' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>Singapore
               </Link>
