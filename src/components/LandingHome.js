@@ -29,9 +29,13 @@ function LandingHome () {
               style={{borderRadius: '0px', marginBottom: '5px',}}>Hong&nbsp;Kong
               </Link>
 
-        <Link to='/uk/home' type="button" class="btn btn-outline-light btn-lg" 
+        {/* * <Link to='https://sunshine-action-uk.org' type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;Kingdom
-              </Link>
+              </Link> * */}
+
+      <a href="https://sunshine-action-uk.org" type="button" class="btn btn-outline-light btn-lg" 
+              style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;Kingdom
+              </a>
 
         <a href="https://sunshine-action-us.org" type="button" class="btn btn-outline-light btn-lg" 
               style={{borderRadius: '0px', marginBottom: '5px',}}>United&nbsp;States&nbsp;of&nbsp;America

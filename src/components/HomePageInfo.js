@@ -15,9 +15,9 @@ function HomePageInfo() {
                             <br />
                             {/* The round text box */}
                             <div class='float-center'>
-                                <p class="numberCircle" id="c1" > <b>340,000</b><br></br>PEOPLE HELPED</p>
-                                <p class="numberCircle" id="c2"><b>20</b><br></br> COUNTRIES</p>
-                                <p class="numberCircle" id="c3"><b>642</b><br></br>PARTNERSHIPS</p>
+                                <p class="numberCircle" id="c1" > <b>380,000</b><br></br>PEOPLE HELPED</p>
+                                <p class="numberCircle" id="c2"><b>23</b><br></br> COUNTRIES</p>
+                                <p class="numberCircle" id="c3"><b>800</b><br></br>PARTNERSHIPS</p>
                                 <p class="numberCircle" id="c4"><b>100%</b> <br></br>FUNDING FROM THE PUBLIC</p>
                                 <p class="numberCircle" id="c5"><b>10,000</b> <br></br>VOLUNTEERS</p>
                                 <p class="numberCircle" id="c6">ENTIRELY VOLUNTEER RUN</p>
