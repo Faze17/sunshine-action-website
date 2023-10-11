@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { HashLink as Link } from 'react-router-hash-link';
-import { readFileSync } from "fs";
+// import { readFileSync } from "fs";
 import { read } from "xlsx/xlsx.mjs";
 
 let emailList = []
